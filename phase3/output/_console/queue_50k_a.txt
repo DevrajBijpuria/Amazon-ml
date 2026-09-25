@@ -1,0 +1,5 @@
+START p3_frozen_baseline scale50k run 1 16:50:00
+END p3_frozen_baseline scale50k rc=0 17:12:52 | 2026-09-25 17:12:51,410 INFO done phase3\output\p3_frozen_baseline\50k\run_1: combined recall 0.95249, macro F0.5 0.9309, validator True 
+START p3_locality_cap100 scale50k run 1 17:12:52
+END p3_locality_cap100 scale50k rc=0 17:35:20 | 2026-09-25 17:35:19,712 INFO done phase3\output\p3_locality_cap100\50k\run_1: combined recall 0.95251, macro F0.5 0.9321, validator True 
+QUEUE DONE

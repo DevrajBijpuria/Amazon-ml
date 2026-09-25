@@ -1,0 +1,11 @@
+2026-09-25 18:14:31,791 INFO experiment p3_locality_cap150, 50000 S1 vs full targets, run 1, rules ['exact_name', 'exact_address', 'numeric', 'name_prefix', 'address_prefix', 'name_ngram', 'name_phonetic', 'address_token', 'house_locality', 'postal_locality', 'state_locality', 'address_signature']
+2026-09-25 18:14:31,813 INFO [train_load_s1_gt] start
+2026-09-25 18:14:39,344 INFO [train_load_s1_gt] 7.5s
+2026-09-25 18:14:39,344 INFO [train_normalize_s1] start
+2026-09-25 18:14:45,260 INFO [train_normalize_s1] 5.9s
+2026-09-25 18:14:45,943 INFO [train_load_s2] start
+2026-09-25 18:14:56,162 INFO [train_load_s2] 10.2s
+2026-09-25 18:14:56,162 INFO [train_normalize_s2] start
+2026-09-25 18:17:20,213 INFO [train_normalize_s2] 144.1s
+2026-09-25 18:17:23,156 INFO [train_candidates_s2] start
+2026-09-25 18:17:23,156 INFO [train_index_s2] start

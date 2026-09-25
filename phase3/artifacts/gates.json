@@ -1,0 +1,27 @@
+[
+  [
+    "G1 Correctness",
+    "PASS",
+    "pytest: 50 passed in 12.26s; section-45 checks (incl. one row per S1, no duplicates) pass on all 10 runs: True; official validator PASS on all runs: True"
+  ],
+  [
+    "G2 Candidate subset",
+    "PASS",
+    "matches_subset_of_candidates true on every run's validation output (10 runs)"
+  ],
+  [
+    "G7 Reproducibility",
+    "NOT RUN",
+    "repeat run of the selected configuration not finished"
+  ],
+  [
+    "G8 Compliance",
+    "PASS",
+    "21 source files scanned: network-client imports none; boto3 imported only in ['phase1/src/run_phase1.py', 'phase3/src/aws_runtime.py'] (own dataset fetch / archival of own outputs to own S3 prefix; not called by any run); inputs are the challenge TSVs only (input SHA-256 recorded per run)"
+  ],
+  [
+    "G9 Full-scale readiness",
+    "FAIL",
+    "selected configuration completed at 10k full-target scale(s) with exit code 0"
+  ]
+]

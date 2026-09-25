@@ -1,0 +1,30 @@
+{
+  "runtime_seconds": {
+    "test_load_s1": 3.6,
+    "test_normalize_s1": 45.4,
+    "test_load_s2": 9.7,
+    "test_normalize_s2": 121.9,
+    "test_candidates_features_scores_s2": 3584.1,
+    "test_load_s3": 10.4,
+    "test_normalize_s3": 114.2,
+    "test_candidates_features_scores_s3": 3533.8,
+    "test_write_outputs": 73.7,
+    "validator": 326.3,
+    "total": 7826.8
+  },
+  "memory": {
+    "main_process_peak_mb": 10430,
+    "all_python_processes_peak_mb": 10505,
+    "method": "main: OS peak working set / ru_maxrss (exact); all: sum over python processes sampled every 2 s"
+  },
+  "environment": {
+    "host": "DEVRAJ",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.3",
+    "logical_cpus": 16,
+    "total_memory_mb": 15773,
+    "execution": "local_workstation"
+  },
+  "code_sha256": "434828392d968a87f68db6e830398f81ab87add468c0602f3374778fcff1cd1b",
+  "git_commit": "unavailable (fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.)"
+}

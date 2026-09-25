@@ -1,0 +1,11 @@
+# Same dependency set as Phase 2.5 (rapidfuzz and joblib approved in Phase 2), pinned to the versions
+# every Phase 3 run used. Python 3.14.3.
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+rapidfuzz==3.14.6
+joblib==1.5.3
+PyYAML==6.0.3
+boto3==1.43.92
+pytest==9.1.1

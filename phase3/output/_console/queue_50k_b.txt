@@ -1,0 +1,3 @@
+START p3_locality_cap150 scale50k run 1 17:35:44
+END p3_locality_cap150 scale50k rc=0 18:05:34 | 2026-09-25 18:05:33,426 INFO done phase3\output\p3_locality_cap150\50k\run_1: combined recall 0.95425, macro F0.5 0.9280, validator True 
+START p3_locality_cap200 scale50k run 1 18:05:34

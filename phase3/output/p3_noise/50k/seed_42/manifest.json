@@ -1,0 +1,112 @@
+{
+  "experiment_id": "p3_noise",
+  "scale": "50k",
+  "source1_entities": 50000,
+  "targets": "full train Source 2 and Source 3",
+  "repeat": 1,
+  "seed": 42,
+  "negative_sample_seed": 42,
+  "model_seed": 42,
+  "rules": [
+    "exact_name",
+    "exact_address",
+    "numeric",
+    "name_prefix",
+    "address_prefix",
+    "name_ngram",
+    "name_phonetic",
+    "address_token",
+    "house_locality",
+    "state_locality",
+    "address_signature"
+  ],
+  "candidate_priority": "per S1 and target source, sort by (1) number of blocking rules that retrieved the pair, descending; (2) max(name_key edit similarity, addr_norm edit similarity), descending; (3) target position in the source file, ascending; keep the first max_candidates_per_source1. Groups at or under the cap are kept whole.",
+  "git_commit": "unavailable (fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.)",
+  "code_sha256": "c3e3f05d30ea5aae77632ba2e25bff89dcfb064c6cd07f10603b374cc9fc5f33",
+  "config_sha256": "26b698b30bdeca7303ba8267f84ab94c66ee8751a1cc30f9c6e2597cfd51fea3",
+  "input_sha256": {
+    "train_source1.tsv": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973",
+    "train_source2.tsv": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed",
+    "train_source3.tsv": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9",
+    "train_ground_truth.tsv": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037"
+  },
+  "output_sha256": {
+    "output/matching_results.tsv": "73fbbd75b41d9ff58a457829f959a1e925ce0ff5109f730ce9619c7628ed5001",
+    "output/candidate_pairs.tsv": "bf0c75b864f5a15aafa40204302c0d4cdb8cba880a0b7aa6384fa153f139e0e3",
+    "artifacts/validation_scores.tsv": "a8508ea1b6e4022fe9566d530e067cae8ae378669e42c18af2d1854103c1107c",
+    "artifacts/candidate_statistics.json": "c0221903170665e0a239cd72f6d956d17dbf5b87a088274f670d9c99f3dfa800",
+    "artifacts/model/matcher.joblib": "84515491e7e51c75f9637d29fe30697474d4ce4910d59a5830233d53328f39a2"
+  },
+  "runtime_seconds": {
+    "train_load_s1_gt": 9.3,
+    "train_normalize_s1": 6.4,
+    "train_load_s2": 10.2,
+    "train_normalize_s2": 144.9,
+    "train_index_s2": 309.7,
+    "train_candidates_s2": 332.0,
+    "train_features_s2": 52.5,
+    "train_load_s3": 9.6,
+    "train_normalize_s3": 135.2,
+    "train_index_s3": 308.9,
+    "train_candidates_s3": 331.6,
+    "train_features_s3": 45.9,
+    "train_model": 17.1,
+    "scoring": 4.1,
+    "threshold_sweep": 0.6,
+    "error_analysis": 32.5,
+    "output": 10.2,
+    "validator": 10.3,
+    "total": 1206.6
+  },
+  "memory": {
+    "main_process_peak_mb": 8441,
+    "all_python_processes_peak_mb": 8903,
+    "method": "main: OS peak working set / ru_maxrss (exact); all: sum over python processes sampled every 2 s"
+  },
+  "environment": {
+    "host": "DEVRAJ",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.3",
+    "logical_cpus": 16,
+    "total_memory_mb": 15773,
+    "execution": "local_workstation"
+  },
+  "validation_output": {
+    "threshold": 0.8,
+    "validation_entities": 10000,
+    "section45_checks": {
+      "1_every_s1_represented": true,
+      "3_no_malformed_ids": true,
+      "4_no_duplicate_ids_in_a_list": true,
+      "5_multi_match_serialization": true,
+      "6_zero_match_serialization": true,
+      "7_deterministic_sorted_lists": true,
+      "matches_subset_of_candidates": true,
+      "2_ids_exist_in_s2_s3": null,
+      "8_row_count": true,
+      "9_header": true
+    },
+    "counts": {
+      "rows": 10000,
+      "with_prediction": 9337,
+      "with_multiple": 8298,
+      "predictions": 31041,
+      "candidate_pairs": 1242487
+    }
+  },
+  "validator": {
+    "command": "python.exe validate_submission.py --matching C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase3\\output\\p3_noise\\50k\\seed_42\\output\\matching_results.tsv --test-dir C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase3\\output\\p3_noise\\50k\\seed_42\\output\\validator_input --candidate C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase3\\output\\p3_noise\\50k\\seed_42\\output\\candidate_pairs.tsv --check-ids",
+    "returncode": 0,
+    "passed": true,
+    "output": [
+      "ML Challenge 2026 — submission validator",
+      "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase3\\output\\p3_noise\\50k\\seed_42\\output\\validator_input",
+      "  required S1 entities: 10000",
+      "  valid S2/S3 match IDs: 10320219",
+      "  matching_results.tsv: 10000 rows (663 empty, 9337 non-empty).",
+      "  candidate_pairs.tsv: 10000 rows (12 empty, 9988 non-empty).",
+      "",
+      "PASS — no blocking issues found. Safe to submit."
+    ]
+  }
+}

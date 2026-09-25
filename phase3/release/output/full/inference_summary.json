@@ -1,0 +1,68 @@
+{
+  "mode": "full",
+  "threshold": 0.8,
+  "empty_target_address_policy": {
+    "empty_target_address_threshold": 0.95,
+    "base_threshold": 0.8,
+    "effective_threshold_empty_target_address": 0.95,
+    "rule": "target normalized address empty (address_missing_2): score >= max(base, empty_target_address_threshold); otherwise score >= base"
+  },
+  "test_source1_entities": 1732544,
+  "candidates": {
+    "s2": {
+      "candidate_pairs": 108776238,
+      "pairs_dropped_by_cap": 20112016,
+      "s1_entities_capped": 488186,
+      "max_candidates_per_source1": 100,
+      "recall_cost": "unknown on test (no labels); see the train-side figures"
+    },
+    "s3": {
+      "candidate_pairs": 110905715,
+      "pairs_dropped_by_cap": 21721711,
+      "s1_entities_capped": 514691,
+      "max_candidates_per_source1": 100,
+      "recall_cost": "unknown on test (no labels); see the train-side figures"
+    }
+  },
+  "candidate_pairs_written": 219681953,
+  "entities_with_prediction": 1622504,
+  "entities_with_multiple": 1446908,
+  "mean_predictions_per_entity": 3.2444,
+  "matching_results": "phase3/release/output/full/matching_results.tsv",
+  "candidate_pairs": "phase3/release/output/full/candidate_pairs.tsv",
+  "section45_checks": {
+    "1_every_s1_represented": true,
+    "3_no_malformed_ids": true,
+    "4_no_duplicate_ids_in_a_list": true,
+    "5_multi_match_serialization": true,
+    "6_zero_match_serialization": true,
+    "7_deterministic_sorted_lists": true,
+    "matches_subset_of_candidates": true,
+    "2_ids_exist_in_s2_s3": null,
+    "8_row_count": true,
+    "9_header": true
+  },
+  "validator": {
+    "sharded_with_candidates_check_ids": {
+      "command": "validate_submission.py --check-ids per shard",
+      "shard_rows": 100000,
+      "shards": 18,
+      "passed": true,
+      "failed_shards": [],
+      "output": [
+        "ML Challenge 2026 — submission validator",
+        "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase3\\release\\output\\full\\_validator_shards\\shard_017",
+        "  required S1 entities: 32544",
+        "  valid S2/S3 match IDs: 9969589",
+        "  matching_results.tsv: 32544 rows (2005 empty, 30539 non-empty).",
+        "  candidate_pairs.tsv: 32544 rows (11 empty, 32533 non-empty).",
+        "",
+        "PASS — no blocking issues found. Safe to submit."
+      ]
+    }
+  },
+  "sha256": {
+    "matching_results.tsv": "d67093a153176c73665bbb0df54e6bb796a0b8fbd1168e6ac3e805e1f7f4707b",
+    "candidate_pairs.tsv": "1cb3b677910610933f47a965fd7faf9a11f0bdcf337ef0079651c9cbd8b2f746"
+  }
+}

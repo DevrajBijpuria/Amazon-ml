@@ -1,0 +1,383 @@
+{
+  "experiment_id": "p3_locality_cap150",
+  "scale": "50k",
+  "repeat": 1,
+  "blocking": {
+    "by_source": {
+      "s2": {
+        "precap_recall": 0.95563,
+        "final_recall": 0.95533,
+        "positives": 83407,
+        "precap_recovered": 79706,
+        "final_recovered": 79681,
+        "precap_pairs": 3674510,
+        "final_pairs": 3530967,
+        "cap_hit_rate": 0.0868,
+        "s1_capped": 4340,
+        "positives_lost_to_cap": 25,
+        "positives_lost_sharing_skipped_key": 2983,
+        "mean_candidates_per_s1": 70.619,
+        "median_candidates_per_s1": 67.0,
+        "p95_candidates_per_s1": 150.0,
+        "p99_candidates_per_s1": 150.0,
+        "max_candidates_per_s1": 150,
+        "s1_with_zero_candidates": 184,
+        "recall_by_country": {
+          "india": {
+            "positives": 33075,
+            "recovered": 31115,
+            "recall": 0.94074
+          },
+          "us": {
+            "positives": 50332,
+            "recovered": 48566,
+            "recall": 0.96491
+          }
+        },
+        "skipped_keys_by_rule": {
+          "exact_name": 1400,
+          "exact_address": 0,
+          "numeric": 540,
+          "name_prefix": 3982,
+          "address_prefix": 144,
+          "name_ngram": 7807,
+          "name_phonetic": 2213,
+          "address_token": 12331,
+          "house_locality": 167,
+          "postal_locality": 0,
+          "state_locality": 12502,
+          "address_signature": 334
+        },
+        "recall_by_rule": {
+          "exact_name": {
+            "candidate_pairs_precap": 450720,
+            "positives_recovered": 46721,
+            "recall": 0.56016,
+            "positives_found_only_by_this_rule": 321
+          },
+          "exact_address": {
+            "candidate_pairs_precap": 33291,
+            "positives_recovered": 27164,
+            "recall": 0.32568,
+            "positives_found_only_by_this_rule": 20
+          },
+          "numeric": {
+            "candidate_pairs_precap": 203661,
+            "positives_recovered": 46589,
+            "recall": 0.55857,
+            "positives_found_only_by_this_rule": 124
+          },
+          "name_prefix": {
+            "candidate_pairs_precap": 569876,
+            "positives_recovered": 38638,
+            "recall": 0.46325,
+            "positives_found_only_by_this_rule": 506
+          },
+          "address_prefix": {
+            "candidate_pairs_precap": 103816,
+            "positives_recovered": 33295,
+            "recall": 0.39919,
+            "positives_found_only_by_this_rule": 123
+          },
+          "name_ngram": {
+            "candidate_pairs_precap": 798817,
+            "positives_recovered": 25034,
+            "recall": 0.30014,
+            "positives_found_only_by_this_rule": 508
+          },
+          "name_phonetic": {
+            "candidate_pairs_precap": 569257,
+            "positives_recovered": 44899,
+            "recall": 0.53831,
+            "positives_found_only_by_this_rule": 595
+          },
+          "address_token": {
+            "candidate_pairs_precap": 835022,
+            "positives_recovered": 29901,
+            "recall": 0.3585,
+            "positives_found_only_by_this_rule": 32
+          },
+          "house_locality": {
+            "candidate_pairs_precap": 248014,
+            "positives_recovered": 52563,
+            "recall": 0.6302,
+            "positives_found_only_by_this_rule": 748
+          },
+          "postal_locality": {
+            "candidate_pairs_precap": 604,
+            "positives_recovered": 126,
+            "recall": 0.00151,
+            "positives_found_only_by_this_rule": 3
+          },
+          "state_locality": {
+            "candidate_pairs_precap": 1186671,
+            "positives_recovered": 52019,
+            "recall": 0.62368,
+            "positives_found_only_by_this_rule": 1348
+          },
+          "address_signature": {
+            "candidate_pairs_precap": 50295,
+            "positives_recovered": 10069,
+            "recall": 0.12072,
+            "positives_found_only_by_this_rule": 169
+          }
+        }
+      },
+      "s3": {
+        "precap_recall": 0.95358,
+        "final_recall": 0.95324,
+        "positives": 89229,
+        "precap_recovered": 85087,
+        "final_recovered": 85057,
+        "precap_pairs": 3711916,
+        "final_pairs": 3556470,
+        "cap_hit_rate": 0.09286,
+        "s1_capped": 4643,
+        "positives_lost_to_cap": 30,
+        "positives_lost_sharing_skipped_key": 3546,
+        "mean_candidates_per_s1": 71.129,
+        "median_candidates_per_s1": 69.0,
+        "p95_candidates_per_s1": 150.0,
+        "p99_candidates_per_s1": 150.0,
+        "max_candidates_per_s1": 150,
+        "s1_with_zero_candidates": 185,
+        "recall_by_country": {
+          "india": {
+            "positives": 35436,
+            "recovered": 33087,
+            "recall": 0.93371
+          },
+          "us": {
+            "positives": 53793,
+            "recovered": 51970,
+            "recall": 0.96611
+          }
+        },
+        "skipped_keys_by_rule": {
+          "exact_name": 1438,
+          "exact_address": 0,
+          "numeric": 623,
+          "name_prefix": 4195,
+          "address_prefix": 277,
+          "name_ngram": 8072,
+          "name_phonetic": 2058,
+          "address_token": 11968,
+          "house_locality": 650,
+          "postal_locality": 0,
+          "state_locality": 12457,
+          "address_signature": 599
+        },
+        "recall_by_rule": {
+          "exact_name": {
+            "candidate_pairs_precap": 563983,
+            "positives_recovered": 48512,
+            "recall": 0.54368,
+            "positives_found_only_by_this_rule": 523
+          },
+          "exact_address": {
+            "candidate_pairs_precap": 43108,
+            "positives_recovered": 35106,
+            "recall": 0.39344,
+            "positives_found_only_by_this_rule": 99
+          },
+          "numeric": {
+            "candidate_pairs_precap": 211044,
+            "positives_recovered": 47919,
+            "recall": 0.53703,
+            "positives_found_only_by_this_rule": 129
+          },
+          "name_prefix": {
+            "candidate_pairs_precap": 579167,
+            "positives_recovered": 39489,
+            "recall": 0.44256,
+            "positives_found_only_by_this_rule": 764
+          },
+          "address_prefix": {
+            "candidate_pairs_precap": 107463,
+            "positives_recovered": 34869,
+            "recall": 0.39078,
+            "positives_found_only_by_this_rule": 112
+          },
+          "name_ngram": {
+            "candidate_pairs_precap": 795568,
+            "positives_recovered": 26152,
+            "recall": 0.29309,
+            "positives_found_only_by_this_rule": 761
+          },
+          "name_phonetic": {
+            "candidate_pairs_precap": 603678,
+            "positives_recovered": 45313,
+            "recall": 0.50783,
+            "positives_found_only_by_this_rule": 447
+          },
+          "address_token": {
+            "candidate_pairs_precap": 752687,
+            "positives_recovered": 29275,
+            "recall": 0.32809,
+            "positives_found_only_by_this_rule": 21
+          },
+          "house_locality": {
+            "candidate_pairs_precap": 276236,
+            "positives_recovered": 54338,
+            "recall": 0.60897,
+            "positives_found_only_by_this_rule": 689
+          },
+          "postal_locality": {
+            "candidate_pairs_precap": 743,
+            "positives_recovered": 160,
+            "recall": 0.00179,
+            "positives_found_only_by_this_rule": 0
+          },
+          "state_locality": {
+            "candidate_pairs_precap": 1217787,
+            "positives_recovered": 52471,
+            "recall": 0.58805,
+            "positives_found_only_by_this_rule": 1316
+          },
+          "address_signature": {
+            "candidate_pairs_precap": 67420,
+            "positives_recovered": 13965,
+            "recall": 0.15651,
+            "positives_found_only_by_this_rule": 199
+          }
+        }
+      }
+    },
+    "combined": {
+      "positives": 172636,
+      "precap_recovered": 164793,
+      "final_recovered": 164738,
+      "precap_pairs": 7386426,
+      "final_pairs": 7087437,
+      "s1_capped": 8983,
+      "precap_recall": 0.95457,
+      "final_recall": 0.95425,
+      "blocking_missed_positives": 7898,
+      "cap_hit_rate": 0.08983,
+      "mean_candidates_per_s1_both_sources": 141.748
+    }
+  },
+  "model": {
+    "threshold": 0.85,
+    "on_grid_edge": false,
+    "macro_f05": 0.9280025736606329,
+    "precision": 0.974983563445102,
+    "recall": 0.8571717580416751,
+    "tp": 29659,
+    "fp": 761,
+    "fn": 4942,
+    "entities": 10000,
+    "entities_with_prediction": 9305,
+    "zero_match_entities_scored_1": 533,
+    "per_source": {
+      "s2": {
+        "macro_f05": 0.9062541240523085,
+        "precision": 0.9748601469299724,
+        "recall": 0.8650200346869207
+      },
+      "s3": {
+        "macro_f05": 0.8979815414188863,
+        "precision": 0.9751010716806776,
+        "recall": 0.8498322147651006
+      }
+    }
+  },
+  "entities": {
+    "zero_match_entities": 569,
+    "zero_match_false_merge_entities": 36,
+    "zero_match_false_merge_predictions": 39,
+    "correctly_empty_entities": 533,
+    "singleton_entities": 535,
+    "singleton_exact_correct": 441,
+    "singleton_missed": 64,
+    "singleton_with_extra_predictions": 31,
+    "extra_predictions_total": 761,
+    "extra_predictions_on_matched_entities": 722,
+    "blocking_missed_positives": 1543,
+    "classifier_missed_positives": 3399,
+    "validation_candidate_recall": 0.95541
+  },
+  "runtime": {
+    "load": 34.5,
+    "normalize": 424.0,
+    "index": 916.9,
+    "candidate": 58.4,
+    "features": 193.4,
+    "training": 19.5,
+    "scoring": 5.1,
+    "threshold_and_error_analysis": 35.5,
+    "output": 11.4,
+    "validator": 11.0,
+    "total": 1782.4
+  },
+  "memory": {
+    "main_process_peak_mb": 6101,
+    "all_python_processes_peak_mb": 11165,
+    "method": "main: OS peak working set / ru_maxrss (exact); all: sum over python processes sampled every 2 s"
+  },
+  "checks": {
+    "section45": {
+      "1_every_s1_represented": true,
+      "3_no_malformed_ids": true,
+      "4_no_duplicate_ids_in_a_list": true,
+      "5_multi_match_serialization": true,
+      "6_zero_match_serialization": true,
+      "7_deterministic_sorted_lists": true,
+      "matches_subset_of_candidates": true,
+      "2_ids_exist_in_s2_s3": null,
+      "8_row_count": true,
+      "9_header": true
+    },
+    "validator_passed": true
+  },
+  "vs_baseline": {
+    "baseline_artifacts": "phase2/output/phase2_5/frozen_50000/artifacts",
+    "identical_validation_entities": true,
+    "bootstrap": {
+      "macro_f05": 0.9280025736606329,
+      "ci95": [
+        0.9247892296101248,
+        0.9310903755679429
+      ],
+      "diff_vs_baseline": -0.002938706235633304,
+      "diff_vs_baseline_ci95": [
+        -0.004674670168353443,
+        -0.0011526486892209004
+      ],
+      "verdict": "worse"
+    },
+    "baseline_macro_f05": 0.9309412798962662,
+    "delta_final_recall": 0.00176,
+    "delta_blocking_missed_positives": -304,
+    "final_pairs_ratio": 1.1383,
+    "entity_behaviour_delta": {
+      "zero_match_entities": 0,
+      "zero_match_false_merge_entities": -6,
+      "zero_match_false_merge_predictions": -12,
+      "correctly_empty_entities": 6,
+      "singleton_entities": 0,
+      "singleton_exact_correct": -1,
+      "singleton_missed": 9,
+      "singleton_with_extra_predictions": -8,
+      "extra_predictions_total": -155,
+      "extra_predictions_on_matched_entities": -143,
+      "blocking_missed_positives": -61,
+      "classifier_missed_positives": 527
+    },
+    "baseline_entity_behaviour": {
+      "zero_match_entities": 569,
+      "zero_match_false_merge_entities": 42,
+      "zero_match_false_merge_predictions": 51,
+      "correctly_empty_entities": 527,
+      "singleton_entities": 535,
+      "singleton_exact_correct": 442,
+      "singleton_missed": 55,
+      "singleton_with_extra_predictions": 39,
+      "extra_predictions_total": 916,
+      "extra_predictions_on_matched_entities": 865,
+      "blocking_missed_positives": 1604,
+      "classifier_missed_positives": 2872,
+      "validation_candidate_recall": 0.95364
+    }
+  }
+}

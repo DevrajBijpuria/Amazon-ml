@@ -1,0 +1,11 @@
+START p3_frozen_baseline scale10k run 1 15:08:24
+END p3_frozen_baseline scale10k rc=0 15:26:51 | 2026-09-25 15:26:50,254 INFO done phase3\output\p3_frozen_baseline\10k\run_1: combined recall 0.95280, macro F0.5 0.9257, validator True 
+START p3_locality_cap100 scale10k run 1 15:26:51
+END p3_locality_cap100 scale10k rc=0 15:48:00 | 2026-09-25 15:47:59,851 INFO done phase3\output\p3_locality_cap100\10k\run_1: combined recall 0.95280, macro F0.5 0.9242, validator True 
+START p3_locality_cap150 scale10k run 1 15:48:00
+END p3_locality_cap150 scale10k rc=0 16:07:18 | 2026-09-25 16:07:17,771 INFO done phase3\output\p3_locality_cap150\10k\run_1: combined recall 0.95430, macro F0.5 0.9242, validator True 
+START p3_locality_cap200 scale10k run 1 16:07:18
+END p3_locality_cap200 scale10k rc=0 16:26:14 | 2026-09-25 16:26:13,673 INFO done phase3\output\p3_locality_cap200\10k\run_1: combined recall 0.95450, macro F0.5 0.9221, validator True 
+START p3_locality_phonetic_cap100 scale10k run 1 16:26:14
+END p3_locality_phonetic_cap100 scale10k rc=0 16:49:27 | 2026-09-25 16:49:26,646 INFO done phase3\output\p3_locality_phonetic_cap100\10k\run_1: combined recall 0.95283, macro F0.5 0.9256, validator True 
+QUEUE DONE

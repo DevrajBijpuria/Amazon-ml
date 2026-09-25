@@ -13,3 +13,7 @@ phase2/output/phase2_5/candsets/10k/b0/features.npy
 
 # temporary validator shards
 phase2/output/**/_validator_shards/
+
+# Phase 3: final 2.85 GB candidate file is attached (gzipped) to the GitHub Release instead
+phase3/release/output/full/candidate_pairs.tsv
+phase3/**/_validator_shards/

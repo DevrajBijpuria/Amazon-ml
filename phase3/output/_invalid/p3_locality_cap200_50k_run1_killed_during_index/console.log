@@ -1,0 +1,21 @@
+2026-09-25 18:05:37,445 INFO experiment p3_locality_cap200, 50000 S1 vs full targets, run 1, rules ['exact_name', 'exact_address', 'numeric', 'name_prefix', 'address_prefix', 'name_ngram', 'name_phonetic', 'address_token', 'house_locality', 'postal_locality', 'state_locality', 'address_signature']
+2026-09-25 18:05:37,467 INFO [train_load_s1_gt] start
+2026-09-25 18:05:45,038 INFO [train_load_s1_gt] 7.6s
+2026-09-25 18:05:45,038 INFO [train_normalize_s1] start
+2026-09-25 18:05:51,017 INFO [train_normalize_s1] 6.0s
+2026-09-25 18:05:51,820 INFO [train_load_s2] start
+2026-09-25 18:06:00,819 INFO [train_load_s2] 9.0s
+2026-09-25 18:06:00,819 INFO [train_normalize_s2] start
+2026-09-25 18:08:25,064 INFO [train_normalize_s2] 144.2s
+2026-09-25 18:08:27,845 INFO [train_candidates_s2] start
+2026-09-25 18:08:27,845 INFO [train_index_s2] start
+C:\Users\dbijp\AppData\Roaming\Python\Python314\site-packages\joblib\externals\loky\backend\resource_tracker.py:359: UserWarning: resource_tracker: There appear to be 4 leaked folder objects to clean up at shutdown
+  warnings.warn(
+C:\Users\dbijp\AppData\Roaming\Python\Python314\site-packages\joblib\externals\loky\backend\resource_tracker.py:375: UserWarning: resource_tracker: C:\Users\dbijp\AppData\Local\Temp\joblib_memmapping_folder_27812_13fb2ed10b084107acd4f9037dd4ab2e_7ed7e8e776b042aba090e845d42166d4: FileNotFoundError(2, 'The system cannot find the file specified')
+  warnings.warn(f"resource_tracker: {name}: {e!r}")
+C:\Users\dbijp\AppData\Roaming\Python\Python314\site-packages\joblib\externals\loky\backend\resource_tracker.py:375: UserWarning: resource_tracker: C:\Users\dbijp\AppData\Local\Temp\joblib_memmapping_folder_27812_13fb2ed10b084107acd4f9037dd4ab2e_0aae751fddcc4d49a5d8b4b047e9b48f: FileNotFoundError(2, 'The system cannot find the file specified')
+  warnings.warn(f"resource_tracker: {name}: {e!r}")
+C:\Users\dbijp\AppData\Roaming\Python\Python314\site-packages\joblib\externals\loky\backend\resource_tracker.py:375: UserWarning: resource_tracker: C:\Users\dbijp\AppData\Local\Temp\joblib_memmapping_folder_27812_982cf2588ec3464bbd4b6e2aee8fc91e_d1bb151e535944eabf7a1777e1dfb737: FileNotFoundError(2, 'The system cannot find the file specified')
+  warnings.warn(f"resource_tracker: {name}: {e!r}")
+C:\Users\dbijp\AppData\Roaming\Python\Python314\site-packages\joblib\externals\loky\backend\resource_tracker.py:375: UserWarning: resource_tracker: C:\Users\dbijp\AppData\Local\Temp\joblib_memmapping_folder_27812_13fb2ed10b084107acd4f9037dd4ab2e_0a59c915847d4947a2ad272ba80f6db6: FileNotFoundError(2, 'The system cannot find the file specified')
+  warnings.warn(f"resource_tracker: {name}: {e!r}")

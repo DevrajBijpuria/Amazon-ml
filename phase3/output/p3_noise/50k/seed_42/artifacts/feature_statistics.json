@@ -1,0 +1,677 @@
+{
+  "feature_order": [
+    "name_norm_eq",
+    "name_key_eq",
+    "name_token_jaccard",
+    "name_core_token_jaccard",
+    "name_char3_jaccard",
+    "name_edit_sim",
+    "name_translit_char3_jaccard",
+    "name_translit_edit_sim",
+    "name_token_set_ratio",
+    "name_phonetic_eq",
+    "name_phonetic_edit_sim",
+    "name_length_1",
+    "name_length_2",
+    "name_length_ratio",
+    "name_length_difference",
+    "name_token_count_1",
+    "name_token_count_2",
+    "name_token_count_difference",
+    "legal_suffix_present_1",
+    "legal_suffix_present_2",
+    "legal_suffix_equal",
+    "name_script_mismatch",
+    "name_missing_1",
+    "name_missing_2",
+    "address_norm_eq",
+    "address_token_jaccard",
+    "address_char3_jaccard",
+    "address_edit_sim",
+    "address_component_jaccard",
+    "address_missing_1",
+    "address_missing_2",
+    "address_missing_either",
+    "house_number_both_present",
+    "house_number_equal",
+    "postal_both_present",
+    "postal_equal",
+    "state_both_present",
+    "state_equal",
+    "country_equal",
+    "target_source_is_s2",
+    "target_source_is_s3",
+    "number_of_blocks_that_retrieved_pair"
+  ],
+  "rows": 6226409,
+  "positives": 164434,
+  "negatives": 6061975,
+  "features": {
+    "name_norm_eq": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.3083,
+      "negative_mean": 0.0433,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1943
+    },
+    "name_key_eq": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.5858,
+      "negative_mean": 0.1469,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1927
+    },
+    "name_token_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6898,
+      "negative_mean": 0.2293,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.1429,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2549
+    },
+    "name_core_token_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7359,
+      "negative_mean": 0.2411,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2227
+    },
+    "name_char3_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6946,
+      "negative_mean": 0.2299,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.1429,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2637
+    },
+    "name_edit_sim": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7369,
+      "negative_mean": 0.3831,
+      "quantiles": {
+        "p05": 0.0909,
+        "p50": 0.3333,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2282
+    },
+    "name_translit_char3_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7185,
+      "negative_mean": 0.2422,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.1538,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.267
+    },
+    "name_translit_edit_sim": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7685,
+      "negative_mean": 0.4029,
+      "quantiles": {
+        "p05": 0.1212,
+        "p50": 0.3571,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2349
+    },
+    "name_token_set_ratio": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.9235,
+      "negative_mean": 0.5442,
+      "quantiles": {
+        "p05": 0.2069,
+        "p50": 0.48,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2145
+    },
+    "name_phonetic_eq": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6386,
+      "negative_mean": 0.2113,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1647
+    },
+    "name_phonetic_edit_sim": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.8675,
+      "negative_mean": 0.4445,
+      "quantiles": {
+        "p05": 0.0833,
+        "p50": 0.3333,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2035
+    },
+    "name_length_1": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 25.4602,
+      "negative_mean": 25.5424,
+      "quantiles": {
+        "p05": 12.0,
+        "p50": 26.0,
+        "p95": 38.0
+      },
+      "correlation_with_label": -0.0016
+    },
+    "name_length_2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 24.7844,
+      "negative_mean": 26.047,
+      "quantiles": {
+        "p05": 12.0,
+        "p50": 26.0,
+        "p95": 42.0
+      },
+      "correlation_with_label": -0.0217
+    },
+    "name_length_ratio": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.8619,
+      "negative_mean": 0.7227,
+      "quantiles": {
+        "p05": 0.375,
+        "p50": 0.75,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1128
+    },
+    "name_length_difference": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 3.9749,
+      "negative_mean": 8.7607,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 7.0,
+        "p95": 22.0
+      },
+      "correlation_with_label": -0.1068
+    },
+    "name_token_count_1": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 3.573,
+      "negative_mean": 3.5844,
+      "quantiles": {
+        "p05": 2.0,
+        "p50": 4.0,
+        "p95": 5.0
+      },
+      "correlation_with_label": -0.0019
+    },
+    "name_token_count_2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 3.4324,
+      "negative_mean": 3.5892,
+      "quantiles": {
+        "p05": 2.0,
+        "p50": 4.0,
+        "p95": 5.0
+      },
+      "correlation_with_label": -0.0214
+    },
+    "name_token_count_difference": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.5254,
+      "negative_mean": 1.0211,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 3.0
+      },
+      "correlation_with_label": -0.0838
+    },
+    "legal_suffix_present_1": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6692,
+      "negative_mean": 0.6816,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0043
+    },
+    "legal_suffix_present_2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.5745,
+      "negative_mean": 0.6308,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0187
+    },
+    "legal_suffix_equal": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.4523,
+      "negative_mean": 0.1898,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1059
+    },
+    "name_script_mismatch": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0914,
+      "negative_mean": 0.0958,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0024
+    },
+    "name_missing_1": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0,
+      "negative_mean": 0.0,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0
+    },
+    "name_missing_2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0,
+      "negative_mean": 0.0,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0
+    },
+    "address_norm_eq": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.2484,
+      "negative_mean": 0.0015,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.4436
+    },
+    "address_token_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7845,
+      "negative_mean": 0.1459,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.1,
+        "p95": 0.5833
+      },
+      "correlation_with_label": 0.5092
+    },
+    "address_char3_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7509,
+      "negative_mean": 0.1408,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0909,
+        "p95": 0.5882
+      },
+      "correlation_with_label": 0.4994
+    },
+    "address_edit_sim": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7176,
+      "negative_mean": 0.3163,
+      "quantiles": {
+        "p05": 0.1324,
+        "p50": 0.2667,
+        "p95": 0.7037
+      },
+      "correlation_with_label": 0.3492
+    },
+    "address_component_jaccard": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.692,
+      "negative_mean": 0.1217,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.5
+      },
+      "correlation_with_label": 0.462
+    },
+    "address_missing_1": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0,
+      "negative_mean": 0.0,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0
+    },
+    "address_missing_2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0366,
+      "negative_mean": 0.018,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0222
+    },
+    "address_missing_either": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0366,
+      "negative_mean": 0.018,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0222
+    },
+    "house_number_both_present": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.8776,
+      "negative_mean": 0.8898,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0063
+    },
+    "house_number_equal": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6884,
+      "negative_mean": 0.0836,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.3239
+    },
+    "postal_both_present": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0019,
+      "negative_mean": 0.0002,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.017
+    },
+    "postal_equal": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.0018,
+      "negative_mean": 0.0001,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.0287
+    },
+    "state_both_present": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.9606,
+      "negative_mean": 0.9794,
+      "quantiles": {
+        "p05": 1.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0209
+    },
+    "state_equal": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.9533,
+      "negative_mean": 0.4297,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.169
+    },
+    "country_equal": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 1.0,
+      "negative_mean": 1.0,
+      "quantiles": {
+        "p05": 1.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.0
+    },
+    "target_source_is_s2": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.4838,
+      "negative_mean": 0.4996,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": -0.0051
+    },
+    "target_source_is_s3": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.5162,
+      "negative_mean": 0.5004,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.0051
+    },
+    "matched_by_exact_name_block": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.579,
+      "negative_mean": 0.1499,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.1871
+    },
+    "matched_by_exact_address_block": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.3787,
+      "negative_mean": 0.0023,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "correlation_with_label": 0.5482
+    },
+    "matched_by_numeric_block": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.6582,
+      "negative_mean": 0.0807,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.3145
+    },
+    "matched_by_prefix_block": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.7029,
+      "negative_mean": 0.1859,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 0.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.2074
+    },
+    "matched_by_ngram_block": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 0.9135,
+      "negative_mean": 0.7852,
+      "quantiles": {
+        "p05": 0.0,
+        "p50": 1.0,
+        "p95": 1.0
+      },
+      "correlation_with_label": 0.0504
+    },
+    "number_of_blocks_that_retrieved_pair": {
+      "dtype": "float32",
+      "missing_rate": 0.0,
+      "positive_mean": 5.0716,
+      "negative_mean": 1.3593,
+      "quantiles": {
+        "p05": 1.0,
+        "p50": 1.0,
+        "p95": 3.0
+      },
+      "correlation_with_label": 0.642
+    }
+  },
+  "highly_correlated_pairs": [
+    [
+      "name_token_jaccard",
+      "name_char3_jaccard",
+      0.954
+    ],
+    [
+      "name_token_jaccard",
+      "name_translit_char3_jaccard",
+      0.925
+    ],
+    [
+      "name_char3_jaccard",
+      "name_edit_sim",
+      0.931
+    ],
+    [
+      "name_char3_jaccard",
+      "name_translit_char3_jaccard",
+      0.972
+    ],
+    [
+      "name_edit_sim",
+      "name_translit_edit_sim",
+      0.933
+    ],
+    [
+      "name_translit_char3_jaccard",
+      "name_translit_edit_sim",
+      0.929
+    ],
+    [
+      "name_length_ratio",
+      "name_length_difference",
+      -0.92
+    ],
+    [
+      "address_token_jaccard",
+      "address_char3_jaccard",
+      0.959
+    ],
+    [
+      "address_missing_2",
+      "address_missing_either",
+      1.0
+    ],
+    [
+      "address_missing_2",
+      "state_both_present",
+      -0.934
+    ],
+    [
+      "address_missing_either",
+      "state_both_present",
+      -0.934
+    ],
+    [
+      "target_source_is_s2",
+      "target_source_is_s3",
+      -1.0
+    ]
+  ]
+}

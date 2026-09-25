@@ -8,6 +8,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import threshold_tuning as tt
+
 ID_RE = re.compile(r"^S[23]-\d+$")
 LIST_RE = re.compile(r"^S[23]-\d+(,S[23]-\d+)*$")
 
@@ -27,9 +29,10 @@ def assemble(s1_ids: list, pairs: pd.DataFrame, id_col: str) -> pd.DataFrame:
                          id_col: [grouped.get(s, "") for s in s1_ids]})
 
 
-def predictions(s1_ids: list, scored: pd.DataFrame, threshold: float) -> pd.DataFrame:
-    """Every candidate with score >= threshold becomes a match (zero, one or many per S1)."""
-    return assemble(s1_ids, scored[scored["score"] >= threshold], "matched_entity_ids")
+def predictions(s1_ids: list, scored: pd.DataFrame, threshold: float, empty_target_address_threshold=None) -> pd.DataFrame:
+    """Every candidate accepted by ``tt.accept`` becomes a match (zero, one or many per S1)."""
+    return assemble(s1_ids, scored[tt.accept_frame(scored, threshold, empty_target_address_threshold)],
+                    "matched_entity_ids")
 
 
 def write_tsv(df: pd.DataFrame, path: Path) -> None:
@@ -42,12 +45,16 @@ def write_tsv(df: pd.DataFrame, path: Path) -> None:
 
 
 def chunk_lines(lo: int, hi: int, s1_idx: np.ndarray, targets: np.ndarray, scores: np.ndarray,
-                threshold: float) -> list:
+                threshold: float, target_address_missing: np.ndarray = None, empty_target_address_threshold=None) -> list:
     """For S1 positions lo..hi-1: 'candidate_ids<TAB>matched_ids' with sorted, comma-joined ids
-    (every candidate is listed; matches are the candidates scoring >= threshold)."""
-    df = pd.DataFrame({"i": s1_idx, "t": targets, "s": scores}).sort_values(["i", "t"])
-    cand = df.groupby("i")["t"].agg(",".join)
-    match = df[df["s"] >= threshold].groupby("i")["t"].agg(",".join)
+    (every candidate is listed; matches are the candidates accepted by ``tt.accept``)."""
+    cols = {"i": s1_idx, "t": targets, "s": scores}
+    if empty_target_address_threshold is not None and target_address_missing is not None:
+        cols["m"] = target_address_missing  # absent while the policy is enabled -> tt.accept raises
+    df = pd.DataFrame(cols).sort_values(["i", "t"])
+    cand = df.groupby("i")["t"].agg(",".join)  # the candidate list never depends on the decision rule
+    ok = tt.accept(df["s"].to_numpy(), threshold, df["m"].to_numpy() if "m" in df else None, empty_target_address_threshold)
+    match = df[ok].groupby("i")["t"].agg(",".join)
     return [f"{cand.get(i, '')}\t{match.get(i, '')}\n" for i in range(lo, hi)]
 
 

@@ -179,7 +179,7 @@ def candidates_for_source(s1, tgt, positives, cg_cfg, keep_s1_mask, n_s1_true):
                 "s1_entities_capped": capped_s1, "pairs_dropped": dropped_pairs,
                 "positive_pairs_dropped": dropped_pos, "recall_cost": rec(dropped_pos)},
         # every skipped key: [key, target frequency, positives lost that shared this key]
-        "skipped_keys": {r: {"max_block_size": cg_cfg["max_block_size"], "skipped_key_count": len(b["skipped"]),
+        "skipped_keys": {r: {"max_block_size": b["max_block_size"], "skipped_key_count": len(b["skipped"]),
                              "target_records_in_skipped_keys": int(b["t_skipped"]["t_idx"].nunique()),
                              "positives_lost_sharing_a_skipped_key": lost_skip[r]["pairs"],
                              "recall_cost": rec(lost_skip[r]["pairs"]),
@@ -280,22 +280,34 @@ def train_stage(cfg: dict, timer: Timer, out: dict, until: str) -> None:
         model = mm.train_model(feats.iloc[chosen][features], y[chosen], cfg["model"], seed)
     val = meta[is_val].copy()
     val["score"] = inf.score(model, feats[is_val], features)
+    empty_thr = cfg["threshold"].get("empty_target_address_threshold")  # None/absent = policy disabled
+    score_cols = ["s1", "target", "source", "label", "score"]
+    if empty_thr is not None:  # the decision needs the target's empty-normalized-address flag (address_missing_2)
+        val[tt.EMPTY_ADDRESS_COLUMN] = feats["address_missing_2"].to_numpy()[is_val].astype(np.int8)
+        score_cols.append(tt.EMPTY_ADDRESS_COLUMN)
     n_true_val = n_true.loc[sorted(val_ids)]
     # per-pair validation scores and per-entity truth counts, for paired comparisons across runs
-    val[["s1", "target", "source", "label", "score"]].to_csv(art / "validation_scores.tsv", sep="\t", index=False)
+    val[score_cols].to_csv(art / "validation_scores.tsv", sep="\t", index=False)
     n_true.loc[sorted(val_ids)].rename("n_true").rename_axis("s1").to_csv(art / "validation_entities.tsv", sep="\t")
     grid = tt.threshold_grid(cfg["threshold"])
     with timer("threshold_sweep"):
         th = tt.sweep(val, n_true_val, grid)
-    thr = th["selected_threshold"]
-    th["per_source_at_selected"] = {s: tt.evaluate(val[val["source"] == s], _true_by_source(pairs, n_true_val, s), thr)
-                                    for s in SOURCES}
+    thr = th["selected_threshold"]  # base threshold: selected exactly as without the policy
+    th["per_source_at_selected"] = {s: tt.evaluate(val[val["source"] == s], _true_by_source(pairs, n_true_val, s), thr,
+                                                   empty_thr) for s in SOURCES}
     th["validation_entities"] = len(val_ids)
     th["validation_candidate_pairs"] = int(len(val))
     th["pair_level_on_candidates"] = {
         "at_0.5": mm.pair_metrics(val["label"].to_numpy(), (val["score"] >= 0.5).astype(int)),
-        "at_selected": mm.pair_metrics(val["label"].to_numpy(), (val["score"] >= thr).astype(int)),
+        "at_selected": mm.pair_metrics(val["label"].to_numpy(), tt.accept_frame(val, thr, empty_thr).astype(int)),
     }
+    if empty_thr is not None:  # recorded here so every later decision (metrics, submissions, production) applies it
+        th["empty_target_address_policy"] = {
+            "empty_target_address_threshold": empty_thr, "base_threshold": thr,
+            "effective_threshold_empty_target_address": max(thr, empty_thr),
+            "rule": "target normalized address empty (address_missing_2): score >= max(base, empty_target_address_threshold); "
+                    "otherwise score >= base"}
+        th["selected_with_policy"] = tt.evaluate(val, n_true_val, thr, empty_thr)
     _json(art / "threshold_results.json", th)
 
     train_info = {
@@ -314,7 +326,8 @@ def train_stage(cfg: dict, timer: Timer, out: dict, until: str) -> None:
         raw = {s: s1_raw_text[s] for s in val_ids}
         for src in SOURCES:  # raw target text is re-read for the few ids that can appear as examples
             raw.update(raw_lookup(data_root / "train" / f"train_source{src[1]}.tsv", example_ids[src]))
-        _json(art / "error_analysis.json", error_analysis(val, pairs[pairs["s1"].isin(val_ids)], thr, raw, n_true_val))
+        _json(art / "error_analysis.json", error_analysis(val, pairs[pairs["s1"].isin(val_ids)], thr, raw, n_true_val,
+                                                          empty_thr))
 
 
 def _true_by_source(pairs, n_true_val, src):
@@ -342,23 +355,26 @@ def feature_statistics(feats: pd.DataFrame, y: np.ndarray, features: list) -> di
     }
 
 
-def error_analysis(val: pd.DataFrame, val_pairs: pd.DataFrame, thr: float, raw: dict, n_true_val: pd.Series) -> dict:
+def error_analysis(val: pd.DataFrame, val_pairs: pd.DataFrame, thr: float, raw: dict, n_true_val: pd.Series,
+                   empty_thr=None) -> dict:
     def ex(rows, k=10):
         return [{"s1": r.s1, "target": r.target, "score": round(float(getattr(r, "score", float("nan"))), 4),
                  "s1_name": raw[r.s1][0], "target_name": raw.get(r.target, ("?", "?"))[0],
                  "s1_address": raw[r.s1][1], "target_address": raw.get(r.target, ("?", "?"))[1]}
                 for r in rows.head(k).itertuples()]
-    fp = val[(val["score"] >= thr) & (val["label"] == 0)].sort_values(["score", "s1", "target"], ascending=[False, True, True])
-    fn_scored = val[(val["score"] < thr) & (val["label"] == 1)].sort_values(["score", "s1", "target"])
+    acc = tt.accept_frame(val, thr, empty_thr)
+    fp = val[acc & (val["label"] == 0).to_numpy()].sort_values(["score", "s1", "target"], ascending=[False, True, True])
+    fn_scored = val[~acc & (val["label"] == 1).to_numpy()].sort_values(["score", "s1", "target"])
     in_cands = val_pairs.merge(val[["s1", "target"]], how="left", on=["s1", "target"], indicator=True)
     never = in_cands[in_cands["_merge"] == "left_only"].sort_values(["s1", "target"])
     pos = val[val["label"] == 1]
     hard = pos.sort_values(["score", "s1", "target"])
-    pred = val[val["score"] >= thr].groupby("s1").size().reindex(n_true_val.index, fill_value=0)
+    pred = val[acc].groupby("s1").size().reindex(n_true_val.index, fill_value=0)
     zero = n_true_val[n_true_val == 0].index
     multi = n_true_val[n_true_val > 1].index
     return {
         "threshold": thr,
+        **({"empty_target_address_threshold": empty_thr} if empty_thr is not None else {}),
         "false_positives": {"count": int(len(fp)), "examples": ex(fp)},
         "false_negatives_scored_below_threshold": {"count": int(len(fn_scored)), "examples": ex(fn_scored)},
         "false_negatives_never_retrieved": {"count": int(len(never)), "examples": ex(never)},
@@ -380,7 +396,8 @@ def test_stage(cfg: dict, timer: Timer, out: dict) -> None:
     art, out_dir = out["artifacts"], out["output"]
     out_dir.mkdir(parents=True, exist_ok=True)
     model, features = mm.load_model(art / "model")
-    thr = json.loads((art / "threshold_results.json").read_text(encoding="utf-8"))["selected_threshold"]
+    th_res = json.loads((art / "threshold_results.json").read_text(encoding="utf-8"))
+    thr, empty_thr = th_res["selected_threshold"], tt.policy_threshold(th_res)  # the same rule validation used
     with timer("test_load_s1"):
         s1_raw = load_source1(data_root, "test", cfg)
     test_dir, dev = data_root / "test", cfg["mode"] == "dev"
@@ -409,9 +426,11 @@ def test_stage(cfg: dict, timer: Timer, out: dict) -> None:
             t_ids = tgt["entity_id"].to_numpy()
             with open(part, "w", encoding="utf-8", newline="\n") as f:
                 for lo, hi, precap, kept, dropped in cg.iter_candidates(blocking, s1, tgt, cgc):
-                    scores = inf.score(model, fe.compute_features(kept, s1, tgt, src, nj), features)
+                    feats = fe.compute_features(kept, s1, tgt, src, nj)
+                    scores = inf.score(model, feats, features)
                     f.writelines(inf.chunk_lines(lo, hi, kept["s1_idx"].to_numpy(), t_ids[kept["t_idx"].to_numpy()],
-                                                 scores, thr))
+                                                 scores, thr, feats["address_missing_2"].to_numpy(), empty_thr))
+                    del feats
                     n_pairs += len(kept)
                     n_dropped += len(dropped)
                     n_capped += int(dropped["s1_idx"].nunique())
@@ -444,7 +463,9 @@ def test_stage(cfg: dict, timer: Timer, out: dict) -> None:
     _json(info_dir / "candidate_statistics.json", stats)
     c = merged["counts"]
     _json(info_dir / "inference_summary.json", {
-        "mode": cfg["mode"], "threshold": thr, "test_source1_entities": len(s1_ids),
+        "mode": cfg["mode"], "threshold": thr,
+        **({"empty_target_address_policy": th_res["empty_target_address_policy"]} if empty_thr is not None else {}),
+        "test_source1_entities": len(s1_ids),
         "candidates": {s: {k: v for k, v in d.items() if k != "skipped_keys"} for s, d in cand_info.items()},
         "candidate_pairs_written": c["candidate_pairs"], "entities_with_prediction": c["with_prediction"],
         "entities_with_multiple": c["with_multiple"], "mean_predictions_per_entity": round(c["predictions"] / len(s1_ids), 4),

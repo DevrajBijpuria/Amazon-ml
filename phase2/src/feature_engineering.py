@@ -301,7 +301,9 @@ RULE_BITS = {"exact_name": 1, "exact_address": 2, "numeric": 4, "name_prefix": 8
              "name_ngram": 32, "name_phonetic": 64, "address_token": 128,
              # Phase 2.5 experimental rules (off in B0)
              "name_phonetic_token": 256, "house_locality": 512, "postal_locality": 1024,
-             "state_locality": 2048, "address_signature": 4096}
+             "state_locality": 2048, "address_signature": 4096,
+             # Phase 3 experimental rule (off unless enabled in the config)
+             "name_addr_composite": 8192}
 _PROVENANCE = {"matched_by_exact_name_block": 1, "matched_by_exact_address_block": 2,
                "matched_by_numeric_block": 4 | 512 | 1024, "matched_by_prefix_block": 8 | 16,
                "matched_by_ngram_block": 32 | 64 | 128 | 256 | 2048 | 4096}  # token/phonetic/signature rules

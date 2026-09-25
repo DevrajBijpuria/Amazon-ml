@@ -130,9 +130,10 @@ def fit(cs: dict, features: list, model: str):
         Xf.astype(np.float64), yf)
 
 
-def per_entity(scored: pd.DataFrame, n_true: pd.Series, thr: float) -> tuple:
-    """n_pred, tp, n_true per validation entity (n_true order). Prediction = score >= thr, nothing else."""
-    sel = scored[scored["score"] >= thr]
+def per_entity(scored: pd.DataFrame, n_true: pd.Series, thr: float, empty_target_address_threshold=None) -> tuple:
+    """n_pred, tp, n_true per validation entity (n_true order). Prediction = tt.accept (score >= thr unless the
+    empty-target-address policy is enabled)."""
+    sel = scored[tt.accept_frame(scored, thr, empty_target_address_threshold)]
     n_pred = sel.groupby("s1").size().reindex(n_true.index, fill_value=0).to_numpy()
     tp = sel.groupby("s1")["label"].sum().reindex(n_true.index, fill_value=0).to_numpy()
     return n_pred, tp, n_true.to_numpy()

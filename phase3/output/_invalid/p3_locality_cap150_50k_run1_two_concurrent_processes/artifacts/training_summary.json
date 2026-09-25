@@ -1,0 +1,13 @@
+{
+  "train_entities": 40000,
+  "validation_entities": 10000,
+  "train_candidate_pairs": 5676113,
+  "train_pairs_used": 790080,
+  "train_positives": 131680,
+  "train_negatives": 658400,
+  "train_candidate_positives": 131680,
+  "negative_ratio": 5,
+  "hard_negative_fraction": 0.5,
+  "coefficients": {},
+  "entity_overlap_train_validation": 0
+}

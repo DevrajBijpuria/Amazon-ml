@@ -1,0 +1,482 @@
+{
+  "threshold": 0.8,
+  "false_positives": {
+    "count": 916,
+    "examples": [
+      {
+        "s1": "S1-861858319",
+        "target": "S3-542891742",
+        "score": 1.0,
+        "s1_name": "Venus (india) Limited",
+        "target_name": "venusindia.com",
+        "s1_address": "418/C Shreepati Nagar Kharedi V, Bhor, Pune, Maharashtra",
+        "target_address": "Mumbai, Mumbai City, MH, No. 933 234, 3232, Vikhroli Gurudarshan Chsl Near Post Office, Tagore Nagar No. 1, Vik, Hroli East"
+      },
+      {
+        "s1": "S1-239014370",
+        "target": "S2-552875661",
+        "score": 1.0,
+        "s1_name": "Global Healthcare Private Limited",
+        "target_name": "Global Healthcare प्रा. लि.",
+        "s1_address": "208, Vardhman Golden Plaza, Plot No.33, Community Centre, Road No.44, Pitampura, Rani Bagh, Delhi, North West, Delhi",
+        "target_address": "C-#5A, KIRAN GARDEN, NEW DELHI, Delhi"
+      },
+      {
+        "s1": "S1-420218675",
+        "target": "S2-140205047",
+        "score": 1.0,
+        "s1_name": "Umesh Agro Private Limited",
+        "target_name": "Mahee Sugar Private Ltd",
+        "s1_address": "B/208 Mangalmurti Biulding, Goregaon, Subh Ngr Chs, Sanskardham Collegegoregaonb/20, Mumbai, Mumbai City, Maharashtra",
+        "target_address": "#780 UNTI NO.A-101, THE SUMMIT, HANUMAN ROAD OFF WESTERN EXPRESS HIGHWAY, NEAR HANUMAN, VILE PARLE EAST MUMBAI, Maharashtra"
+      },
+      {
+        "s1": "S1-191470994",
+        "target": "S3-101194585",
+        "score": 1.0,
+        "s1_name": "Coque Tax Service LLC",
+        "target_name": "Levin, Black & Redman Coastal LLC Services",
+        "s1_address": "511 Symmes Street, Norman, OK",
+        "target_address": "812 Symmes St, Norman CITY, Oklahoma"
+      },
+      {
+        "s1": "S1-169137757",
+        "target": "S2-458378933",
+        "score": 1.0,
+        "s1_name": "ESX Systems Limited",
+        "target_name": "Sky Systems Pvt Limited",
+        "s1_address": "Flat No 101, Ajit Elite, Sr No 123, Santosh Nagar, Pune City, Pune, Maharashtra",
+        "target_address": "YESHWANTNAGAR B-5, A/P- AKLUJ, TAL-MALSHIRAS, DIST-SOLAPUR., SOLAPUR, महाराष्ट्र"
+      },
+      {
+        "s1": "S1-169137757",
+        "target": "S2-226442717",
+        "score": 1.0,
+        "s1_name": "ESX Systems Limited",
+        "target_name": "Sky Systems Pvt",
+        "s1_address": "Flat No 101, Ajit Elite, Sr No 123, Santosh Nagar, Pune City, Pune, Maharashtra",
+        "target_address": "YESHWANTNAGAR B-5, A/P- AKLUJ, TAL-MALSHIRAS, DIST-SOLAPUR., SOLAPUR, Maharashtra"
+      },
+      {
+        "s1": "S1-682334499",
+        "target": "S3-564750230",
+        "score": 1.0,
+        "s1_name": "Haveli India Pvt Ltd",
+        "target_name": "Girish & Brothers Ventures Company",
+        "s1_address": "Fl N 301 Nr Anandi Garden, S No 77 Patil Tower, Haveli, Pune, Maharashtra",
+        "target_address": "C-9, Anandi Villa, Mirani Nagar, G.g.road, Mulund (W), Mumbai City, महाराष्ट्र, Bombay"
+      },
+      {
+        "s1": "S1-778947697",
+        "target": "S3-111063056",
+        "score": 1.0,
+        "s1_name": "Pious Printech LLP",
+        "target_name": "Technologies Southern Productions of Jaipur LLP",
+        "s1_address": "B2/504, G-1, Ground Floor, Kpg Pride Chitrakoot Yojna, Vaishali Nagar, Jaipur, Rajasthan",
+        "target_address": "6 E-1/ 447, Chitrakoot Yojna, Vaishali Nagar, Jaipur, RJ"
+      },
+      {
+        "s1": "S1-21164424",
+        "target": "S2-325682578",
+        "score": 1.0,
+        "s1_name": "Vishal Polytechnic Company",
+        "target_name": "Triple Brhohetars Holdings LLP",
+        "s1_address": "1, Tamil Nadu, River View Enclave, Teesta Street, 3Rd Main Rd, Sriperumbudur, Kanchipuram",
+        "target_address": "2/651, IPS COLONY, RIVER VIW COLONY, MANAPAKKAM, CHENNAI, Tamil Nadu"
+      },
+      {
+        "s1": "S1-244269916",
+        "target": "S2-81771940",
+        "score": 1.0,
+        "s1_name": "Prism Developers Private Limited",
+        "target_name": "Satyam Tradecomm LLP",
+        "s1_address": "C-11, Sita Sadan, Opp. Dev Nagar Off Sai Baba Nagar, Kandivali West, Mumbai, Mumbai City, Maharashtra",
+        "target_address": "OFFICE NO. 20, SITA VIHAR CO-OP. HOUSING SOCIETY LIMITED, LBS MARG, NAUPADA, THANE WEST, Maharashtra"
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 2872,
+    "examples": [
+      {
+        "s1": "S1-126749530",
+        "target": "S3-594159831",
+        "score": 0.0007,
+        "s1_name": "Taum Holdings",
+        "target_name": "Taum LLC | www.taumllc.com",
+        "s1_address": "144 Hunter Street, MA, Fall River",
+        "target_address": "14 Hunter St, Fall River, Massachusetts"
+      },
+      {
+        "s1": "S1-414390428",
+        "target": "S2-371240420",
+        "score": 0.0018,
+        "s1_name": "Capital Star Prudential Co",
+        "target_name": "Drexkornovi - 8297348082",
+        "s1_address": "11915 Oryx Place, Albuquerque, NM",
+        "target_address": "11915 ORYX PLACE, ALBUQUERQUE, NM"
+      },
+      {
+        "s1": "S1-233169034",
+        "target": "S3-536292668",
+        "score": 0.0019,
+        "s1_name": "Auron Studios",
+        "target_name": "Cirabelofaye | www.cirabelofa.com",
+        "s1_address": "111 Mcleod Avenue, Topsail Beach, NC",
+        "target_address": "111 Mcleod Avenue, North Carolina, Topsail Beach"
+      },
+      {
+        "s1": "S1-221132030",
+        "target": "S3-295746216",
+        "score": 0.0029,
+        "s1_name": "Morani Products Pvt Ltd",
+        "target_name": "Mr Brixumbra",
+        "s1_address": "Plot No 2/B, Block No 207, Saheli Industrial Estate, Kim Mandvi Road, Olpad, Surat, Gujarat",
+        "target_address": "No 2/B, Olpad, Surat, GJ"
+      },
+      {
+        "s1": "S1-186759366",
+        "target": "S3-916611031",
+        "score": 0.0033,
+        "s1_name": "Lotus Mart Private Limited",
+        "target_name": "Beloirievo Co",
+        "s1_address": "C/O Manju Sec4 Ram Nagari, Ashiana Khajpura Patna, Phulwari, Patna, Bihar",
+        "target_address": "C/O Manju Sec4 Ram Nagari, Ashiana Khajpura Patna, Phulwari, Patna, Bihar"
+      },
+      {
+        "s1": "S1-749067273",
+        "target": "S3-185086847",
+        "score": 0.0036,
+        "s1_name": "Industries Vardan Fresh Ltd",
+        "target_name": "Industries Vardan Fresh Limited",
+        "s1_address": "705, Ansal Vikas Deep Building Laxmi Nagar District Centre, Vikas Marg, Delhi, East Delhi, Delhi",
+        "target_address": "No 305 705, Delhi, <NULL>, DL"
+      },
+      {
+        "s1": "S1-70422791",
+        "target": "S3-612306596",
+        "score": 0.0047,
+        "s1_name": "Rajvi Finance",
+        "target_name": "Deltacirahalo Co",
+        "s1_address": "10, Arjun Park, Nangli, Shakrawati Najafgarh, New Delhi, Delhi, West Delhi, Delhi",
+        "target_address": "10, Arjun Park, Nangli, Shakrawati Najafgarh, New Delhi, Delhi, West Delhi, Delhi"
+      },
+      {
+        "s1": "S1-384095272",
+        "target": "S3-527730437",
+        "score": 0.0059,
+        "s1_name": "B/B Light L.L.C.",
+        "target_name": "Service B/B L.L.C.",
+        "s1_address": "136 Outer Loop, Louisville, KY",
+        "target_address": "36 Outer Loop, N/A, Louisville, Kentucky"
+      },
+      {
+        "s1": "S1-392622350",
+        "target": "S3-187173481",
+        "score": 0.0074,
+        "s1_name": "United Marketing Private Limited",
+        "target_name": "united marketing private limited",
+        "s1_address": "Kila No.15/1, 2, 9, 10, Village Jaitheri Road, Rai, Sector 38, Sonipat, Haryana",
+        "target_address": "Kiea No.0015/1, Sonipat, Gharwal, HR"
+      },
+      {
+        "s1": "S1-952916004",
+        "target": "S2-23170410",
+        "score": 0.0077,
+        "s1_name": "Surya Estate Pvt Ltd",
+        "target_name": "Sri suryaestate.com - 5608585154",
+        "s1_address": "Dadiyapura Outside Datia, Gate Jhansi, Jhansi, Uttar Pradesh",
+        "target_address": "DOOR NO D/948 DADIYAPURA OUTSIDE DATIA, GATE JHANSI, JHANSI, Uttar Pradesh"
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 1604,
+    "examples": [
+      {
+        "s1": "S1-100714457",
+        "target": "S3-299669224",
+        "score": NaN,
+        "s1_name": "Sharda Dairy LLP",
+        "target_name": "Mr Sharda  Dairy L.L.P.",
+        "s1_address": "45-9-509, Keerthi Nagar Colony, Geesungonda Mandal, Warangal Urban, Telangana",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-101780735",
+        "target": "S3-869990025",
+        "score": NaN,
+        "s1_name": "Advanced Insurance Advisors",
+        "target_name": "Advanced Advisors Insurance",
+        "s1_address": "1407 Meadow Court, Rockford, IL",
+        "target_address": "Meadow Court, Rockford, Illinois"
+      },
+      {
+        "s1": "S1-102606099",
+        "target": "S3-110965286",
+        "score": NaN,
+        "s1_name": "Five Educational Society",
+        "target_name": "Five Edducatgional Society",
+        "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-102685544",
+        "target": "S2-447044649",
+        "score": NaN,
+        "s1_name": "Painters Union Local No 866 LLC",
+        "target_name": "Painters  Union Local No",
+        "s1_address": "64 School Street, Lake Placid, NY",
+        "target_address": "SCHOOL STREET, LAKE PLACID, NY"
+      },
+      {
+        "s1": "S1-107403618",
+        "target": "S2-616181739",
+        "score": NaN,
+        "s1_name": "South Solutions Private Limited",
+        "target_name": "साउथ सॉल्यूशंस प्राइवेट लिमिटेड",
+        "s1_address": "C/O Ram Kumar Singh, Sultanpur Post Bharakhara Thana Sukhpura, Ballia, Uttar Pradesh",
+        "target_address": "C/O RAM KMUAR SINGH, BALLIA, Uttar Pradesh"
+      },
+      {
+        "s1": "S1-10759041",
+        "target": "S2-188491970",
+        "score": NaN,
+        "s1_name": "Atlantic Commercial Digital",
+        "target_name": "Atlantic Commercial",
+        "s1_address": "201 Trk Lane, Tahuya, WA",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-108724009",
+        "target": "S2-765753332",
+        "score": NaN,
+        "s1_name": "Dental Heartland Partners LLC",
+        "target_name": "DENTAL PARTNERS HEARTLAND LLC",
+        "s1_address": "41 Candle Tree Lane, Swanton, MD",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-109972435",
+        "target": "S3-433286445",
+        "score": NaN,
+        "s1_name": "Downtown Auto Body!",
+        "target_name": "Downtown Áuto Body! Services",
+        "s1_address": "15414 35th Avenue, Unit 39, Lynnwood, WA",
+        "target_address": "15291 35th Ave, Unit 39, Lynnwood, Washington"
+      },
+      {
+        "s1": "S1-110070329",
+        "target": "S3-293599126",
+        "score": NaN,
+        "s1_name": "Slate LLC",
+        "target_name": "Slate LLC",
+        "s1_address": "375 Old Virginia St, Middlesex County, VA",
+        "target_address": "Old Virginia St, Middlesex County, Virginia"
+      },
+      {
+        "s1": "S1-111717403",
+        "target": "S3-297610703",
+        "score": NaN,
+        "s1_name": "Williams Purecycle Inc",
+        "target_name": "Williams Putcrycle Inc",
+        "s1_address": "261 Route 39, New Fairfield, CT",
+        "target_address": ""
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-126749530",
+      "target": "S3-594159831",
+      "score": 0.0007,
+      "s1_name": "Taum Holdings",
+      "target_name": "Taum LLC | www.taumllc.com",
+      "s1_address": "144 Hunter Street, MA, Fall River",
+      "target_address": "14 Hunter St, Fall River, Massachusetts"
+    },
+    {
+      "s1": "S1-414390428",
+      "target": "S2-371240420",
+      "score": 0.0018,
+      "s1_name": "Capital Star Prudential Co",
+      "target_name": "Drexkornovi - 8297348082",
+      "s1_address": "11915 Oryx Place, Albuquerque, NM",
+      "target_address": "11915 ORYX PLACE, ALBUQUERQUE, NM"
+    },
+    {
+      "s1": "S1-233169034",
+      "target": "S3-536292668",
+      "score": 0.0019,
+      "s1_name": "Auron Studios",
+      "target_name": "Cirabelofaye | www.cirabelofa.com",
+      "s1_address": "111 Mcleod Avenue, Topsail Beach, NC",
+      "target_address": "111 Mcleod Avenue, North Carolina, Topsail Beach"
+    },
+    {
+      "s1": "S1-221132030",
+      "target": "S3-295746216",
+      "score": 0.0029,
+      "s1_name": "Morani Products Pvt Ltd",
+      "target_name": "Mr Brixumbra",
+      "s1_address": "Plot No 2/B, Block No 207, Saheli Industrial Estate, Kim Mandvi Road, Olpad, Surat, Gujarat",
+      "target_address": "No 2/B, Olpad, Surat, GJ"
+    },
+    {
+      "s1": "S1-186759366",
+      "target": "S3-916611031",
+      "score": 0.0033,
+      "s1_name": "Lotus Mart Private Limited",
+      "target_name": "Beloirievo Co",
+      "s1_address": "C/O Manju Sec4 Ram Nagari, Ashiana Khajpura Patna, Phulwari, Patna, Bihar",
+      "target_address": "C/O Manju Sec4 Ram Nagari, Ashiana Khajpura Patna, Phulwari, Patna, Bihar"
+    },
+    {
+      "s1": "S1-749067273",
+      "target": "S3-185086847",
+      "score": 0.0036,
+      "s1_name": "Industries Vardan Fresh Ltd",
+      "target_name": "Industries Vardan Fresh Limited",
+      "s1_address": "705, Ansal Vikas Deep Building Laxmi Nagar District Centre, Vikas Marg, Delhi, East Delhi, Delhi",
+      "target_address": "No 305 705, Delhi, <NULL>, DL"
+    },
+    {
+      "s1": "S1-70422791",
+      "target": "S3-612306596",
+      "score": 0.0047,
+      "s1_name": "Rajvi Finance",
+      "target_name": "Deltacirahalo Co",
+      "s1_address": "10, Arjun Park, Nangli, Shakrawati Najafgarh, New Delhi, Delhi, West Delhi, Delhi",
+      "target_address": "10, Arjun Park, Nangli, Shakrawati Najafgarh, New Delhi, Delhi, West Delhi, Delhi"
+    },
+    {
+      "s1": "S1-384095272",
+      "target": "S3-527730437",
+      "score": 0.0059,
+      "s1_name": "B/B Light L.L.C.",
+      "target_name": "Service B/B L.L.C.",
+      "s1_address": "136 Outer Loop, Louisville, KY",
+      "target_address": "36 Outer Loop, N/A, Louisville, Kentucky"
+    },
+    {
+      "s1": "S1-392622350",
+      "target": "S3-187173481",
+      "score": 0.0074,
+      "s1_name": "United Marketing Private Limited",
+      "target_name": "united marketing private limited",
+      "s1_address": "Kila No.15/1, 2, 9, 10, Village Jaitheri Road, Rai, Sector 38, Sonipat, Haryana",
+      "target_address": "Kiea No.0015/1, Sonipat, Gharwal, HR"
+    },
+    {
+      "s1": "S1-952916004",
+      "target": "S2-23170410",
+      "score": 0.0077,
+      "s1_name": "Surya Estate Pvt Ltd",
+      "target_name": "Sri suryaestate.com - 5608585154",
+      "s1_address": "Dadiyapura Outside Datia, Gate Jhansi, Jhansi, Uttar Pradesh",
+      "target_address": "DOOR NO D/948 DADIYAPURA OUTSIDE DATIA, GATE JHANSI, JHANSI, Uttar Pradesh"
+    }
+  ],
+  "zero_match_entities": {
+    "count": 569,
+    "predicted_empty": 527,
+    "false_merge_examples": [
+      {
+        "s1": "S1-145602117",
+        "target": "S2-354582927",
+        "score": 0.9996,
+        "s1_name": "Lake Uranium",
+        "target_name": "Polaris Inc",
+        "s1_address": "17 Storms Road, Kettering, OH",
+        "target_address": "STORMS CREEK ROAD, URBANA, OH"
+      },
+      {
+        "s1": "S1-793768461",
+        "target": "S3-909481763",
+        "score": 0.9934,
+        "s1_name": "W/X Oncology L.L.C.",
+        "target_name": "W/X Oncology LLC",
+        "s1_address": "304 Gregg Avenue, Augusta, KS",
+        "target_address": "305 Gregg Ave, PO Box 1322, Augusta, Kansas"
+      },
+      {
+        "s1": "S1-594125631",
+        "target": "S2-18372497",
+        "score": 0.9922,
+        "s1_name": "Aarvan Agro",
+        "target_name": "Aarveon Agro",
+        "s1_address": "13/287, Cholas Center, Nilambur, Malappuram, Malapuram, Kerala",
+        "target_address": "13/287, CHOLAS CENTER, NILAMBUR, MALAPPURAM, Keralam"
+      },
+      {
+        "s1": "S1-800309662",
+        "target": "S2-472906346",
+        "score": 0.9893,
+        "s1_name": "LX Mines LLC",
+        "target_name": "Incorporated Pinnacle",
+        "s1_address": "2609 Appling Crest Drive, Memphis, TN",
+        "target_address": "7454 APPLING CLUB CIRCLE, CORDOVA, TN"
+      },
+      {
+        "s1": "S1-800309662",
+        "target": "S2-965586426",
+        "score": 0.9893,
+        "s1_name": "LX Mines LLC",
+        "target_name": "Pinnacle Inc",
+        "s1_address": "2609 Appling Crest Drive, Memphis, TN",
+        "target_address": "7454 APPLING CLUB CIR, CORDOVA, TN"
+      },
+      {
+        "s1": "S1-157268011",
+        "target": "S3-546959607",
+        "score": 0.9887,
+        "s1_name": "New Delhi Producer Private Limited",
+        "target_name": "Newdelhiproducer.Com",
+        "s1_address": "A-21, Lgf, Lajpat Nagar-Iii, New Delhi, South Delhi, Delhi",
+        "target_address": "##142 A, South Delhi, New Delhi, DL"
+      },
+      {
+        "s1": "S1-800309662",
+        "target": "S3-551329518",
+        "score": 0.9883,
+        "s1_name": "LX Mines LLC",
+        "target_name": "Inc Pinnacle",
+        "s1_address": "2609 Appling Crest Drive, Memphis, TN",
+        "target_address": "7454 Appling Club Circle, Cordova, Tennessee"
+      },
+      {
+        "s1": "S1-800309662",
+        "target": "S3-985357235",
+        "score": 0.9883,
+        "s1_name": "LX Mines LLC",
+        "target_name": "Pinnacle Inc",
+        "s1_address": "2609 Appling Crest Drive, Memphis, TN",
+        "target_address": "7454 Appling Club Cir, Cordova, Tennessee"
+      },
+      {
+        "s1": "S1-800309662",
+        "target": "S2-638410967",
+        "score": 0.9879,
+        "s1_name": "LX Mines LLC",
+        "target_name": "PINNACLE CORP",
+        "s1_address": "2609 Appling Crest Drive, Memphis, TN",
+        "target_address": "457 APPLING CLUB CIR, CORDOVA, TN"
+      },
+      {
+        "s1": "S1-949538181",
+        "target": "S2-502202016",
+        "score": 0.983,
+        "s1_name": "Jones & Smith Golden Inc.",
+        "target_name": "Inc Jones & Smíth Golden",
+        "s1_address": "3003 Southwall Street, Memphis, TN",
+        "target_address": "3005 SOUTHWALL STREET, MEMPHIS, TN"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 8896,
+    "mean_true_matches": 3.829,
+    "mean_predicted": 3.425,
+    "predicted_at_least_two": 8255
+  }
+}

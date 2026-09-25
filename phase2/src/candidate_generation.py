@@ -121,6 +121,13 @@ def rule_keys(rec: pd.DataFrame, rule: str, cfg: dict, token_df: dict = None) ->
         return _with_locality(rec, cp, token_df["addr_norm"], cfg["rare_tokens_per_address"], "postal", "pl")
     if rule == "state_locality":
         return _with_locality(rec, cp, token_df["addr_norm"], cfg["rare_tokens_per_address"], "state", "sl")
+    if rule == "name_addr_composite":  # Phase 3: rarest-2 core-name tokens x rarest-2 locality tokens
+        addr = {}
+        for i, t in _rarest_tokens(rec, "addr_norm", token_df["addr_norm"], cfg["rare_tokens_per_address"]):
+            addr.setdefault(i, []).append(t)
+        pairs = [(i, f"{cp[i]}na|{n}|{a}") for i, n in _rarest_tokens(rec, "name_core", token_df["name_core"],
+                                                                       cfg["rare_tokens_per_name"]) for a in addr.get(i, [])]
+        return _long([i for i, _ in pairs], [k for _, k in pairs])
     if rule == "address_signature":  # sorted non-numeric, non-state comma components (order-free locality)
         sigs = []
         for p, comps in zip(cp, rec["components"]):
@@ -138,9 +145,12 @@ RULE_FLAGS = {"exact_name": "use_exact_name_block", "exact_address": "use_exact_
               # Phase 2.5 experimental rules: absent from the B0 config, so off by default
               "name_phonetic_token": "use_name_phonetic_token_block", "house_locality": "use_house_locality_block",
               "postal_locality": "use_postal_locality_block", "state_locality": "use_state_locality_block",
-              "address_signature": "use_address_signature_block"}
-_TOKEN_DFS = {"name_ngram": "name_core", "address_token": "addr_norm", "name_phonetic_token": "name_phon",
-              "house_locality": "addr_norm", "postal_locality": "addr_norm", "state_locality": "addr_norm"}
+              "address_signature": "use_address_signature_block",
+              # Phase 3 experimental rule: off unless enabled in the config
+              "name_addr_composite": "use_name_addr_composite_block"}
+_TOKEN_DFS = {"name_ngram": ("name_core",), "address_token": ("addr_norm",), "name_phonetic_token": ("name_phon",),
+              "house_locality": ("addr_norm",), "postal_locality": ("addr_norm",), "state_locality": ("addr_norm",),
+              "name_addr_composite": ("name_core", "addr_norm")}
 
 
 def enabled_rules(cfg: dict) -> list:
@@ -150,7 +160,7 @@ def enabled_rules(cfg: dict) -> list:
 def rule_tables(s1: pd.DataFrame, tgt: pd.DataFrame, cfg: dict, rules: list = None) -> dict:
     """Integer-coded S1 and target keys for each rule, with target key frequencies (no cutoff applied)."""
     rules = rules or enabled_rules(cfg)
-    token_df = {kind: rare_token_frequencies([s1, tgt], kind) for kind in {_TOKEN_DFS[r] for r in rules if r in _TOKEN_DFS}}
+    token_df = {kind: rare_token_frequencies([s1, tgt], kind) for kind in {k for r in rules for k in _TOKEN_DFS.get(r, ())}}
     tables = {}
     for rule in rules:
         sk, tk = rule_keys(s1, rule, cfg, token_df), rule_keys(tgt, rule, cfg, token_df)
@@ -161,13 +171,14 @@ def rule_tables(s1: pd.DataFrame, tgt: pd.DataFrame, cfg: dict, rules: list = No
     return tables
 
 
-def apply_cutoff(tables: dict, max_block_size) -> dict:
+def apply_cutoff(tables: dict, max_block_size, by_rule: dict = None) -> dict:
     """Blocking index per rule: target keys holding more than ``max_block_size`` records are skipped
-    (``None`` = no cutoff, diagnostic only)."""
+    (``None`` = no cutoff, diagnostic only); ``by_rule`` overrides the cutoff for the rules it names."""
     blocking = {}
     for rule, tb in tables.items():
         tk, freq, uniques = tb["t"], tb["freq"], tb["uniques"]
-        skipped = freq[freq > max_block_size] if max_block_size is not None else freq.iloc[:0]
+        limit = (by_rule or {}).get(rule, max_block_size)
+        skipped = freq[freq > limit] if limit is not None else freq.iloc[:0]
         is_skipped = tk["code"].isin(skipped.index)
         blocking[rule] = {
             "s1": tb["s1"],
@@ -178,14 +189,15 @@ def apply_cutoff(tables: dict, max_block_size) -> dict:
                                                                                    ascending=[False, True]),
             "target_keys": int(len(freq)),
             "target_keyed_records": int(tk["t_idx"].nunique()),
+            "max_block_size": limit,
         }
-        log.info("  %s: %d target keys, %d skipped (> %s records)", rule, len(freq), len(skipped), max_block_size)
+        log.info("  %s: %d target keys, %d skipped (> %s records)", rule, len(freq), len(skipped), limit)
     return blocking
 
 
 def build_blocking(s1: pd.DataFrame, tgt: pd.DataFrame, cfg: dict) -> dict:
     """Build every rule's target index once; returns per-rule S1 keys, target keys and skipped keys."""
-    return apply_cutoff(rule_tables(s1, tgt, cfg), cfg["max_block_size"])
+    return apply_cutoff(rule_tables(s1, tgt, cfg), cfg["max_block_size"], cfg.get("max_block_size_by_rule"))
 
 
 # ---------------------------------------------------------------- candidates

@@ -1,0 +1,19 @@
+{
+  "note": "Process terminated externally after the run completed validation and wrote manifest.json, before metrics.json was written.",
+  "terminated_by": "session memory watchdog (scratchpad watchdog_policy.ps1), rule 'Pages Input/sec > 3000 for 4 samples'",
+  "terminated_at": "2026-09-25 23:11:23 local; process exit code -1",
+  "false_positive": "memory was not under pressure: minimum free RAM 6,642 MB, minimum commit headroom 10,746 MB; the paging counter was driven by memory-mapped file reads during validation; that rule has been withdrawn",
+  "completed_before_termination": [
+    "training",
+    "scoring",
+    "threshold sweep",
+    "error analysis",
+    "validation submission files",
+    "official validator (PASS)",
+    "manifest.json (output hashes recorded)"
+  ],
+  "missing_step_completed_afterwards": "metrics.json written on 2026-09-25 with metrics.run_metrics(run_dir, phase2/output/phase2_5/frozen_50000) -- the same call experiment_runner.run() makes as its final step -- from the unchanged artifacts; no job was rerun",
+  "code_sha256_at_run": "434828392d968a87f68db6e830398f81ab87add468c0602f3374778fcff1cd1b",
+  "run_log_note": "run.log has no final 'done' line because the logger was terminated with the process",
+  "written_at": "2026-09-25T23:15:02"
+}

@@ -1,0 +1,482 @@
+{
+  "threshold": 0.85,
+  "false_positives": {
+    "count": 173,
+    "examples": [
+      {
+        "s1": "S1-382264455",
+        "target": "S3-78629542",
+        "score": 0.9974,
+        "s1_name": "Gerry Baldwin, Ph.D., DDS PC",
+        "target_name": "Gerry Baldwin, Ph.D., DDS PC Metro",
+        "s1_address": "1638 Millers Chapel Road, Greeneville, TN",
+        "target_address": "1638 Millers Chapel Road, Greeneville, Tennessee"
+      },
+      {
+        "s1": "S1-582396159",
+        "target": "S3-900303242",
+        "score": 0.9954,
+        "s1_name": "Allied Bnb Inc.",
+        "target_name": "Allied Bnb Inc",
+        "s1_address": "415 Mccurdy Avenue, Rainsville, AL",
+        "target_address": "Rainsville, 417 Mccurdy Ave, Alabama"
+      },
+      {
+        "s1": "S1-322870263",
+        "target": "S3-682161839",
+        "score": 0.9946,
+        "s1_name": "Montus Atlas L.L.C.",
+        "target_name": "Montus Atlas L.L.C.",
+        "s1_address": "145 Plaza Boulevard, Madison, AL",
+        "target_address": "66 Plaza Blvd, Madison, Alabama"
+      },
+      {
+        "s1": "S1-892825590",
+        "target": "S3-576052506",
+        "score": 0.9937,
+        "s1_name": "Raj Food Private Limited",
+        "target_name": "ರಾಜ್ ಫುಡ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+        "s1_address": "Mallathally, No 10, Karnataka, Bangalore",
+        "target_address": "Door No B3/11, Bangalore, KA"
+      },
+      {
+        "s1": "S1-892825590",
+        "target": "S3-864781679",
+        "score": 0.9928,
+        "s1_name": "Raj Food Private Limited",
+        "target_name": "ರಾಜ್ ಫುಡ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+        "s1_address": "Mallathally, No 10, Karnataka, Bangalore",
+        "target_address": "H.no B3/11, Bangalore, KA"
+      },
+      {
+        "s1": "S1-65318779",
+        "target": "S3-475295213",
+        "score": 0.9927,
+        "s1_name": "Koga Fuse Inc.",
+        "target_name": "Koga Fuse Inc",
+        "s1_address": "4895 389 Road, Stuart, OK",
+        "target_address": "4908 389 Rd, Stuart, Oklahoma"
+      },
+      {
+        "s1": "S1-261931295",
+        "target": "S3-826309010",
+        "score": 0.9925,
+        "s1_name": "Misoft Securities PC",
+        "target_name": "Express (Security)",
+        "s1_address": "1260 2738, Caddo Mills, TX",
+        "target_address": "1260 2738, Caddo Mills, Texas"
+      },
+      {
+        "s1": "S1-773381534",
+        "target": "S2-11013207",
+        "score": 0.9918,
+        "s1_name": "Gussi Roberge Elite LLC",
+        "target_name": "Roberge, Bartley Elite Llc",
+        "s1_address": "1148 Rustic Village Road, Bedford County, VA",
+        "target_address": "1148 RUSTIC VILLAGE ROAD, BEDFORD COUNTY, VA"
+      },
+      {
+        "s1": "S1-245589650",
+        "target": "S2-948605571",
+        "score": 0.991,
+        "s1_name": "Interfaith Committee VI P.C.",
+        "target_name": "Interfaith Committee Vg P.C.",
+        "s1_address": "158 Exchange Street, Unit 2, Rockland, MA",
+        "target_address": "158 Exchange St, NULL, ROCKLAND, MA"
+      },
+      {
+        "s1": "S1-178542661",
+        "target": "S3-916848386",
+        "score": 0.9903,
+        "s1_name": "Guru Projects Private Limited",
+        "target_name": "గురు ప్రాజెక్ట్స్ ఎల్‌ఎల్‌పీ",
+        "s1_address": "310, 5Th Floor, Liberty Plaza, Himayat Nagar, Telangana, 3-6-365, Hyderabad",
+        "target_address": "Rangareddy, Hyderabad, 310, 5Th Floor, Liberty Plaza, Himayat Nagar, 03-6-386, TG"
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 701,
+    "examples": [
+      {
+        "s1": "S1-658901609",
+        "target": "S2-918688636",
+        "score": 0.0014,
+        "s1_name": "Jaipur Design Private Limited",
+        "target_name": "JAlPUR DSSIN PRIVATE LIMITED - 7847626465",
+        "s1_address": "Flat No.-401-402, Hilltop Plaza, Near Jawahar Nagar, Petrol Pump, Sector-7, Jaipur, Rajasthan",
+        "target_address": "FLAT NO.-401-402, JAIPUR, Rajasthan"
+      },
+      {
+        "s1": "S1-423565136",
+        "target": "S3-490945370",
+        "score": 0.0014,
+        "s1_name": "Jmd Brothers Private Limited",
+        "target_name": "Ariaquo - 5025476611",
+        "s1_address": "Flat No. 7D, Crescent Court, No.8, Crescent Road, Bangalore., Karnataka",
+        "target_address": "7D, Crescent Court, No.8, Crescent Road, Bangalore., KA"
+      },
+      {
+        "s1": "S1-414390428",
+        "target": "S2-371240420",
+        "score": 0.0017,
+        "s1_name": "Capital Star Prudential Co",
+        "target_name": "Drexkornovi - 8297348082",
+        "s1_address": "11915 Oryx Place, Albuquerque, NM",
+        "target_address": "11915 ORYX PLACE, ALBUQUERQUE, NM"
+      },
+      {
+        "s1": "S1-126749530",
+        "target": "S3-594159831",
+        "score": 0.0027,
+        "s1_name": "Taum Holdings",
+        "target_name": "Taum LLC | www.taumllc.com",
+        "s1_address": "144 Hunter Street, MA, Fall River",
+        "target_address": "14 Hunter St, Fall River, Massachusetts"
+      },
+      {
+        "s1": "S1-620874858",
+        "target": "S2-771889839",
+        "score": 0.0069,
+        "s1_name": "Patna Technologies Pvt Ltd",
+        "target_name": "tpatna.com",
+        "s1_address": "Plot No 218 B, Patliputra Colony, Patna, Bihar",
+        "target_address": "DOOR NO 21 B, PATLIPUTRA COLONY, PATNA, बिहार"
+      },
+      {
+        "s1": "S1-777537816",
+        "target": "S3-638407204",
+        "score": 0.0073,
+        "s1_name": "Rushikulya (India) Detective Public Limited",
+        "target_name": "rushikulya (india) detective public limited",
+        "s1_address": "B/101, 1St Floor, Kunthajyoti Co-Op Soc Viva Jangid Complex, Manvelpada Virar(E), Palghar, Thane, Maharashtra",
+        "target_address": "B/01, Thane, MH"
+      },
+      {
+        "s1": "S1-530087827",
+        "target": "S3-867858752",
+        "score": 0.0075,
+        "s1_name": "Construction Shubh Beverages Ltd",
+        "target_name": "Construction Shubh Beverages Limited",
+        "s1_address": "2, Jogodyan Lane Kankurgachi S.O. Kankurgachi, Kolkata, Kolkata, Howrah, West Bengal",
+        "target_address": "4, N/A, Oaa, Howrah, WB"
+      },
+      {
+        "s1": "S1-285097507",
+        "target": "S2-650023664",
+        "score": 0.0085,
+        "s1_name": "Webb Credit PLLC",
+        "target_name": "WEBB PLLC CENTER | www.webbpllc.com",
+        "s1_address": "745 -303 Lawrence Drive, Virginia Beach City, VA",
+        "target_address": "744917C LAWRENCE DR, VIRGINIA BEACH, VA"
+      },
+      {
+        "s1": "S1-394064735",
+        "target": "S3-336256833",
+        "score": 0.0087,
+        "s1_name": "Bagwe Wafers Private Limited",
+        "target_name": "Sri Aviveramira",
+        "s1_address": "Sno 672/3A State Bank Hsg, Socy Shop N0.4 Bibawewadi, Pune City, Pune, Maharashtra",
+        "target_address": "Socy Shop N0.4 Bibawewadi, MH, Pune, Pune City, Sno D/672/3a State Bank Hsg"
+      },
+      {
+        "s1": "S1-416123909",
+        "target": "S3-50837184",
+        "score": 0.0119,
+        "s1_name": "Tara Prime (India) Private Limited",
+        "target_name": "TARA PRIME (INDIA) PRIVATE LIMITED",
+        "s1_address": "Flat No. 212, Plot No. 34, Floor 2Nd, White House Apartment Sec. 13 Rohini, Delhi, New Delhi, Delhi",
+        "target_address": "Flat No. 00212, Delhi, North West, DL"
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 306,
+    "examples": [
+      {
+        "s1": "S1-102539463",
+        "target": "S2-715944218",
+        "score": NaN,
+        "s1_name": "Swastik Consulting Private Limited",
+        "target_name": ">> Swastik Consulting Limited [Center]",
+        "s1_address": "10-6-87/2, Srinivas Colony, Mahabubnagar H.O, Mahabub Nagar, Telangana",
+        "target_address": "10-6-87, SRINIVAS COLONY, MAHABUB NAGAR, Andhra Pradesh"
+      },
+      {
+        "s1": "S1-10785361",
+        "target": "S3-849650818",
+        "score": NaN,
+        "s1_name": "Ps India (India) Private Limited",
+        "target_name": "Fluxbelo",
+        "s1_address": "Gujarat, Nilam Complex, Paldi, Ahmedabad, 12, Ahmedabad",
+        "target_address": "12, Ahmedabad, GJ"
+      },
+      {
+        "s1": "S1-115415854",
+        "target": "S2-350305086",
+        "score": NaN,
+        "s1_name": "One Consultancy Private Limited",
+        "target_name": "ওয়ান কনসালটেন্সি প্রাইভেট লিমিটেড",
+        "s1_address": "West Bengal, Calcutta, Kolkata, 161/1 M G Road 3Rd Floorroom No 61",
+        "target_address": "H.NO 163/1 M G ROAD 3RD FLOORROOM NO 61, KOLKATA, CALCUTTA, West Bengal"
+      },
+      {
+        "s1": "S1-123044933",
+        "target": "S2-459846560",
+        "score": NaN,
+        "s1_name": "Alpha Infotech Private Limited",
+        "target_name": "अल्फा इंफोटेक प्राइवेट लिमिटेड",
+        "s1_address": "502, Kumudi Apartments Nasirpur, Dwarka Phase-I, New Delhi, South West Delhi, Delhi",
+        "target_address": "502, N/A, NEW DELHI, दिल्ली"
+      },
+      {
+        "s1": "S1-123044933",
+        "target": "S2-970255331",
+        "score": NaN,
+        "s1_name": "Alpha Infotech Private Limited",
+        "target_name": "अल्फा इंफोटेक प्राइवेट लिमिटेड",
+        "s1_address": "502, Kumudi Apartments Nasirpur, Dwarka Phase-I, New Delhi, South West Delhi, Delhi",
+        "target_address": "502, N/A, NEW DELHI, दिल्ली"
+      },
+      {
+        "s1": "S1-13119483",
+        "target": "S2-282838285",
+        "score": NaN,
+        "s1_name": "Pediatric Dentistry Partners LLC",
+        "target_name": "Pediatric Dentistry Partners",
+        "s1_address": "143 Mary Street, Unit Apartment 102, Syracuse, NY",
+        "target_address": "1-5 MARY ST, SYRACUSE, NY"
+      },
+      {
+        "s1": "S1-13119483",
+        "target": "S2-473466733",
+        "score": NaN,
+        "s1_name": "Pediatric Dentistry Partners LLC",
+        "target_name": "Pediatric Dentistry Partners Llc",
+        "s1_address": "143 Mary Street, Unit Apartment 102, Syracuse, NY",
+        "target_address": "NY, SYRACUSE, MARY STREET"
+      },
+      {
+        "s1": "S1-13119483",
+        "target": "S2-6975869",
+        "score": NaN,
+        "s1_name": "Pediatric Dentistry Partners LLC",
+        "target_name": "llc pediatric dentistry partners",
+        "s1_address": "143 Mary Street, Unit Apartment 102, Syracuse, NY",
+        "target_address": "NY, SYRACUSE, 0143 MARY STREET"
+      },
+      {
+        "s1": "S1-133393847",
+        "target": "S2-134940740",
+        "score": NaN,
+        "s1_name": "Surya Constructions",
+        "target_name": "સૂર્ય કન્સ્ટ્રક્શન્સ",
+        "s1_address": "Fl. No. 308, Chandan Appt. Nr. Althan Garden, Surat, Gujarat",
+        "target_address": "FL. NO. 308, SURAT, Gujarat"
+      },
+      {
+        "s1": "S1-133393847",
+        "target": "S2-199161930",
+        "score": NaN,
+        "s1_name": "Surya Constructions",
+        "target_name": "સૂર્ય Constructions",
+        "s1_address": "Fl. No. 308, Chandan Appt. Nr. Althan Garden, Surat, Gujarat",
+        "target_address": "FL. NO. 308, SURAT, ગુજરાત"
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-658901609",
+      "target": "S2-918688636",
+      "score": 0.0014,
+      "s1_name": "Jaipur Design Private Limited",
+      "target_name": "JAlPUR DSSIN PRIVATE LIMITED - 7847626465",
+      "s1_address": "Flat No.-401-402, Hilltop Plaza, Near Jawahar Nagar, Petrol Pump, Sector-7, Jaipur, Rajasthan",
+      "target_address": "FLAT NO.-401-402, JAIPUR, Rajasthan"
+    },
+    {
+      "s1": "S1-423565136",
+      "target": "S3-490945370",
+      "score": 0.0014,
+      "s1_name": "Jmd Brothers Private Limited",
+      "target_name": "Ariaquo - 5025476611",
+      "s1_address": "Flat No. 7D, Crescent Court, No.8, Crescent Road, Bangalore., Karnataka",
+      "target_address": "7D, Crescent Court, No.8, Crescent Road, Bangalore., KA"
+    },
+    {
+      "s1": "S1-414390428",
+      "target": "S2-371240420",
+      "score": 0.0017,
+      "s1_name": "Capital Star Prudential Co",
+      "target_name": "Drexkornovi - 8297348082",
+      "s1_address": "11915 Oryx Place, Albuquerque, NM",
+      "target_address": "11915 ORYX PLACE, ALBUQUERQUE, NM"
+    },
+    {
+      "s1": "S1-126749530",
+      "target": "S3-594159831",
+      "score": 0.0027,
+      "s1_name": "Taum Holdings",
+      "target_name": "Taum LLC | www.taumllc.com",
+      "s1_address": "144 Hunter Street, MA, Fall River",
+      "target_address": "14 Hunter St, Fall River, Massachusetts"
+    },
+    {
+      "s1": "S1-620874858",
+      "target": "S2-771889839",
+      "score": 0.0069,
+      "s1_name": "Patna Technologies Pvt Ltd",
+      "target_name": "tpatna.com",
+      "s1_address": "Plot No 218 B, Patliputra Colony, Patna, Bihar",
+      "target_address": "DOOR NO 21 B, PATLIPUTRA COLONY, PATNA, बिहार"
+    },
+    {
+      "s1": "S1-777537816",
+      "target": "S3-638407204",
+      "score": 0.0073,
+      "s1_name": "Rushikulya (India) Detective Public Limited",
+      "target_name": "rushikulya (india) detective public limited",
+      "s1_address": "B/101, 1St Floor, Kunthajyoti Co-Op Soc Viva Jangid Complex, Manvelpada Virar(E), Palghar, Thane, Maharashtra",
+      "target_address": "B/01, Thane, MH"
+    },
+    {
+      "s1": "S1-530087827",
+      "target": "S3-867858752",
+      "score": 0.0075,
+      "s1_name": "Construction Shubh Beverages Ltd",
+      "target_name": "Construction Shubh Beverages Limited",
+      "s1_address": "2, Jogodyan Lane Kankurgachi S.O. Kankurgachi, Kolkata, Kolkata, Howrah, West Bengal",
+      "target_address": "4, N/A, Oaa, Howrah, WB"
+    },
+    {
+      "s1": "S1-285097507",
+      "target": "S2-650023664",
+      "score": 0.0085,
+      "s1_name": "Webb Credit PLLC",
+      "target_name": "WEBB PLLC CENTER | www.webbpllc.com",
+      "s1_address": "745 -303 Lawrence Drive, Virginia Beach City, VA",
+      "target_address": "744917C LAWRENCE DR, VIRGINIA BEACH, VA"
+    },
+    {
+      "s1": "S1-394064735",
+      "target": "S3-336256833",
+      "score": 0.0087,
+      "s1_name": "Bagwe Wafers Private Limited",
+      "target_name": "Sri Aviveramira",
+      "s1_address": "Sno 672/3A State Bank Hsg, Socy Shop N0.4 Bibawewadi, Pune City, Pune, Maharashtra",
+      "target_address": "Socy Shop N0.4 Bibawewadi, MH, Pune, Pune City, Sno D/672/3a State Bank Hsg"
+    },
+    {
+      "s1": "S1-416123909",
+      "target": "S3-50837184",
+      "score": 0.0119,
+      "s1_name": "Tara Prime (India) Private Limited",
+      "target_name": "TARA PRIME (INDIA) PRIVATE LIMITED",
+      "s1_address": "Flat No. 212, Plot No. 34, Floor 2Nd, White House Apartment Sec. 13 Rohini, Delhi, New Delhi, Delhi",
+      "target_address": "Flat No. 00212, Delhi, North West, DL"
+    }
+  ],
+  "zero_match_entities": {
+    "count": 115,
+    "predicted_empty": 106,
+    "false_merge_examples": [
+      {
+        "s1": "S1-322870263",
+        "target": "S3-682161839",
+        "score": 0.9946,
+        "s1_name": "Montus Atlas L.L.C.",
+        "target_name": "Montus Atlas L.L.C.",
+        "s1_address": "145 Plaza Boulevard, Madison, AL",
+        "target_address": "66 Plaza Blvd, Madison, Alabama"
+      },
+      {
+        "s1": "S1-714642946",
+        "target": "S2-714917499",
+        "score": 0.9714,
+        "s1_name": "U 8 Clear Telecommunication LLC",
+        "target_name": "Zeriex",
+        "s1_address": "501 Rebecca Smith Way, Cecilton, MD",
+        "target_address": "501 REBECCA SMITH WAY, MD, CECILTON"
+      },
+      {
+        "s1": "S1-612349185",
+        "target": "S3-373725946",
+        "score": 0.9702,
+        "s1_name": "Shraddha Construction Private Limited",
+        "target_name": "Narmada Constructions",
+        "s1_address": "44, Dilbagh Nagar Jalandhar, Jalandhar City, Jalandhar, Punjab",
+        "target_address": "H.no 504 A Dilbagh Nagar Extn, ਪੰਜਾਬ, Jalandhar"
+      },
+      {
+        "s1": "S1-312235137",
+        "target": "S3-92216014",
+        "score": 0.9636,
+        "s1_name": "Kestance Bridge",
+        "target_name": "Kestanceyn Bnieo",
+        "s1_address": "222 Brighton Avenue, Dallas, TX",
+        "target_address": "#222 Brighton Ave, Dallas, Texas"
+      },
+      {
+        "s1": "S1-25495248",
+        "target": "S3-208025747",
+        "score": 0.9613,
+        "s1_name": "Bright Care Private Limited",
+        "target_name": "Pvt Bright Care Ltd",
+        "s1_address": "H.No. C-84, Ground Floor Kalka Ji, New Delhi, South Delhi, Delhi",
+        "target_address": "H.no 28, South Delhi, New Delhi, दिल्ली"
+      },
+      {
+        "s1": "S1-25495248",
+        "target": "S3-856951999",
+        "score": 0.9295,
+        "s1_name": "Bright Care Private Limited",
+        "target_name": "Bright Care",
+        "s1_address": "H.No. C-84, Ground Floor Kalka Ji, New Delhi, South Delhi, Delhi",
+        "target_address": "H No 23, First Floor Aliganj Kotla, New Delhi, South Delhi, Delhi"
+      },
+      {
+        "s1": "S1-109597244",
+        "target": "S2-402290391",
+        "score": 0.9232,
+        "s1_name": "Al Properties Private Limited",
+        "target_name": "అల్ Properties ప్రైవేట్ లిమిటెడ్",
+        "s1_address": "8-2-624/A/B1, 1St Floor, Road No.10, Banjara Hills, Hyderabad, Telangana",
+        "target_address": "#770F, ROAD NO.44, JUBILEE HILLS, HYDERABAD, Telangana"
+      },
+      {
+        "s1": "S1-509905357",
+        "target": "S3-963215154",
+        "score": 0.9068,
+        "s1_name": "Inventive Institute Pvt. Ltd.",
+        "target_name": "Inventive-Institute Pvt.",
+        "s1_address": "Bangalore, 135, I Floor, 14Th Cross, 6Th C Main, Karnataka, J.P Nagar Iii Phase",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-249116846",
+        "target": "S3-220087032",
+        "score": 0.8939,
+        "s1_name": "Nelson Investments",
+        "target_name": "Zetayuma",
+        "s1_address": "98 Lockwood Avenue, Oyster Bay, NY",
+        "target_address": "New York, #98 Baldwin Avenue, Oyster Bay"
+      },
+      {
+        "s1": "S1-714642946",
+        "target": "S2-530827668",
+        "score": 0.8833,
+        "s1_name": "U 8 Clear Telecommunication LLC",
+        "target_name": "Zeriex",
+        "s1_address": "501 Rebecca Smith Way, Cecilton, MD",
+        "target_address": "501 Rebecca Smith Way, CECILTON, MD"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 1768,
+    "mean_true_matches": 3.833,
+    "mean_predicted": 3.356,
+    "predicted_at_least_two": 1624
+  }
+}

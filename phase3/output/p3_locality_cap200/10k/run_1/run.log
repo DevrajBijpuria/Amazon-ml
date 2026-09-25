@@ -1,0 +1,63 @@
+2026-09-25 16:07:22,430 INFO experiment p3_locality_cap200, 10000 S1 vs full targets, run 1, rules ['exact_name', 'exact_address', 'numeric', 'name_prefix', 'address_prefix', 'name_ngram', 'name_phonetic', 'address_token', 'house_locality', 'postal_locality', 'state_locality', 'address_signature']
+2026-09-25 16:07:22,460 INFO [train_load_s1_gt] start
+2026-09-25 16:07:29,833 INFO [train_load_s1_gt] 7.4s
+2026-09-25 16:07:29,833 INFO [train_normalize_s1] start
+2026-09-25 16:07:32,229 INFO [train_normalize_s1] 2.4s
+2026-09-25 16:07:32,411 INFO [train_load_s2] start
+2026-09-25 16:07:42,552 INFO [train_load_s2] 10.1s
+2026-09-25 16:07:42,552 INFO [train_normalize_s2] start
+2026-09-25 16:09:50,691 INFO [train_normalize_s2] 128.1s
+2026-09-25 16:09:53,076 INFO [train_candidates_s2] start
+2026-09-25 16:09:53,076 INFO [train_index_s2] start
+2026-09-25 16:15:34,287 INFO   exact_name: 5151503 target keys, 1400 skipped (> 100 records)
+2026-09-25 16:15:34,414 INFO   exact_address: 3695797 target keys, 0 skipped (> 100 records)
+2026-09-25 16:15:34,662 INFO   numeric: 2473309 target keys, 540 skipped (> 100 records)
+2026-09-25 16:15:34,926 INFO   name_prefix: 1033272 target keys, 3982 skipped (> 100 records)
+2026-09-25 16:15:35,204 INFO   address_prefix: 3500417 target keys, 144 skipped (> 100 records)
+2026-09-25 16:15:35,589 INFO   name_ngram: 163077 target keys, 7807 skipped (> 100 records)
+2026-09-25 16:15:35,869 INFO   name_phonetic: 2507868 target keys, 2213 skipped (> 100 records)
+2026-09-25 16:15:36,309 INFO   address_token: 321883 target keys, 12331 skipped (> 100 records)
+2026-09-25 16:15:36,742 INFO   house_locality: 4804708 target keys, 168 skipped (> 100 records)
+2026-09-25 16:15:36,746 INFO   postal_locality: 34148 target keys, 0 skipped (> 100 records)
+2026-09-25 16:15:37,211 INFO   state_locality: 655660 target keys, 12505 skipped (> 100 records)
+2026-09-25 16:15:37,380 INFO   address_signature: 921817 target keys, 334 skipped (> 100 records)
+2026-09-25 16:15:37,425 INFO [train_index_s2] 344.3s
+2026-09-25 16:15:48,130 INFO [train_candidates_s2] 355.1s
+2026-09-25 16:15:48,130 INFO s2: recall 0.9538, 745753 pairs, mean 74.6 per S1
+2026-09-25 16:15:48,130 INFO [train_features_s2] start
+2026-09-25 16:16:06,056 INFO [train_features_s2] 17.9s
+2026-09-25 16:16:07,152 INFO [train_load_s3] start
+2026-09-25 16:16:17,834 INFO [train_load_s3] 10.7s
+2026-09-25 16:16:17,834 INFO [train_normalize_s3] start
+2026-09-25 16:18:34,260 INFO [train_normalize_s3] 136.4s
+2026-09-25 16:18:36,906 INFO [train_candidates_s3] start
+2026-09-25 16:18:36,906 INFO [train_index_s3] start
+2026-09-25 16:24:39,542 INFO   exact_name: 5571652 target keys, 1438 skipped (> 100 records)
+2026-09-25 16:24:39,676 INFO   exact_address: 3899104 target keys, 0 skipped (> 100 records)
+2026-09-25 16:24:39,947 INFO   numeric: 2541045 target keys, 623 skipped (> 100 records)
+2026-09-25 16:24:40,237 INFO   name_prefix: 1066910 target keys, 4195 skipped (> 100 records)
+2026-09-25 16:24:40,497 INFO   address_prefix: 3620678 target keys, 277 skipped (> 100 records)
+2026-09-25 16:24:40,914 INFO   name_ngram: 177929 target keys, 8072 skipped (> 100 records)
+2026-09-25 16:24:41,200 INFO   name_phonetic: 2710944 target keys, 2058 skipped (> 100 records)
+2026-09-25 16:24:41,637 INFO   address_token: 300493 target keys, 11968 skipped (> 100 records)
+2026-09-25 16:24:42,081 INFO   house_locality: 4807765 target keys, 652 skipped (> 100 records)
+2026-09-25 16:24:42,085 INFO   postal_locality: 40572 target keys, 0 skipped (> 100 records)
+2026-09-25 16:24:42,576 INFO   state_locality: 629871 target keys, 12460 skipped (> 100 records)
+2026-09-25 16:24:42,750 INFO   address_signature: 859799 target keys, 599 skipped (> 100 records)
+2026-09-25 16:24:42,795 INFO [train_index_s3] 365.9s
+2026-09-25 16:24:53,750 INFO [train_candidates_s3] 376.8s
+2026-09-25 16:24:53,750 INFO s3: recall 0.9551, 732485 pairs, mean 73.2 per S1
+2026-09-25 16:24:53,751 INFO [train_features_s3] start
+2026-09-25 16:25:11,837 INFO [train_features_s3] 18.1s
+2026-09-25 16:25:20,773 INFO [train_model] start
+2026-09-25 16:25:26,028 INFO [train_model] 5.3s
+2026-09-25 16:25:26,130 INFO [scoring] start
+2026-09-25 16:25:27,168 INFO [scoring] 1.0s
+2026-09-25 16:25:27,851 INFO [threshold_sweep] start
+2026-09-25 16:25:28,003 INFO [threshold_sweep] 0.2s
+2026-09-25 16:25:29,080 INFO [error_analysis] start
+2026-09-25 16:25:54,379 INFO [error_analysis] 25.3s
+2026-09-25 16:25:54,495 INFO [output] start
+2026-09-25 16:26:00,875 INFO [output] 6.4s
+2026-09-25 16:26:00,875 INFO [validator] start
+2026-09-25 16:26:11,117 INFO [validator] 10.2s

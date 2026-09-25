@@ -1,0 +1,11 @@
+{
+  "source_run": "phase3/output/p3_empty_address_policy/50k/run_1",
+  "sha256": {
+    "artifacts/candidate_statistics.json": "c0221903170665e0a239cd72f6d956d17dbf5b87a088274f670d9c99f3dfa800",
+    "artifacts/model/feature_schema.json": "b90d7eb916c88e6b961fd38b308a1ad7d015f2ea4328c8cf65dc1fd13bd0cc47",
+    "artifacts/model/matcher.joblib": "84515491e7e51c75f9637d29fe30697474d4ce4910d59a5830233d53328f39a2",
+    "artifacts/threshold_results.json": "48f74b3a6dc1822e6b6dc7b8583b5a427acbb3c2c3030df4fcf0ea24abc8de26",
+    "config.yaml": "42d251561928ec30eda8dd6d6369f17dd578b9235536fadc47d8ad1aa9f388ae",
+    "source_run_manifest.json": "52abae0b5cda7a922999f8de2a078a26ad62822ff5e7c4fc71fe301d26c95fdd"
+  }
+}

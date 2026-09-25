@@ -1,0 +1,410 @@
+{
+  "threshold": 0.85,
+  "false_positives": {
+    "count": 18,
+    "examples": [
+      {
+        "s1": "S1-141941354",
+        "target": "S2-611603209",
+        "score": 0.9936,
+        "s1_name": "Bright Metro L.L.C.",
+        "target_name": "Bright Metro LLC",
+        "s1_address": "284 Danforth Street, Unit APT 104, Portland, ME",
+        "target_address": "297-D DANFORTH ST, PORTLAND, ME"
+      },
+      {
+        "s1": "S1-48068006",
+        "target": "S3-254755240",
+        "score": 0.9932,
+        "s1_name": "Zito Yhn LLC",
+        "target_name": "Johnson Yhn LLC",
+        "s1_address": "KY, 147 Frankie Drive, Richmond",
+        "target_address": "147 Frankie Drive, Richmond, Kentucky"
+      },
+      {
+        "s1": "S1-159871837",
+        "target": "S3-334539664",
+        "score": 0.9894,
+        "s1_name": "Dynamic Municipal",
+        "target_name": "CHACE MUNICIPAL",
+        "s1_address": "Indianapolis, IN, 8510 Castle Ridge Lane",
+        "target_address": "8510 Lake Clearwater Lane, Indianapolis, Indiana"
+      },
+      {
+        "s1": "S1-377912796",
+        "target": "S3-315645133",
+        "score": 0.9859,
+        "s1_name": "Vaayuora Solutions Private Limited",
+        "target_name": "Vaayuoyx Solutions Private",
+        "s1_address": "7Th Floor-719, Shivalik, Shilp, Iscon Cross Road, Ahmadabad City, Ahmedabad, Gujarat",
+        "target_address": "No 7Th Floor-719, Shivalik, Shilp, Iscon Cross Road, Ahmedabad, GJ"
+      },
+      {
+        "s1": "S1-402965427",
+        "target": "S3-559980580",
+        "score": 0.9779,
+        "s1_name": "Digital Wealth Alliance LLC",
+        "target_name": "Platinum",
+        "s1_address": "9314 Cherry Hill Road, Unit 609, College Park, MD",
+        "target_address": "9314 Cherry Hill Road, MD, Unit 507, College Park"
+      },
+      {
+        "s1": "S1-253227957",
+        "target": "S3-304333393",
+        "score": 0.971,
+        "s1_name": "Indraprastha Global",
+        "target_name": "Supreme",
+        "s1_address": "714-A, Tamil Nadu, 7Th Floor, Mount Road, Anna Salai, Chennai",
+        "target_address": "Tamil Nadu, 715 A, 7Th Floor, Spencer Plaza Suite No.244, Mount Road, Anna Salai, Chennai"
+      },
+      {
+        "s1": "S1-831456529",
+        "target": "S3-949115114",
+        "score": 0.9582,
+        "s1_name": "Grace Chapel",
+        "target_name": "Grace Chapel Inc",
+        "s1_address": "22 Lewis Drive, City Of Aberdeen, MD",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-426702569",
+        "target": "S2-185128751",
+        "score": 0.9551,
+        "s1_name": "Niranjan Apparels Pvt. Ltd.",
+        "target_name": "Niranjan Apparels",
+        "s1_address": "No.143, 3Rd Main, Avalahalli, Bda Layout, Bsk 3Rd Stage, Bangalore, Bangalore South, Bangalore, Karnataka",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-491138472",
+        "target": "S2-309541537",
+        "score": 0.954,
+        "s1_name": "Tejiya Developers Center",
+        "target_name": "Tejiari Developers Center",
+        "s1_address": "55 Amer Complex, Zone Ii, M.P. Nagar Mig 55 Near Pnb Bank, Bhopal, Madhya Pradesh",
+        "target_address": "NO ##76 AMER COMPLEX, ZONE II, M.P. NAGAR MIG 55 NEAR PNB BANK, BHOPAL, Madhya Pradesh"
+      },
+      {
+        "s1": "S1-941261133",
+        "target": "S3-827821346",
+        "score": 0.9454,
+        "s1_name": "Ricciardelli, Hilda C., O.D., PC",
+        "target_name": "Ricciardelli Hilda O.D. C. PC P.C.",
+        "s1_address": "21303 Sr 81, Spencerville, OH",
+        "target_address": ""
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 73,
+    "examples": [
+      {
+        "s1": "S1-237349399",
+        "target": "S3-5913767",
+        "score": 0.0006,
+        "s1_name": "Winner Best Limited",
+        "target_name": "Deltagild One",
+        "s1_address": "Sub Plot No. 6 60/61 Lati Bazar Gita Mandir Road, Ahmedabad, Gujarat",
+        "target_address": "Sub Plot No. 6 60/61 Lati Bazar Gita Mandir Road, Ahmedabad, Gujarat"
+      },
+      {
+        "s1": "S1-700383051",
+        "target": "S3-192725946",
+        "score": 0.0026,
+        "s1_name": "Delhi Communications Pvt. Ltd.",
+        "target_name": "DELHI COMMUNICATIONS PVT. LTD. - 9979997195",
+        "s1_address": "652 First Floor Phatak Dupty Sultan Churiwalan, Delhi, Central Delhi, Delhi",
+        "target_address": "Delhi, Central Delhi, 650 First Floor Phatak Dupty Sultan Churiwalan, DL"
+      },
+      {
+        "s1": "S1-910304460",
+        "target": "S3-472183393",
+        "score": 0.0041,
+        "s1_name": "Mohammad Brothers Private Limited",
+        "target_name": "Dr Mohammad Brothers Limited Service",
+        "s1_address": "No.34, Godown Street, Madras.1. Madras.1., Madras.1., Tamil Nadu",
+        "target_address": "Madras.1. Madras.1., Godown Street, TN, Madras.1., No.0034"
+      },
+      {
+        "s1": "S1-313448121",
+        "target": "S3-667053896",
+        "score": 0.0063,
+        "s1_name": "Signature Nutrition Group",
+        "target_name": "Signature Nutrition Group - 8090366936",
+        "s1_address": "2006 Presbury Street, Baltimore, MD",
+        "target_address": "1627 Presbury Street, Baltimore, Maryland"
+      },
+      {
+        "s1": "S1-736969873",
+        "target": "S3-69609194",
+        "score": 0.0121,
+        "s1_name": "Sangameshwar Brothers Care",
+        "target_name": "Smt sbcare.com",
+        "s1_address": "Prestige Trade Towerno.46, 23Rd Floor Palace Road, Bangalore North, Bangalore, Karnataka",
+        "target_address": "Prstige Trade Towerno.##46, 23Rd Floor Palace Road, Bengaluru, Bangalore, KA"
+      },
+      {
+        "s1": "S1-193618187",
+        "target": "S2-641725400",
+        "score": 0.0123,
+        "s1_name": "YWH Convertible LLC",
+        "target_name": "YWH LLC Center",
+        "s1_address": "6220 Harvest Street, Springfield, OH",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-630494536",
+        "target": "S2-605458161",
+        "score": 0.0124,
+        "s1_name": "Prairie Auto Inc",
+        "target_name": "prairie auto inc",
+        "s1_address": "16554 Brigadoon Trail, Gulf Shores, AL",
+        "target_address": "AL, BALDWIN COUNTY, 1655 BRIGADOON TRL"
+      },
+      {
+        "s1": "S1-145490067",
+        "target": "S3-345085995",
+        "score": 0.0137,
+        "s1_name": "Urban Pizza",
+        "target_name": "Urban Pizza Center",
+        "s1_address": "Montgomery, 6959 Sandfield Drive, AL",
+        "target_address": "6886 Sandfield Drive, Montgomery, Alabama"
+      },
+      {
+        "s1": "S1-274659648",
+        "target": "S3-218749853",
+        "score": 0.0173,
+        "s1_name": "Integrated Media Concepts Corp",
+        "target_name": "Calokeloevo",
+        "s1_address": "Kingsport, 3907 Skyland Drive, TN",
+        "target_address": "390 Skyland Drive, Kingsport, Tennessee"
+      },
+      {
+        "s1": "S1-951832034",
+        "target": "S3-402101530",
+        "score": 0.0176,
+        "s1_name": "Markham and Bacchus",
+        "target_name": "Markham and Bacchus Service",
+        "s1_address": "181 Arnold Gamble Circle, Sacramento, CA",
+        "target_address": "30 Arnold Gamble Cir, Sacramento, California"
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 35,
+    "examples": [
+      {
+        "s1": "S1-109666175",
+        "target": "S2-523332136",
+        "score": NaN,
+        "s1_name": "Village Of Somers Community Services",
+        "target_name": "Village  Of Somers Community",
+        "s1_address": "7809 12th Street, Village Of Somers, WI",
+        "target_address": "TWELFTH STREET, KENOSHA, WI"
+      },
+      {
+        "s1": "S1-128350097",
+        "target": "S2-928954639",
+        "score": NaN,
+        "s1_name": "Fu, Emmert & Perkins Oaktree",
+        "target_name": "FU, ERMRT & PERKINS OAKTREE",
+        "s1_address": "1710 Mount Hood Street, The Dalles, OR",
+        "target_address": "1708 MOUNT HOOD ST, THE DALLES, OR"
+      },
+      {
+        "s1": "S1-139619805",
+        "target": "S2-307706648",
+        "score": NaN,
+        "s1_name": "Super Medical Centre Company",
+        "target_name": "Super Miecal Centre Company",
+        "s1_address": "Kalamassery, Kerala, Ernakulam, Kummancheri Junction Changhampuzha Nagar, Pathadippalam, 23/163A",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-144748187",
+        "target": "S2-921645598",
+        "score": NaN,
+        "s1_name": "Urology Physicians LLC",
+        "target_name": "Urology Physícians (LLC)",
+        "s1_address": "1689 Parco Avenue, Ontario, CA",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-209008446",
+        "target": "S2-992532092",
+        "score": NaN,
+        "s1_name": "Bharat Food Private Limited",
+        "target_name": "भारत फूड प्राइवेट लिमिटेड",
+        "s1_address": "Flat No.701, A Wing Ambika Plaza, 90 Feet Road, Mulund (E), Mumbai, Maharashtra",
+        "target_address": "H.NO 701, MULUND (E), MUMBAI, Maharashtra"
+      },
+      {
+        "s1": "S1-361859792",
+        "target": "S3-135249363",
+        "score": NaN,
+        "s1_name": "Sampati & Co",
+        "target_name": "Smgi & Co",
+        "s1_address": "Delhi, House No 922, North West, Delhi, Khasra No 177 Ground Floor Near Shiv Mandir Village Jaunti",
+        "target_address": "#97 House No 922, Delhi, North West, DL"
+      },
+      {
+        "s1": "S1-443154384",
+        "target": "S2-994491779",
+        "score": NaN,
+        "s1_name": "Span Media Limited",
+        "target_name": "Limited Span Measaia",
+        "s1_address": "D- 298, Basement Defence Colony, New Delhi, Delhi",
+        "target_address": "D- 298, C-4 , JANAK PURI, NEW DELHI, Delhi"
+      },
+      {
+        "s1": "S1-456427404",
+        "target": "S2-345725843",
+        "score": NaN,
+        "s1_name": "Cozy Nails! PLLC",
+        "target_name": "Cozy Nails!",
+        "s1_address": "MN, 13977 East Road, Lake Park",
+        "target_address": "MN, LAKE PARK, 1397 EAST RD"
+      },
+      {
+        "s1": "S1-46506909",
+        "target": "S2-973316855",
+        "score": NaN,
+        "s1_name": "High Shyam Builders Pvt Ltd",
+        "target_name": "ഹൈ ശ്യാം ബിൽഡേഴ്സ് പ്രൈവറ്റ് ലിമിറ്റഡ്",
+        "s1_address": "62/1963/B12, Muslim Orphanage Building, Kozhikode, Kerala",
+        "target_address": "KOZHIKODE, 62/1963/B12, KOZHIKODE, Kerala"
+      },
+      {
+        "s1": "S1-46506909",
+        "target": "S3-69478476",
+        "score": NaN,
+        "s1_name": "High Shyam Builders Pvt Ltd",
+        "target_name": "ഹൈ ശ്യാം ബിൽഡേഴ്സ് പ്രൈവറ്റ് ലിമിറ്റഡ്",
+        "s1_address": "62/1963/B12, Muslim Orphanage Building, Kozhikode, Kerala",
+        "target_address": "Kozikode, Kozhikode, 5-62/1963/B12, കേരളം"
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-237349399",
+      "target": "S3-5913767",
+      "score": 0.0006,
+      "s1_name": "Winner Best Limited",
+      "target_name": "Deltagild One",
+      "s1_address": "Sub Plot No. 6 60/61 Lati Bazar Gita Mandir Road, Ahmedabad, Gujarat",
+      "target_address": "Sub Plot No. 6 60/61 Lati Bazar Gita Mandir Road, Ahmedabad, Gujarat"
+    },
+    {
+      "s1": "S1-700383051",
+      "target": "S3-192725946",
+      "score": 0.0026,
+      "s1_name": "Delhi Communications Pvt. Ltd.",
+      "target_name": "DELHI COMMUNICATIONS PVT. LTD. - 9979997195",
+      "s1_address": "652 First Floor Phatak Dupty Sultan Churiwalan, Delhi, Central Delhi, Delhi",
+      "target_address": "Delhi, Central Delhi, 650 First Floor Phatak Dupty Sultan Churiwalan, DL"
+    },
+    {
+      "s1": "S1-910304460",
+      "target": "S3-472183393",
+      "score": 0.0041,
+      "s1_name": "Mohammad Brothers Private Limited",
+      "target_name": "Dr Mohammad Brothers Limited Service",
+      "s1_address": "No.34, Godown Street, Madras.1. Madras.1., Madras.1., Tamil Nadu",
+      "target_address": "Madras.1. Madras.1., Godown Street, TN, Madras.1., No.0034"
+    },
+    {
+      "s1": "S1-313448121",
+      "target": "S3-667053896",
+      "score": 0.0063,
+      "s1_name": "Signature Nutrition Group",
+      "target_name": "Signature Nutrition Group - 8090366936",
+      "s1_address": "2006 Presbury Street, Baltimore, MD",
+      "target_address": "1627 Presbury Street, Baltimore, Maryland"
+    },
+    {
+      "s1": "S1-736969873",
+      "target": "S3-69609194",
+      "score": 0.0121,
+      "s1_name": "Sangameshwar Brothers Care",
+      "target_name": "Smt sbcare.com",
+      "s1_address": "Prestige Trade Towerno.46, 23Rd Floor Palace Road, Bangalore North, Bangalore, Karnataka",
+      "target_address": "Prstige Trade Towerno.##46, 23Rd Floor Palace Road, Bengaluru, Bangalore, KA"
+    },
+    {
+      "s1": "S1-193618187",
+      "target": "S2-641725400",
+      "score": 0.0123,
+      "s1_name": "YWH Convertible LLC",
+      "target_name": "YWH LLC Center",
+      "s1_address": "6220 Harvest Street, Springfield, OH",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-630494536",
+      "target": "S2-605458161",
+      "score": 0.0124,
+      "s1_name": "Prairie Auto Inc",
+      "target_name": "prairie auto inc",
+      "s1_address": "16554 Brigadoon Trail, Gulf Shores, AL",
+      "target_address": "AL, BALDWIN COUNTY, 1655 BRIGADOON TRL"
+    },
+    {
+      "s1": "S1-145490067",
+      "target": "S3-345085995",
+      "score": 0.0137,
+      "s1_name": "Urban Pizza",
+      "target_name": "Urban Pizza Center",
+      "s1_address": "Montgomery, 6959 Sandfield Drive, AL",
+      "target_address": "6886 Sandfield Drive, Montgomery, Alabama"
+    },
+    {
+      "s1": "S1-274659648",
+      "target": "S3-218749853",
+      "score": 0.0173,
+      "s1_name": "Integrated Media Concepts Corp",
+      "target_name": "Calokeloevo",
+      "s1_address": "Kingsport, 3907 Skyland Drive, TN",
+      "target_address": "390 Skyland Drive, Kingsport, Tennessee"
+    },
+    {
+      "s1": "S1-951832034",
+      "target": "S3-402101530",
+      "score": 0.0176,
+      "s1_name": "Markham and Bacchus",
+      "target_name": "Markham and Bacchus Service",
+      "s1_address": "181 Arnold Gamble Circle, Sacramento, CA",
+      "target_address": "30 Arnold Gamble Cir, Sacramento, California"
+    }
+  ],
+  "zero_match_entities": {
+    "count": 17,
+    "predicted_empty": 15,
+    "false_merge_examples": [
+      {
+        "s1": "S1-159871837",
+        "target": "S3-334539664",
+        "score": 0.9894,
+        "s1_name": "Dynamic Municipal",
+        "target_name": "CHACE MUNICIPAL",
+        "s1_address": "Indianapolis, IN, 8510 Castle Ridge Lane",
+        "target_address": "8510 Lake Clearwater Lane, Indianapolis, Indiana"
+      },
+      {
+        "s1": "S1-925859038",
+        "target": "S3-362365885",
+        "score": 0.8768,
+        "s1_name": "Express Wireless Innovations",
+        "target_name": "Quoaviquo",
+        "s1_address": "204 Wayside Court, Bedford, TX",
+        "target_address": "204 Wayside Court, Bedford, Texas"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 169,
+    "mean_true_matches": 4.006,
+    "mean_predicted": 3.473,
+    "predicted_at_least_two": 159
+  }
+}
