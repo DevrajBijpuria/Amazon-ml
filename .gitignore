@@ -1,17 +1,15 @@
-# challenge data is not redistributed
+# challenge data is not redistributed (and each file exceeds GitHub's 100 MB limit)
 dataset/
+phase2/output/**/test_subset/
 
 # Python / pytest
 __pycache__/
 *.pyc
 .pytest_cache/
 
-# large or regenerable run outputs
-*.npy
-*.log
-*.mem.csv
-phase2/output/**/test_subset/
+# over GitHub's 100 MB per-file limit
+phase2/output/phase2_5/frozen_50000/output/full/candidate_pairs.tsv
+phase2/output/phase2_5/candsets/10k/b0/features.npy
+
+# temporary validator shards
 phase2/output/**/_validator_shards/
-phase2/output/phase2_5/candsets/
-phase2/output/**/*.tsv
-!phase2/output/**/validation_entities.tsv
