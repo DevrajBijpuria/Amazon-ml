@@ -1,0 +1,437 @@
+{
+  "threshold": 0.8,
+  "false_positives": {
+    "count": 49,
+    "examples": [
+      {
+        "s1": "S1-116338782",
+        "target": "S2-402815945",
+        "score": 0.9999,
+        "s1_name": "Rocky Ministries Corp",
+        "target_name": "Rocky Ministries Harbor Corp",
+        "s1_address": "1026 1/2 Bridge Street, Unit 1/2, Columbia, TN",
+        "target_address": "NULL, TN, 1026 1/15 BRIDGE STREET, COLUMBIA"
+      },
+      {
+        "s1": "S1-557022307",
+        "target": "S2-229162590",
+        "score": 0.9997,
+        "s1_name": "DTM Solutions Limited",
+        "target_name": "DTV Solutions Limited",
+        "s1_address": "Plot No.699, Flat No.Gm-1, Meenal Apt. Shalimar Garden Extension - 1, Sahibabad, Ghaziabad, Uttar Pradesh",
+        "target_address": "702/2 , FLAT NO.GM-1, MEENAL APT. SHALIMAR GARTEN EXTENSION - 1, SAHIBABAD, Uttar Pradesh"
+      },
+      {
+        "s1": "S1-680997139",
+        "target": "S2-784387477",
+        "score": 0.9992,
+        "s1_name": "Consultants Godbole (india) Pvt Ltd",
+        "target_name": "Consultants Godbole (india) Group Pvt Ltd",
+        "s1_address": "C/O- Manoj Kumar Singh, Bhagwanpur, Mushahari, Muzaffarpur, Bihar",
+        "target_address": "H.NO 69/5 C/O- MANOJ KUMAR SINGH, BHAGWANPUR, MUSHAHARI, Bihar"
+      },
+      {
+        "s1": "S1-772206302",
+        "target": "S3-28141358",
+        "score": 0.9961,
+        "s1_name": "Accurate Vidyalaya",
+        "target_name": "Sreeram Vidyalaya",
+        "s1_address": "Ganpati Indigo, Near Gaayodhya By Pass, H No - 10, Madhya Pradesh, Bhopal",
+        "target_address": "House No. 10, Bhopal, MP"
+      },
+      {
+        "s1": "S1-393259793",
+        "target": "S3-506660295",
+        "score": 0.9945,
+        "s1_name": "Innova Care Ltd",
+        "target_name": "Innova  Marketing",
+        "s1_address": "34, Pelican Ind Estate, Road No 5 Kathwada Gidc, Daskroi, Ahmedabad, Gujarat",
+        "target_address": "55, Pelican Ind Estate, Road No 5 Kathwada Gidc, Daskroi, Ahmedabad, GJ"
+      },
+      {
+        "s1": "S1-607139509",
+        "target": "S2-346699671",
+        "score": 0.9935,
+        "s1_name": "Apex Elite Fox",
+        "target_name": "APEX ELITE FOX GROUP",
+        "s1_address": "137 Chesterfield Way, Folsom, CA",
+        "target_address": "141 CHESTERFIELD WAY, FOLSOM, CA"
+      },
+      {
+        "s1": "S1-573427830",
+        "target": "S3-476424970",
+        "score": 0.9925,
+        "s1_name": "Wildlife Network",
+        "target_name": "[LLC] Wildlife Network",
+        "s1_address": "5587 Fox Chase Drive, Hokah, MN",
+        "target_address": "5596 Fox Chase Dr, Hokah, Minnesota"
+      },
+      {
+        "s1": "S1-214131574",
+        "target": "S3-349805237",
+        "score": 0.9882,
+        "s1_name": "Vertex Esports, L.L.C.",
+        "target_name": "Vertex, LLC",
+        "s1_address": "7767 White Chapel Road, OH, Licking Twp",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-163249957",
+        "target": "S3-395565336",
+        "score": 0.9854,
+        "s1_name": "Empire Investments, LLC",
+        "target_name": "Door LLC Investments",
+        "s1_address": "5145 45, Auburn, IN",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-825411169",
+        "target": "S2-529566185",
+        "score": 0.9854,
+        "s1_name": "Redstone Traders Private Limited",
+        "target_name": "REDSTONE TRADERS ENTERPRISES PRIVATE LTD",
+        "s1_address": "4 Hari Nivas C Road Churchgate Mumbai, Mumbai, Mumbai City, Maharashtra",
+        "target_address": "NO 5 HARI NIVAS C ROAD CHURCHGATE MUMBAI, MUMBAI, Maharashtra"
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 64,
+    "examples": [
+      {
+        "s1": "S1-342344172",
+        "target": "S2-130834849",
+        "score": 0.0002,
+        "s1_name": "Panvel Sugar Limited",
+        "target_name": "Iridova",
+        "s1_address": "Shop No. 4, Ground Floor, Swami Smarth Chs, Plot Number - E1/C, Sector Number - 12, Panvel, Raigarh(Mh), Maharashtra",
+        "target_address": "DOOR NO 3, Maharashtra, RAIGARH(MH)"
+      },
+      {
+        "s1": "S1-690151152",
+        "target": "S2-228559678",
+        "score": 0.0003,
+        "s1_name": "Masco Foundation",
+        "target_name": "Shri Masco Service",
+        "s1_address": "167 Ground Floor Abhay Khand - 1, Indrapuram, Ghaziabad, Uttar Pradesh",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-51145721",
+        "target": "S3-384554073",
+        "score": 0.0004,
+        "s1_name": "Baptist Services",
+        "target_name": "Baptist-Center Enterprises",
+        "s1_address": "217 Springbrook Lane, Chesapeake City, VA",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-539406463",
+        "target": "S3-519560115",
+        "score": 0.0009,
+        "s1_name": "Genetic Heights",
+        "target_name": "Shri -- 6enetic Heights",
+        "s1_address": "Flat No 302, Orange Homes, Adorn, K V R Rainbowcolony, Qutubullapur, K.V.Rangareddy, Telangana",
+        "target_address": "298, Qutubullapur, K.v.rangareddy, TG"
+      },
+      {
+        "s1": "S1-324704727",
+        "target": "S2-4097610",
+        "score": 0.0009,
+        "s1_name": "OQ Purpose Co",
+        "target_name": "Dovabelo",
+        "s1_address": "D-7, Phase Iii Garden Homes Alkapuri, Gwalior, Madhya Pradesh",
+        "target_address": "H.NO 87 D-7, GWALIOR, Madhya Pradesh"
+      },
+      {
+        "s1": "S1-900817625",
+        "target": "S3-772786324",
+        "score": 0.001,
+        "s1_name": "Cameron Allied Priority",
+        "target_name": "Cameron  Priority Partners",
+        "s1_address": "N4231 C, Town Of Freedom, WI",
+        "target_address": "N423 C, PMB 8248, Kaukauuna CDP, Wisconsin"
+      },
+      {
+        "s1": "S1-685048543",
+        "target": "S3-975683365",
+        "score": 0.0022,
+        "s1_name": "Ghanshyam Milk",
+        "target_name": "Ghanshyam Me",
+        "s1_address": "5Th Floor, 502, Meraki Arena, Cts No. 619/14 619/15 619/21A 21B, V N Purav Marg, Opp R K Studio, Chembur East, Mumbai, Maharashtra",
+        "target_address": "Floor, Mumbai (SUBURBAN), MH"
+      },
+      {
+        "s1": "S1-977292711",
+        "target": "S2-256007340",
+        "score": 0.0029,
+        "s1_name": "Sai Innovative Exports Private Limited",
+        "target_name": "ସାଇ ଇନୋଭେଟିଭ୍ ଏକ୍ସପୋର୍ଟସ୍ ପ୍ରାଇଭେଟ୍ ଲିମିଟେଡ୍",
+        "s1_address": "Plot No-355, Rohini Villa, Taraboi, Baniatangi, Jatni, Khordha, Orissa",
+        "target_address": "PCOT NO-00355, JATNI, JATANI, Orissa"
+      },
+      {
+        "s1": "S1-667264941",
+        "target": "S3-810666500",
+        "score": 0.0038,
+        "s1_name": "Bright Bright Corporate, Inc",
+        "target_name": "Bright  Bright Cofeforate, Inc",
+        "s1_address": "35142 Lead Line Road, Virden, IL",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-916679619",
+        "target": "S3-677979213",
+        "score": 0.0047,
+        "s1_name": "Tramel Holding Company PLLC",
+        "target_name": "Cal0evo",
+        "s1_address": "300 Charles Street, Unit APT 201, Baltimore, MD",
+        "target_address": "0300 Charles St, Baltimore, Maryland"
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 51,
+    "examples": [
+      {
+        "s1": "S1-119033930",
+        "target": "S3-45249084",
+        "score": NaN,
+        "s1_name": "Royal Technology Private Limited",
+        "target_name": "रॉयल टेक्नोलॉजी प्राइवेट लिमिटेड",
+        "s1_address": "G-8-A, No. 1, Bhagirath Palace, North East, Delhi, 1737",
+        "target_address": "737, North East, Delhi, दिल्ली"
+      },
+      {
+        "s1": "S1-119033930",
+        "target": "S3-745743078",
+        "score": NaN,
+        "s1_name": "Royal Technology Private Limited",
+        "target_name": "रॉयल टेक्नोलॉजी प्राइवेट लिमिटेड",
+        "s1_address": "G-8-A, No. 1, Bhagirath Palace, North East, Delhi, 1737",
+        "target_address": "737, North East, Delhi, दिल्ली"
+      },
+      {
+        "s1": "S1-119187241",
+        "target": "S2-865100548",
+        "score": NaN,
+        "s1_name": "Silver Classic Industries Private Limited",
+        "target_name": "சில்வர் கிளாசிக் இண்டஸ்ட்ரீஸ் பிரைவேட் லிமிடெட்",
+        "s1_address": "Dr.No.299, Anandha Nagar, Gudalur (N) And (S), Coimbatore North, Coimbatore, Tamil Nadu",
+        "target_address": "COIMBATORE, COIMBATORE NORTH, DR.NO.299, தமிழ்நாடு"
+      },
+      {
+        "s1": "S1-202025302",
+        "target": "S3-285987646",
+        "score": NaN,
+        "s1_name": "Oncology Associates LLC",
+        "target_name": "Oncology Associates L.L.C. Trading",
+        "s1_address": "2310 Iris Drive, Sierra Vista, AZ",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-255217115",
+        "target": "S2-798805961",
+        "score": NaN,
+        "s1_name": "My Investments LLP",
+        "target_name": "మై ఇన్వెస్ట్‌మెంట్స్ ఎల్‌ఎల్‌పీ",
+        "s1_address": "22-6-270/3/8, Balala Shopping Mall, Machli Kaman, Charminar, Hyderabad, Telangana",
+        "target_address": "22-6-270/3/8, HYDERABAD, Telangana"
+      },
+      {
+        "s1": "S1-261169281",
+        "target": "S2-927345730",
+        "score": NaN,
+        "s1_name": "U 3 K Steel",
+        "target_name": "U 3 K",
+        "s1_address": "5200 Clairemont Drive, Town Of Grand Chute, WI",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-263753520",
+        "target": "S2-171637668",
+        "score": NaN,
+        "s1_name": "Silver Industries Private Limited",
+        "target_name": "सिल्वर इंडस्ट्रीज प्राइवेट लिमिटेड",
+        "s1_address": "House No.65 (Basement), Furniture Block, Kirti Nagar, New Delhi, West Delhi, Delhi",
+        "target_address": "NO. 208 HOUSE NO.65 (BASEMENT), NEW DELHI, Delhi"
+      },
+      {
+        "s1": "S1-270293020",
+        "target": "S2-336292518",
+        "score": NaN,
+        "s1_name": "Northern Advanced Lincoln LP",
+        "target_name": "Northem Advanced",
+        "s1_address": "3250 Lake Road, Lancaster, OH",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-309089131",
+        "target": "S3-447370721",
+        "score": NaN,
+        "s1_name": "Future Impex Limited",
+        "target_name": "M/s Future  Impex",
+        "s1_address": "Orissa, Flat No-324, Northern Heights Kalarahanga, Khordha, Bhubaneswar",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-309089131",
+        "target": "S3-994619470",
+        "score": NaN,
+        "s1_name": "Future Impex Limited",
+        "target_name": "Quoavi",
+        "s1_address": "Orissa, Flat No-324, Northern Heights Kalarahanga, Khordha, Bhubaneswar",
+        "target_address": "Door No 621 Flat No-324, Bhubaneswar, Khordha, OD"
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-342344172",
+      "target": "S2-130834849",
+      "score": 0.0002,
+      "s1_name": "Panvel Sugar Limited",
+      "target_name": "Iridova",
+      "s1_address": "Shop No. 4, Ground Floor, Swami Smarth Chs, Plot Number - E1/C, Sector Number - 12, Panvel, Raigarh(Mh), Maharashtra",
+      "target_address": "DOOR NO 3, Maharashtra, RAIGARH(MH)"
+    },
+    {
+      "s1": "S1-690151152",
+      "target": "S2-228559678",
+      "score": 0.0003,
+      "s1_name": "Masco Foundation",
+      "target_name": "Shri Masco Service",
+      "s1_address": "167 Ground Floor Abhay Khand - 1, Indrapuram, Ghaziabad, Uttar Pradesh",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-51145721",
+      "target": "S3-384554073",
+      "score": 0.0004,
+      "s1_name": "Baptist Services",
+      "target_name": "Baptist-Center Enterprises",
+      "s1_address": "217 Springbrook Lane, Chesapeake City, VA",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-539406463",
+      "target": "S3-519560115",
+      "score": 0.0009,
+      "s1_name": "Genetic Heights",
+      "target_name": "Shri -- 6enetic Heights",
+      "s1_address": "Flat No 302, Orange Homes, Adorn, K V R Rainbowcolony, Qutubullapur, K.V.Rangareddy, Telangana",
+      "target_address": "298, Qutubullapur, K.v.rangareddy, TG"
+    },
+    {
+      "s1": "S1-324704727",
+      "target": "S2-4097610",
+      "score": 0.0009,
+      "s1_name": "OQ Purpose Co",
+      "target_name": "Dovabelo",
+      "s1_address": "D-7, Phase Iii Garden Homes Alkapuri, Gwalior, Madhya Pradesh",
+      "target_address": "H.NO 87 D-7, GWALIOR, Madhya Pradesh"
+    },
+    {
+      "s1": "S1-900817625",
+      "target": "S3-772786324",
+      "score": 0.001,
+      "s1_name": "Cameron Allied Priority",
+      "target_name": "Cameron  Priority Partners",
+      "s1_address": "N4231 C, Town Of Freedom, WI",
+      "target_address": "N423 C, PMB 8248, Kaukauuna CDP, Wisconsin"
+    },
+    {
+      "s1": "S1-685048543",
+      "target": "S3-975683365",
+      "score": 0.0022,
+      "s1_name": "Ghanshyam Milk",
+      "target_name": "Ghanshyam Me",
+      "s1_address": "5Th Floor, 502, Meraki Arena, Cts No. 619/14 619/15 619/21A 21B, V N Purav Marg, Opp R K Studio, Chembur East, Mumbai, Maharashtra",
+      "target_address": "Floor, Mumbai (SUBURBAN), MH"
+    },
+    {
+      "s1": "S1-977292711",
+      "target": "S2-256007340",
+      "score": 0.0029,
+      "s1_name": "Sai Innovative Exports Private Limited",
+      "target_name": "ସାଇ ଇନୋଭେଟିଭ୍ ଏକ୍ସପୋର୍ଟସ୍ ପ୍ରାଇଭେଟ୍ ଲିମିଟେଡ୍",
+      "s1_address": "Plot No-355, Rohini Villa, Taraboi, Baniatangi, Jatni, Khordha, Orissa",
+      "target_address": "PCOT NO-00355, JATNI, JATANI, Orissa"
+    },
+    {
+      "s1": "S1-667264941",
+      "target": "S3-810666500",
+      "score": 0.0038,
+      "s1_name": "Bright Bright Corporate, Inc",
+      "target_name": "Bright  Bright Cofeforate, Inc",
+      "s1_address": "35142 Lead Line Road, Virden, IL",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-916679619",
+      "target": "S3-677979213",
+      "score": 0.0047,
+      "s1_name": "Tramel Holding Company PLLC",
+      "target_name": "Cal0evo",
+      "s1_address": "300 Charles Street, Unit APT 201, Baltimore, MD",
+      "target_address": "0300 Charles St, Baltimore, Maryland"
+    }
+  ],
+  "zero_match_entities": {
+    "count": 54,
+    "predicted_empty": 50,
+    "false_merge_examples": [
+      {
+        "s1": "S1-116338782",
+        "target": "S2-402815945",
+        "score": 0.9999,
+        "s1_name": "Rocky Ministries Corp",
+        "target_name": "Rocky Ministries Harbor Corp",
+        "s1_address": "1026 1/2 Bridge Street, Unit 1/2, Columbia, TN",
+        "target_address": "NULL, TN, 1026 1/15 BRIDGE STREET, COLUMBIA"
+      },
+      {
+        "s1": "S1-393259793",
+        "target": "S3-506660295",
+        "score": 0.9945,
+        "s1_name": "Innova Care Ltd",
+        "target_name": "Innova  Marketing",
+        "s1_address": "34, Pelican Ind Estate, Road No 5 Kathwada Gidc, Daskroi, Ahmedabad, Gujarat",
+        "target_address": "55, Pelican Ind Estate, Road No 5 Kathwada Gidc, Daskroi, Ahmedabad, GJ"
+      },
+      {
+        "s1": "S1-360795448",
+        "target": "S3-140801565",
+        "score": 0.9519,
+        "s1_name": "Department of Health",
+        "target_name": "Department Housing-of",
+        "s1_address": "464 Howard Hill Road, Newark Valley, NY",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-360795448",
+        "target": "S2-283683612",
+        "score": 0.9478,
+        "s1_name": "Department of Health",
+        "target_name": "Department of Health (Inc)",
+        "s1_address": "464 Howard Hill Road, Newark Valley, NY",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-268651992",
+        "target": "S2-648003261",
+        "score": 0.8636,
+        "s1_name": "Davidson Vulcan",
+        "target_name": "Owens Vulcan",
+        "s1_address": "501 Main Street, Loretto, TN",
+        "target_address": "TN, LORETTO, 51 MAIN ST"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 898,
+    "mean_true_matches": 3.808,
+    "mean_predicted": 3.727,
+    "predicted_at_least_two": 879
+  }
+}

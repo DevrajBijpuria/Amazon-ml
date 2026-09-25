@@ -1,0 +1,9 @@
+﻿{
+    "name":  "blocking_10k",
+    "args":  "phase2/src/phase2_5.py blocking --scale 10k",
+    "exit_code":  0,
+    "wall_seconds":  1752.1,
+    "main_process_peak_working_set_mb":  9654,
+    "all_python_processes_peak_mb":  9777,
+    "samples":  866
+}

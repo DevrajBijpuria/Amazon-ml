@@ -1,0 +1,9 @@
+﻿{
+    "name":  "blocking_dev",
+    "args":  "phase2/src/phase2_5.py blocking --scale dev",
+    "exit_code":  0,
+    "wall_seconds":  317.2,
+    "main_process_peak_working_set_mb":  2329,
+    "all_python_processes_peak_mb":  2893,
+    "samples":  156
+}

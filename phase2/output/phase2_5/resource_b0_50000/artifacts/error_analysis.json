@@ -1,0 +1,482 @@
+{
+  "threshold": 0.65,
+  "false_positives": {
+    "count": 1353,
+    "examples": [
+      {
+        "s1": "S1-879684008",
+        "target": "S2-43708311",
+        "score": 0.9995,
+        "s1_name": "Conmat Solutions Private Limited",
+        "target_name": "CONMAT SOLUTIONS LIMITED",
+        "s1_address": "Maharashtra, Navghar Rd, Bhd Geeta Bhawan Bhayander(E), Thane, F/201 Ishwar Pooja Park Blog No. 3",
+        "target_address": "F/201 ISHWRA POOJA PARK BLOG NO. 10, NAVGHAR RD, BHD GEETA BHAWAN BHAYANDER(E), THANE, Maharashtra"
+      },
+      {
+        "s1": "S1-383911575",
+        "target": "S3-574566767",
+        "score": 0.9993,
+        "s1_name": "Noida Rubber Private Limited",
+        "target_name": "Noida Rubber Limited",
+        "s1_address": "Uttar Pradesh, Gautam Buddha Nagar, Noida, Shop No.-Lgf07 W-Block Homes 121 Sector -121",
+        "target_address": "Shop No.-lgf07 W-block Homes 121 Sector -124, Gautam Buddha Nagar, Noida, उत्तर प्रदेश"
+      },
+      {
+        "s1": "S1-16059640",
+        "target": "S3-644604118",
+        "score": 0.9993,
+        "s1_name": "Nadean K. Dicicco, DDS LLC",
+        "target_name": "Nadean K. Dicicco, DDDS LLC",
+        "s1_address": "1204 La Delle Street, Wharton, TX",
+        "target_address": "1204 La Delle Street, Wharton, Texas"
+      },
+      {
+        "s1": "S1-979775943",
+        "target": "S3-905773958",
+        "score": 0.9991,
+        "s1_name": "Yamuin Rail Pvt Ltd",
+        "target_name": "YAMMUIN RAIL PVT LTD",
+        "s1_address": "Phulwari, Patna, Bihar, 179A, Patliputra Col Boring Rd., Madan Mohan Dwivedi",
+        "target_address": "Madan Mohan Dwivedi, Patna, BR, 179A, Patliputra Col Boring Rd., Phulwari"
+      },
+      {
+        "s1": "S1-253908489",
+        "target": "S2-713459798",
+        "score": 0.9991,
+        "s1_name": "Lyreus Defense Inc",
+        "target_name": "LYREUSA DEFENSE",
+        "s1_address": "11726 Paysons Way, Fairfax County, VA",
+        "target_address": "FAIRFAX COUNTY, VA, 11726 PAYSONS WAY"
+      },
+      {
+        "s1": "S1-563648342",
+        "target": "S2-592528491",
+        "score": 0.999,
+        "s1_name": "United Properties Limited",
+        "target_name": "యునైటెడ్ ప్రాజెక్ట్స్ లిమిటెడ్",
+        "s1_address": "5-178/A30C, Lal Bhadur, Nagar, Maszid Opp Road, Mangalagiri, Guntur, Andhra Pradesh",
+        "target_address": "5-178/A43C, LAL BHADUR, NAGAR, MASZID OPP ROAD, GUNTUR, MANGALAGIRI, Andhra Pradesh"
+      },
+      {
+        "s1": "S1-725786214",
+        "target": "S3-63534876",
+        "score": 0.9989,
+        "s1_name": "Caldon Bain",
+        "target_name": "caldan bain",
+        "s1_address": "Baltimore, 2732 Chesley Avenue, MD",
+        "target_address": "2732 Chesley Ave, Baltimore, Maryland"
+      },
+      {
+        "s1": "S1-57216413",
+        "target": "S3-577439743",
+        "score": 0.9986,
+        "s1_name": "Devtech Automation Limited",
+        "target_name": "Devtecha Aut0magtion Limited",
+        "s1_address": "F-16, Ff F Rajouri Garden Near Mcd Office, New Delhi, West Delhi, Delhi",
+        "target_address": "F-16, Ff F Rajouri Garden Near Mcd Office, New Delhi, West Delhi, दिल्ली"
+      },
+      {
+        "s1": "S1-301010886",
+        "target": "S3-250475004",
+        "score": 0.9986,
+        "s1_name": "Malia Dowell Premier Fuels",
+        "target_name": "Malia Dowell Premier Fuels Ltd",
+        "s1_address": "505 299th Street, Roy, WA",
+        "target_address": "Roy, Washington, 505 299th St"
+      },
+      {
+        "s1": "S1-445204659",
+        "target": "S2-42658472",
+        "score": 0.9984,
+        "s1_name": "TU Remedies Private Limited",
+        "target_name": "TW Remedies Private Ltd",
+        "s1_address": "Ghaziabad, Uttar Pradesh, Ghaziabad, Commercial Space No.82 First Floor Plot No.160 Village Arthala Gt Road",
+        "target_address": "COMMERCIAL SPACE NO.82 FIRST FLOOR PLOT NO.161 VILLAGE ARTHALA GT ROAD, GHAZIABAD, उत्तर प्रदेश"
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 4357,
+    "examples": [
+      {
+        "s1": "S1-236696801",
+        "target": "S3-851368753",
+        "score": 0.0004,
+        "s1_name": "Day, Rodriguez and Marsh Tbk",
+        "target_name": "Day, Rodriguez And  Marsh Tbk Inc. | www.dayrodri.com",
+        "s1_address": "322 Lily Lane, Wharton, TX",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-151234482",
+        "target": "S2-454384381",
+        "score": 0.0005,
+        "s1_name": "Vr Polytechnic",
+        "target_name": "VR-SERVICES - 9608432108",
+        "s1_address": "916, 9Th Floor, Vrindavan Green, Sahibabad, Ghaziabad, Uttar Pradesh",
+        "target_address": "9-16, 9TH FLOOR, VRINDAVAN GREEN, SAHIBABAD, GHAZIABAD, Uttar Pradesh"
+      },
+      {
+        "s1": "S1-951564840",
+        "target": "S2-263866897",
+        "score": 0.0006,
+        "s1_name": "Vanguard Industrial Corporation",
+        "target_name": "Nexzeph",
+        "s1_address": "10300 -26600 Amite River Road, St. George City, LA",
+        "target_address": "AMITE RIVER ROAD, BATON ROUGE, LA"
+      },
+      {
+        "s1": "S1-686076622",
+        "target": "S3-110983369",
+        "score": 0.0006,
+        "s1_name": "Growwell (India) India Private Limited",
+        "target_name": "Growwell Growwell (India) India Limited Services",
+        "s1_address": "21/1, Raja S C Mullick Road, Kolkata, Kolkata, Howrah, West Bengal",
+        "target_address": "Door No 134 21/1, Calcutta, Howrah, WB"
+      },
+      {
+        "s1": "S1-126749530",
+        "target": "S3-594159831",
+        "score": 0.0009,
+        "s1_name": "Taum Holdings",
+        "target_name": "Taum LLC | www.taumllc.com",
+        "s1_address": "144 Hunter Street, MA, Fall River",
+        "target_address": "14 Hunter St, Fall River, Massachusetts"
+      },
+      {
+        "s1": "S1-102606099",
+        "target": "S2-557388422",
+        "score": 0.001,
+        "s1_name": "Five Educational Society",
+        "target_name": "Five Educational Society Ltd - 9956109154",
+        "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-227957207",
+        "target": "S3-540168290",
+        "score": 0.0012,
+        "s1_name": "Roto Health Pvt Ltd",
+        "target_name": "R0to Pvt  Ltd Services",
+        "s1_address": "Revenue Survey No. 117, B/H. Laxminarayan Cotton, Latipar Road, Jabalpur, Taluka Tankara, Dist.Morbi, Jabalpur, Rajkot, Gujarat",
+        "target_address": "Rajkot, GJ, Revenue Survey No. 0117, Rajkot Region"
+      },
+      {
+        "s1": "S1-45278941",
+        "target": "S3-713032058",
+        "score": 0.0013,
+        "s1_name": "Nium Inc",
+        "target_name": "Ectomirasyn",
+        "s1_address": "1552 B Dahill Road, Brooklyn, NY",
+        "target_address": "001552 B Dahill Road, Brooklyn, New York"
+      },
+      {
+        "s1": "S1-660692068",
+        "target": "S2-586445541",
+        "score": 0.0015,
+        "s1_name": "Rds Technologies Private Limited",
+        "target_name": "Ciraflux",
+        "s1_address": "No 31 W, Rk Nagar, 4Th Street, Ayyampalayam, Tiruchengodu, Namakkal, Tamil Nadu",
+        "target_address": "NO 31/3 W, TIRUCHENGODU, Tamil Nadu"
+      },
+      {
+        "s1": "S1-280156537",
+        "target": "S3-597349763",
+        "score": 0.0016,
+        "s1_name": "Bauman Colonial Telecom Inc.",
+        "target_name": "Orbimiraflux",
+        "s1_address": "14 Nedley Lane, Greenwich, CT",
+        "target_address": "014 Nedley Ln, Glenville, Connecticut"
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 2989,
+    "examples": [
+      {
+        "s1": "S1-100365402",
+        "target": "S3-177658990",
+        "score": NaN,
+        "s1_name": "Flint LLC",
+        "target_name": "Flint",
+        "s1_address": "4177 State Street, Eastern Goleta Valley, CA",
+        "target_address": "04177 State St, Eastern Goleta Valley, California"
+      },
+      {
+        "s1": "S1-100714457",
+        "target": "S3-299669224",
+        "score": NaN,
+        "s1_name": "Sharda Dairy LLP",
+        "target_name": "Mr Sharda  Dairy L.L.P.",
+        "s1_address": "45-9-509, Keerthi Nagar Colony, Geesungonda Mandal, Warangal Urban, Telangana",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-101729673",
+        "target": "S2-482638153",
+        "score": NaN,
+        "s1_name": "Siddhi Agro Private Limited",
+        "target_name": ">> Siddhi Private Limited Center",
+        "s1_address": "114, Pocket H-17 Sector-7, Rohini, Delhi",
+        "target_address": "114., ROHINI, DELHI"
+      },
+      {
+        "s1": "S1-101780735",
+        "target": "S3-869990025",
+        "score": NaN,
+        "s1_name": "Advanced Insurance Advisors",
+        "target_name": "Advanced Advisors Insurance",
+        "s1_address": "1407 Meadow Court, Rockford, IL",
+        "target_address": "Meadow Court, Rockford, Illinois"
+      },
+      {
+        "s1": "S1-102335151",
+        "target": "S2-964447821",
+        "score": NaN,
+        "s1_name": "Division of Consumer Affairs",
+        "target_name": "Divisi0n of Consumer Afhcfers",
+        "s1_address": "8923 Mission Avenue, Unit 327, Spokane Valley, WA",
+        "target_address": "8923 Mission Ave, SPOKANE VALLEY, WA"
+      },
+      {
+        "s1": "S1-102606099",
+        "target": "S3-110965286",
+        "score": NaN,
+        "s1_name": "Five Educational Society",
+        "target_name": "Five Edducatgional Society",
+        "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-102685544",
+        "target": "S2-447044649",
+        "score": NaN,
+        "s1_name": "Painters Union Local No 866 LLC",
+        "target_name": "Painters  Union Local No",
+        "s1_address": "64 School Street, Lake Placid, NY",
+        "target_address": "SCHOOL STREET, LAKE PLACID, NY"
+      },
+      {
+        "s1": "S1-102695101",
+        "target": "S3-184006551",
+        "score": NaN,
+        "s1_name": "Big Ice Cream",
+        "target_name": "Big  Ice",
+        "s1_address": "6490 Green Fennel Avenue, Ocean Isle Beach, NC",
+        "target_address": "Green Fennel Ave, Ocean Isle Beach, North Carolina"
+      },
+      {
+        "s1": "S1-103277119",
+        "target": "S3-462479740",
+        "score": NaN,
+        "s1_name": "Primary Care Continental Specialists Inc",
+        "target_name": "Primary Care Specialists Inc Services",
+        "s1_address": "1801 E Hills Drive, Moore, OK",
+        "target_address": "1801 East Hills Dr, Moore, Oklahoma"
+      },
+      {
+        "s1": "S1-103680715",
+        "target": "S2-105732118",
+        "score": NaN,
+        "s1_name": "Fox Cardiology",
+        "target_name": "FOX CCRCIOLOGY",
+        "s1_address": "7858 Prairie Street, Holbrook, AZ",
+        "target_address": "AZ, 785 PRAIRIE STREET, HOLBROOK"
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-236696801",
+      "target": "S3-851368753",
+      "score": 0.0004,
+      "s1_name": "Day, Rodriguez and Marsh Tbk",
+      "target_name": "Day, Rodriguez And  Marsh Tbk Inc. | www.dayrodri.com",
+      "s1_address": "322 Lily Lane, Wharton, TX",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-151234482",
+      "target": "S2-454384381",
+      "score": 0.0005,
+      "s1_name": "Vr Polytechnic",
+      "target_name": "VR-SERVICES - 9608432108",
+      "s1_address": "916, 9Th Floor, Vrindavan Green, Sahibabad, Ghaziabad, Uttar Pradesh",
+      "target_address": "9-16, 9TH FLOOR, VRINDAVAN GREEN, SAHIBABAD, GHAZIABAD, Uttar Pradesh"
+    },
+    {
+      "s1": "S1-951564840",
+      "target": "S2-263866897",
+      "score": 0.0006,
+      "s1_name": "Vanguard Industrial Corporation",
+      "target_name": "Nexzeph",
+      "s1_address": "10300 -26600 Amite River Road, St. George City, LA",
+      "target_address": "AMITE RIVER ROAD, BATON ROUGE, LA"
+    },
+    {
+      "s1": "S1-686076622",
+      "target": "S3-110983369",
+      "score": 0.0006,
+      "s1_name": "Growwell (India) India Private Limited",
+      "target_name": "Growwell Growwell (India) India Limited Services",
+      "s1_address": "21/1, Raja S C Mullick Road, Kolkata, Kolkata, Howrah, West Bengal",
+      "target_address": "Door No 134 21/1, Calcutta, Howrah, WB"
+    },
+    {
+      "s1": "S1-126749530",
+      "target": "S3-594159831",
+      "score": 0.0009,
+      "s1_name": "Taum Holdings",
+      "target_name": "Taum LLC | www.taumllc.com",
+      "s1_address": "144 Hunter Street, MA, Fall River",
+      "target_address": "14 Hunter St, Fall River, Massachusetts"
+    },
+    {
+      "s1": "S1-102606099",
+      "target": "S2-557388422",
+      "score": 0.001,
+      "s1_name": "Five Educational Society",
+      "target_name": "Five Educational Society Ltd - 9956109154",
+      "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-227957207",
+      "target": "S3-540168290",
+      "score": 0.0012,
+      "s1_name": "Roto Health Pvt Ltd",
+      "target_name": "R0to Pvt  Ltd Services",
+      "s1_address": "Revenue Survey No. 117, B/H. Laxminarayan Cotton, Latipar Road, Jabalpur, Taluka Tankara, Dist.Morbi, Jabalpur, Rajkot, Gujarat",
+      "target_address": "Rajkot, GJ, Revenue Survey No. 0117, Rajkot Region"
+    },
+    {
+      "s1": "S1-45278941",
+      "target": "S3-713032058",
+      "score": 0.0013,
+      "s1_name": "Nium Inc",
+      "target_name": "Ectomirasyn",
+      "s1_address": "1552 B Dahill Road, Brooklyn, NY",
+      "target_address": "001552 B Dahill Road, Brooklyn, New York"
+    },
+    {
+      "s1": "S1-660692068",
+      "target": "S2-586445541",
+      "score": 0.0015,
+      "s1_name": "Rds Technologies Private Limited",
+      "target_name": "Ciraflux",
+      "s1_address": "No 31 W, Rk Nagar, 4Th Street, Ayyampalayam, Tiruchengodu, Namakkal, Tamil Nadu",
+      "target_address": "NO 31/3 W, TIRUCHENGODU, Tamil Nadu"
+    },
+    {
+      "s1": "S1-280156537",
+      "target": "S3-597349763",
+      "score": 0.0016,
+      "s1_name": "Bauman Colonial Telecom Inc.",
+      "target_name": "Orbimiraflux",
+      "s1_address": "14 Nedley Lane, Greenwich, CT",
+      "target_address": "014 Nedley Ln, Glenville, Connecticut"
+    }
+  ],
+  "zero_match_entities": {
+    "count": 569,
+    "predicted_empty": 489,
+    "false_merge_examples": [
+      {
+        "s1": "S1-413390876",
+        "target": "S3-837861811",
+        "score": 0.9958,
+        "s1_name": "Lb Orb Private Limited",
+        "target_name": "LB ORB OVERSEAS PRIVATE LIMITED",
+        "s1_address": "Lower Ground Floor, Salcon Rasvilas, D-1, Saket District Center, Saket, New Delhi, New Delhi, South Delhi, Delhi",
+        "target_address": "Salcon Rasvilas, D-1, Saket District Center, Saket, New Delhi, DL, New Delhi, 1-0 Lower Ground Floor, South Delhi"
+      },
+      {
+        "s1": "S1-835799395",
+        "target": "S2-199724183",
+        "score": 0.9948,
+        "s1_name": "WH Blackrock Inc.",
+        "target_name": "CWH Blackrock Inc",
+        "s1_address": "419 Larch Street, Carbondale, IL",
+        "target_address": "419 LARCH ST, N/A, CARBONDALE, IL"
+      },
+      {
+        "s1": "S1-791085591",
+        "target": "S3-342347973",
+        "score": 0.9892,
+        "s1_name": "Indrtech Bottling Private Limited",
+        "target_name": "Indrtech Bottling Industries Private Limited",
+        "s1_address": "Holding No. 95 Plot 731/1158 Pawan Dish Road, Kantabanji, Balangir, Orissa",
+        "target_address": "Holding No. 95 Plot 731/1162 Pawan Dish Road, Kantabanji, Balangir, OD"
+      },
+      {
+        "s1": "S1-733871857",
+        "target": "S2-934591840",
+        "score": 0.989,
+        "s1_name": "Willow Pacific, LLC",
+        "target_name": "Vioavi Pacific,",
+        "s1_address": "La Grande, 62978 Fruitdale Lane, OR",
+        "target_address": "62978 FRUITDALE LN, OR, LA GRANDE"
+      },
+      {
+        "s1": "S1-298144479",
+        "target": "S3-461661590",
+        "score": 0.9884,
+        "s1_name": "Aditiya Solution Private Limited",
+        "target_name": "Aditiyi Solution  Private Limited",
+        "s1_address": "8/2/616/1, 4Th Floor 4B, Saha Building Near Hotel Minerva Grand, Banjara Hills, Hyderabad, Telangana",
+        "target_address": "D/8/2/616/1, 4Th Floor 4B, Saha Building Near Hotel Minerva Grand, Banjara Hills, Hyderabad, Ghmc M Corp Og, తెలంగాణ"
+      },
+      {
+        "s1": "S1-593487186",
+        "target": "S3-118553343",
+        "score": 0.9827,
+        "s1_name": "Dream & Brothers Private Limited",
+        "target_name": "Dream & Brothers L.L.P.",
+        "s1_address": "Shop-Gg - 4 To 8, Panel - 6, 3Rd Passage Rrtm, Saroli, Chorasi, Surat, Gujarat",
+        "target_address": "Sho-gg - 4 To 17, Panel - 6, 3Rd Passage Rrtm, Saroli, Chorasi, Surat, ગુજરાત"
+      },
+      {
+        "s1": "S1-594125631",
+        "target": "S2-18372497",
+        "score": 0.9728,
+        "s1_name": "Aarvan Agro",
+        "target_name": "Aarveon Agro",
+        "s1_address": "13/287, Cholas Center, Nilambur, Malappuram, Malapuram, Kerala",
+        "target_address": "13/287, CHOLAS CENTER, NILAMBUR, MALAPPURAM, Keralam"
+      },
+      {
+        "s1": "S1-457596246",
+        "target": "S3-119555012",
+        "score": 0.9653,
+        "s1_name": "Sls Systems Private Limited",
+        "target_name": "Sls Systems Group Private Ltd",
+        "s1_address": "C-I Panchsheel Margkhirki Extension Malviya Nagar, New Delhi, South Delhi, Delhi",
+        "target_address": "New Delhi, DL, No 10 C-i Panchsheel Margkhirki Extension Malviya Nagar, South Delhi"
+      },
+      {
+        "s1": "S1-675334975",
+        "target": "S3-822628847",
+        "score": 0.9571,
+        "s1_name": "Surya Engineering Private Limited",
+        "target_name": "Surya Engineering Limited",
+        "s1_address": "Maharashtra, Vikas Metal Compoundudyogdham Lbs Marg Vikhroli West, Mumbai",
+        "target_address": "Mumbai, No 42 Vikas Metal Compoundudyogdham Lbs Marg Vikhroli West, MH, Mumbai"
+      },
+      {
+        "s1": "S1-378632296",
+        "target": "S2-257174146",
+        "score": 0.9479,
+        "s1_name": "Big Management Private Limited",
+        "target_name": "बिग मैनेजमेंट स्वीट्स प्राइवेट लिमिटेड",
+        "s1_address": "B/Sh/50 18-C, Elco Arcade, 46 Hill Road, Bandra West, Mumbai, Mumbai, Maharashtra",
+        "target_address": "B/SH/50 21-C, ELCO ARCADE, 46 HILL ROAD, BANDRA WEST, MUMBAI, MUMBAI, Maharashtra"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 8896,
+    "mean_true_matches": 3.829,
+    "mean_predicted": 3.147,
+    "predicted_at_least_two": 7749
+  }
+}

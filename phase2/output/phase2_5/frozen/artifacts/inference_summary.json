@@ -1,0 +1,60 @@
+{
+  "mode": "dev",
+  "threshold": 0.8,
+  "test_source1_entities": 5000,
+  "candidates": {
+    "s2": {
+      "candidate_pairs": 302270,
+      "pairs_dropped_by_cap": 61424,
+      "s1_entities_capped": 1389,
+      "max_candidates_per_source1": 100,
+      "recall_cost": "unknown on test (no labels); see the train-side figures"
+    },
+    "s3": {
+      "candidate_pairs": 278157,
+      "pairs_dropped_by_cap": 52521,
+      "s1_entities_capped": 1192,
+      "max_candidates_per_source1": 100,
+      "recall_cost": "unknown on test (no labels); see the train-side figures"
+    }
+  },
+  "candidate_pairs_written": 580427,
+  "entities_with_prediction": 799,
+  "entities_with_multiple": 163,
+  "mean_predictions_per_entity": 0.292,
+  "matching_results": "phase2/output/phase2_5/frozen/output/dev/matching_results.tsv",
+  "candidate_pairs": "phase2/output/phase2_5/frozen/output/dev/candidate_pairs.tsv",
+  "section45_checks": {
+    "1_every_s1_represented": true,
+    "3_no_malformed_ids": true,
+    "4_no_duplicate_ids_in_a_list": true,
+    "5_multi_match_serialization": true,
+    "6_zero_match_serialization": true,
+    "7_deterministic_sorted_lists": true,
+    "matches_subset_of_candidates": true,
+    "2_ids_exist_in_s2_s3": true,
+    "8_row_count": true,
+    "9_header": true
+  },
+  "validator": {
+    "with_candidates": {
+      "command": "python.exe validate_submission.py --matching C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\frozen\\output\\dev\\matching_results.tsv --test-dir C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\frozen\\output\\dev\\test_subset --candidate C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\frozen\\output\\dev\\candidate_pairs.tsv --check-ids",
+      "returncode": 0,
+      "passed": true,
+      "output": [
+        "ML Challenge 2026 — submission validator",
+        "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\frozen\\output\\dev\\test_subset",
+        "  required S1 entities: 5000",
+        "  valid S2/S3 match IDs: 200000",
+        "  matching_results.tsv: 5000 rows (4201 empty, 799 non-empty).",
+        "  candidate_pairs.tsv: 5000 rows (2 empty, 4998 non-empty).",
+        "",
+        "PASS — no blocking issues found. Safe to submit."
+      ]
+    }
+  },
+  "sha256": {
+    "matching_results.tsv": "b45ba669f8280d18bc08b682ea27db5123f6ba3f54cc928dc28c84b2186a607d",
+    "candidate_pairs.tsv": "001b58e1b5a93f7645f83f1fa1b9d28f8d7a76ae37a98c39a5b67c571626c5a5"
+  }
+}

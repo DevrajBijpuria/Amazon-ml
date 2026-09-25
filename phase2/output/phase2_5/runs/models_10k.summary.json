@@ -1,0 +1,9 @@
+﻿{
+    "name":  "models_10k",
+    "args":  "phase2/src/phase2_5_models.py --candset phase2/output/phase2_5/candsets/10k/b0 --scale 10k",
+    "exit_code":  0,
+    "wall_seconds":  31.1,
+    "main_process_peak_working_set_mb":  842,
+    "all_python_processes_peak_mb":  734,
+    "samples":  15
+}

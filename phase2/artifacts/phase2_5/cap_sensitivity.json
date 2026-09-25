@@ -1,0 +1,2038 @@
+{
+  "dev": {
+    "scale": "dev",
+    "source1_entities": 5000,
+    "validation_entities": 1000,
+    "target_rows_per_source": 100000,
+    "b0_recall": {
+      "s2": {
+        "positives": 8328,
+        "b0_recall": 0.98103,
+        "validation_positives": 1670,
+        "validation_b0_recall": 0.97844
+      },
+      "s3": {
+        "positives": 9055,
+        "b0_recall": 0.98156,
+        "validation_positives": 1798,
+        "validation_b0_recall": 0.97998
+      }
+    },
+    "by_source_by_cutoff": {
+      "s2": {
+        "50": {
+          "30": {
+            "recall": 0.9761,
+            "after_cap": {
+              "pairs": 102149,
+              "mean_per_s1": 20.43,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 41738,
+            "positives_lost_to_cap": 7,
+            "recall_lost_to_cap": 0.00084,
+            "cap_seconds": 0.4
+          },
+          "60": {
+            "recall": 0.97683,
+            "after_cap": {
+              "pairs": 136630,
+              "mean_per_s1": 27.326,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 7257,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 0.00012,
+            "cap_seconds": 0.19
+          },
+          "80": {
+            "recall": 0.97695,
+            "after_cap": {
+              "pairs": 142116,
+              "mean_per_s1": 28.423,
+              "p95_per_s1": 71.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 1771,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.1
+          },
+          "100": {
+            "recall": 0.97695,
+            "after_cap": {
+              "pairs": 143568,
+              "mean_per_s1": 28.714,
+              "p95_per_s1": 71.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 319,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.06
+          },
+          "150": {
+            "recall": 0.97695,
+            "after_cap": {
+              "pairs": 143878,
+              "mean_per_s1": 28.776,
+              "p95_per_s1": 71.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 9,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.06
+          },
+          "200": {
+            "recall": 0.97695,
+            "after_cap": {
+              "pairs": 143887,
+              "mean_per_s1": 28.777,
+              "p95_per_s1": 71.0,
+              "max_per_s1": 159
+            },
+            "pairs_before_cap": 143887,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.0
+          }
+        },
+        "100": {
+          "30": {
+            "recall": 0.97803,
+            "after_cap": {
+              "pairs": 124699,
+              "mean_per_s1": 24.94,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 188009,
+            "positives_lost_to_cap": 36,
+            "recall_lost_to_cap": 0.00432,
+            "cap_seconds": 0.79
+          },
+          "60": {
+            "recall": 0.98103,
+            "after_cap": {
+              "pairs": 207436,
+              "mean_per_s1": 41.487,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 105272,
+            "positives_lost_to_cap": 11,
+            "recall_lost_to_cap": 0.00132,
+            "cap_seconds": 0.62
+          },
+          "80": {
+            "recall": 0.98175,
+            "after_cap": {
+              "pairs": 246254,
+              "mean_per_s1": 49.251,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 66454,
+            "positives_lost_to_cap": 5,
+            "recall_lost_to_cap": 0.0006,
+            "cap_seconds": 0.48
+          },
+          "100": {
+            "recall": 0.98211,
+            "after_cap": {
+              "pairs": 272596,
+              "mean_per_s1": 54.519,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 40112,
+            "positives_lost_to_cap": 2,
+            "recall_lost_to_cap": 0.00024,
+            "cap_seconds": 0.39
+          },
+          "150": {
+            "recall": 0.98235,
+            "after_cap": {
+              "pairs": 302972,
+              "mean_per_s1": 60.594,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 9736,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.23
+          },
+          "200": {
+            "recall": 0.98235,
+            "after_cap": {
+              "pairs": 310741,
+              "mean_per_s1": 62.148,
+              "p95_per_s1": 156.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 312708,
+            "pairs_dropped": 1967,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.14
+          }
+        },
+        "150": {
+          "30": {
+            "recall": 0.97815,
+            "after_cap": {
+              "pairs": 133746,
+              "mean_per_s1": 26.749,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 398467,
+            "positives_lost_to_cap": 72,
+            "recall_lost_to_cap": 0.00865,
+            "cap_seconds": 1.38
+          },
+          "60": {
+            "recall": 0.98199,
+            "after_cap": {
+              "pairs": 238011,
+              "mean_per_s1": 47.602,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 294202,
+            "positives_lost_to_cap": 40,
+            "recall_lost_to_cap": 0.0048,
+            "cap_seconds": 1.37
+          },
+          "80": {
+            "recall": 0.98307,
+            "after_cap": {
+              "pairs": 295489,
+              "mean_per_s1": 59.098,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 236724,
+            "positives_lost_to_cap": 31,
+            "recall_lost_to_cap": 0.00372,
+            "cap_seconds": 1.35
+          },
+          "100": {
+            "recall": 0.98475,
+            "after_cap": {
+              "pairs": 344469,
+              "mean_per_s1": 68.894,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 187744,
+            "positives_lost_to_cap": 17,
+            "recall_lost_to_cap": 0.00204,
+            "cap_seconds": 1.26
+          },
+          "150": {
+            "recall": 0.98583,
+            "after_cap": {
+              "pairs": 435225,
+              "mean_per_s1": 87.045,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 96988,
+            "positives_lost_to_cap": 8,
+            "recall_lost_to_cap": 0.00096,
+            "cap_seconds": 1.01
+          },
+          "200": {
+            "recall": 0.98631,
+            "after_cap": {
+              "pairs": 486292,
+              "mean_per_s1": 97.258,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 532213,
+            "pairs_dropped": 45921,
+            "positives_lost_to_cap": 4,
+            "recall_lost_to_cap": 0.00048,
+            "cap_seconds": 0.57
+          }
+        },
+        "250": {
+          "30": {
+            "recall": 0.9743,
+            "after_cap": {
+              "pairs": 140710,
+              "mean_per_s1": 28.142,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 781141,
+            "positives_lost_to_cap": 129,
+            "recall_lost_to_cap": 0.01549,
+            "cap_seconds": 2.22
+          },
+          "60": {
+            "recall": 0.97851,
+            "after_cap": {
+              "pairs": 263031,
+              "mean_per_s1": 52.606,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 658820,
+            "positives_lost_to_cap": 94,
+            "recall_lost_to_cap": 0.01129,
+            "cap_seconds": 2.2
+          },
+          "80": {
+            "recall": 0.98055,
+            "after_cap": {
+              "pairs": 336639,
+              "mean_per_s1": 67.328,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 585212,
+            "positives_lost_to_cap": 77,
+            "recall_lost_to_cap": 0.00925,
+            "cap_seconds": 2.23
+          },
+          "100": {
+            "recall": 0.98259,
+            "after_cap": {
+              "pairs": 404939,
+              "mean_per_s1": 80.988,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 516912,
+            "positives_lost_to_cap": 60,
+            "recall_lost_to_cap": 0.0072,
+            "cap_seconds": 2.06
+          },
+          "150": {
+            "recall": 0.98643,
+            "after_cap": {
+              "pairs": 555497,
+              "mean_per_s1": 111.099,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 366354,
+            "positives_lost_to_cap": 28,
+            "recall_lost_to_cap": 0.00336,
+            "cap_seconds": 1.68
+          },
+          "200": {
+            "recall": 0.98859,
+            "after_cap": {
+              "pairs": 678554,
+              "mean_per_s1": 135.711,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 921851,
+            "pairs_dropped": 243297,
+            "positives_lost_to_cap": 10,
+            "recall_lost_to_cap": 0.0012,
+            "cap_seconds": 1.57
+          }
+        },
+        "500": {
+          "30": {
+            "recall": 0.97346,
+            "after_cap": {
+              "pairs": 143910,
+              "mean_per_s1": 28.782,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 1076203,
+            "positives_lost_to_cap": 146,
+            "recall_lost_to_cap": 0.01753,
+            "cap_seconds": 2.21
+          },
+          "60": {
+            "recall": 0.97743,
+            "after_cap": {
+              "pairs": 273201,
+              "mean_per_s1": 54.64,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 946912,
+            "positives_lost_to_cap": 113,
+            "recall_lost_to_cap": 0.01357,
+            "cap_seconds": 2.49
+          },
+          "80": {
+            "recall": 0.97971,
+            "after_cap": {
+              "pairs": 352751,
+              "mean_per_s1": 70.55,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 867362,
+            "positives_lost_to_cap": 94,
+            "recall_lost_to_cap": 0.01129,
+            "cap_seconds": 2.23
+          },
+          "100": {
+            "recall": 0.98187,
+            "after_cap": {
+              "pairs": 428222,
+              "mean_per_s1": 85.644,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 791891,
+            "positives_lost_to_cap": 76,
+            "recall_lost_to_cap": 0.00913,
+            "cap_seconds": 2.33
+          },
+          "150": {
+            "recall": 0.98607,
+            "after_cap": {
+              "pairs": 599921,
+              "mean_per_s1": 119.984,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 620192,
+            "positives_lost_to_cap": 41,
+            "recall_lost_to_cap": 0.00492,
+            "cap_seconds": 2.23
+          },
+          "200": {
+            "recall": 0.98847,
+            "after_cap": {
+              "pairs": 749066,
+              "mean_per_s1": 149.813,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 1220113,
+            "pairs_dropped": 471047,
+            "positives_lost_to_cap": 21,
+            "recall_lost_to_cap": 0.00252,
+            "cap_seconds": 1.93
+          }
+        }
+      },
+      "s3": {
+        "50": {
+          "30": {
+            "recall": 0.9778,
+            "after_cap": {
+              "pairs": 102332,
+              "mean_per_s1": 20.466,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 40606,
+            "positives_lost_to_cap": 5,
+            "recall_lost_to_cap": 0.00055,
+            "cap_seconds": 0.32
+          },
+          "60": {
+            "recall": 0.97813,
+            "after_cap": {
+              "pairs": 135937,
+              "mean_per_s1": 27.187,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 7001,
+            "positives_lost_to_cap": 2,
+            "recall_lost_to_cap": 0.00022,
+            "cap_seconds": 0.18
+          },
+          "80": {
+            "recall": 0.97835,
+            "after_cap": {
+              "pairs": 141127,
+              "mean_per_s1": 28.225,
+              "p95_per_s1": 69.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 1811,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.1
+          },
+          "100": {
+            "recall": 0.97835,
+            "after_cap": {
+              "pairs": 142540,
+              "mean_per_s1": 28.508,
+              "p95_per_s1": 69.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 398,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.08
+          },
+          "150": {
+            "recall": 0.97835,
+            "after_cap": {
+              "pairs": 142938,
+              "mean_per_s1": 28.588,
+              "p95_per_s1": 69.0,
+              "max_per_s1": 147
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.0
+          },
+          "200": {
+            "recall": 0.97835,
+            "after_cap": {
+              "pairs": 142938,
+              "mean_per_s1": 28.588,
+              "p95_per_s1": 69.0,
+              "max_per_s1": 147
+            },
+            "pairs_before_cap": 142938,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.0
+          }
+        },
+        "100": {
+          "30": {
+            "recall": 0.98034,
+            "after_cap": {
+              "pairs": 121070,
+              "mean_per_s1": 24.214,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 174184,
+            "positives_lost_to_cap": 24,
+            "recall_lost_to_cap": 0.00265,
+            "cap_seconds": 0.75
+          },
+          "60": {
+            "recall": 0.98156,
+            "after_cap": {
+              "pairs": 196200,
+              "mean_per_s1": 39.24,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 99054,
+            "positives_lost_to_cap": 13,
+            "recall_lost_to_cap": 0.00144,
+            "cap_seconds": 0.61
+          },
+          "80": {
+            "recall": 0.98266,
+            "after_cap": {
+              "pairs": 231206,
+              "mean_per_s1": 46.241,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 64048,
+            "positives_lost_to_cap": 3,
+            "recall_lost_to_cap": 0.00033,
+            "cap_seconds": 0.62
+          },
+          "100": {
+            "recall": 0.98277,
+            "after_cap": {
+              "pairs": 256387,
+              "mean_per_s1": 51.277,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 38867,
+            "positives_lost_to_cap": 2,
+            "recall_lost_to_cap": 0.00022,
+            "cap_seconds": 0.44
+          },
+          "150": {
+            "recall": 0.98277,
+            "after_cap": {
+              "pairs": 285107,
+              "mean_per_s1": 57.021,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 10147,
+            "positives_lost_to_cap": 2,
+            "recall_lost_to_cap": 0.00022,
+            "cap_seconds": 0.26
+          },
+          "200": {
+            "recall": 0.98299,
+            "after_cap": {
+              "pairs": 293210,
+              "mean_per_s1": 58.642,
+              "p95_per_s1": 155.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 295254,
+            "pairs_dropped": 2044,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.13
+          }
+        },
+        "150": {
+          "30": {
+            "recall": 0.98266,
+            "after_cap": {
+              "pairs": 133036,
+              "mean_per_s1": 26.607,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 394071,
+            "positives_lost_to_cap": 50,
+            "recall_lost_to_cap": 0.00552,
+            "cap_seconds": 1.35
+          },
+          "60": {
+            "recall": 0.98531,
+            "after_cap": {
+              "pairs": 236045,
+              "mean_per_s1": 47.209,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 291062,
+            "positives_lost_to_cap": 26,
+            "recall_lost_to_cap": 0.00287,
+            "cap_seconds": 1.34
+          },
+          "80": {
+            "recall": 0.98642,
+            "after_cap": {
+              "pairs": 293966,
+              "mean_per_s1": 58.793,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 233141,
+            "positives_lost_to_cap": 16,
+            "recall_lost_to_cap": 0.00177,
+            "cap_seconds": 1.3
+          },
+          "100": {
+            "recall": 0.98708,
+            "after_cap": {
+              "pairs": 345126,
+              "mean_per_s1": 69.025,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 181981,
+            "positives_lost_to_cap": 10,
+            "recall_lost_to_cap": 0.0011,
+            "cap_seconds": 1.06
+          },
+          "150": {
+            "recall": 0.98752,
+            "after_cap": {
+              "pairs": 437855,
+              "mean_per_s1": 87.571,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 89252,
+            "positives_lost_to_cap": 6,
+            "recall_lost_to_cap": 0.00066,
+            "cap_seconds": 0.72
+          },
+          "200": {
+            "recall": 0.98785,
+            "after_cap": {
+              "pairs": 485822,
+              "mean_per_s1": 97.164,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 527107,
+            "pairs_dropped": 41285,
+            "positives_lost_to_cap": 3,
+            "recall_lost_to_cap": 0.00033,
+            "cap_seconds": 0.54
+          }
+        },
+        "250": {
+          "30": {
+            "recall": 0.98034,
+            "after_cap": {
+              "pairs": 140659,
+              "mean_per_s1": 28.132,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 800701,
+            "positives_lost_to_cap": 103,
+            "recall_lost_to_cap": 0.01137,
+            "cap_seconds": 2.26
+          },
+          "60": {
+            "recall": 0.98343,
+            "after_cap": {
+              "pairs": 263116,
+              "mean_per_s1": 52.623,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 678244,
+            "positives_lost_to_cap": 75,
+            "recall_lost_to_cap": 0.00828,
+            "cap_seconds": 2.3
+          },
+          "80": {
+            "recall": 0.9852,
+            "after_cap": {
+              "pairs": 337488,
+              "mean_per_s1": 67.498,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 603872,
+            "positives_lost_to_cap": 59,
+            "recall_lost_to_cap": 0.00652,
+            "cap_seconds": 2.37
+          },
+          "100": {
+            "recall": 0.98675,
+            "after_cap": {
+              "pairs": 407556,
+              "mean_per_s1": 81.511,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 533804,
+            "positives_lost_to_cap": 45,
+            "recall_lost_to_cap": 0.00497,
+            "cap_seconds": 2.52
+          },
+          "150": {
+            "recall": 0.98851,
+            "after_cap": {
+              "pairs": 560629,
+              "mean_per_s1": 112.126,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 380731,
+            "positives_lost_to_cap": 29,
+            "recall_lost_to_cap": 0.0032,
+            "cap_seconds": 2.19
+          },
+          "200": {
+            "recall": 0.99039,
+            "after_cap": {
+              "pairs": 684183,
+              "mean_per_s1": 136.837,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 941360,
+            "pairs_dropped": 257177,
+            "positives_lost_to_cap": 12,
+            "recall_lost_to_cap": 0.00133,
+            "cap_seconds": 1.54
+          }
+        },
+        "500": {
+          "30": {
+            "recall": 0.97858,
+            "after_cap": {
+              "pairs": 143751,
+              "mean_per_s1": 28.75,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 1121215,
+            "positives_lost_to_cap": 128,
+            "recall_lost_to_cap": 0.01414,
+            "cap_seconds": 2.38
+          },
+          "60": {
+            "recall": 0.98178,
+            "after_cap": {
+              "pairs": 273272,
+              "mean_per_s1": 54.654,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 991694,
+            "positives_lost_to_cap": 99,
+            "recall_lost_to_cap": 0.01093,
+            "cap_seconds": 2.27
+          },
+          "80": {
+            "recall": 0.98288,
+            "after_cap": {
+              "pairs": 353241,
+              "mean_per_s1": 70.648,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 911725,
+            "positives_lost_to_cap": 89,
+            "recall_lost_to_cap": 0.00983,
+            "cap_seconds": 2.26
+          },
+          "100": {
+            "recall": 0.98465,
+            "after_cap": {
+              "pairs": 429335,
+              "mean_per_s1": 85.867,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 835631,
+            "positives_lost_to_cap": 73,
+            "recall_lost_to_cap": 0.00806,
+            "cap_seconds": 2.17
+          },
+          "150": {
+            "recall": 0.98686,
+            "after_cap": {
+              "pairs": 602132,
+              "mean_per_s1": 120.426,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 662834,
+            "positives_lost_to_cap": 53,
+            "recall_lost_to_cap": 0.00585,
+            "cap_seconds": 2.15
+          },
+          "200": {
+            "recall": 0.98907,
+            "after_cap": {
+              "pairs": 752961,
+              "mean_per_s1": 150.592,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 1264966,
+            "pairs_dropped": 512005,
+            "positives_lost_to_cap": 33,
+            "recall_lost_to_cap": 0.00364,
+            "cap_seconds": 1.93
+          }
+        }
+      }
+    }
+  },
+  "10k": {
+    "scale": "10k",
+    "source1_entities": 10000,
+    "validation_entities": 2000,
+    "target_rows_per_source": "full",
+    "b0_recall": {
+      "s2": {
+        "positives": 16690,
+        "b0_recall": 0.91288,
+        "validation_positives": 3270,
+        "validation_b0_recall": 0.91101
+      },
+      "s3": {
+        "positives": 18078,
+        "b0_recall": 0.91177,
+        "validation_positives": 3624,
+        "validation_b0_recall": 0.91474
+      }
+    },
+    "by_source_by_cutoff": {
+      "s2": {
+        "50": {
+          "30": {
+            "recall": 0.88125,
+            "after_cap": {
+              "pairs": 172334,
+              "mean_per_s1": 17.233,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 65394,
+            "positives_lost_to_cap": 248,
+            "recall_lost_to_cap": 0.01486,
+            "cap_seconds": 1.28
+          },
+          "60": {
+            "recall": 0.89593,
+            "after_cap": {
+              "pairs": 226926,
+              "mean_per_s1": 22.693,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 10802,
+            "positives_lost_to_cap": 3,
+            "recall_lost_to_cap": 0.00018,
+            "cap_seconds": 0.88
+          },
+          "80": {
+            "recall": 0.89605,
+            "after_cap": {
+              "pairs": 235040,
+              "mean_per_s1": 23.504,
+              "p95_per_s1": 66.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 2688,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 6e-05,
+            "cap_seconds": 0.77
+          },
+          "100": {
+            "recall": 0.89611,
+            "after_cap": {
+              "pairs": 237265,
+              "mean_per_s1": 23.727,
+              "p95_per_s1": 66.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 463,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.72
+          },
+          "150": {
+            "recall": 0.89611,
+            "after_cap": {
+              "pairs": 237728,
+              "mean_per_s1": 23.773,
+              "p95_per_s1": 66.0,
+              "max_per_s1": 138
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.01
+          },
+          "200": {
+            "recall": 0.89611,
+            "after_cap": {
+              "pairs": 237728,
+              "mean_per_s1": 23.773,
+              "p95_per_s1": 66.0,
+              "max_per_s1": 138
+            },
+            "pairs_before_cap": 237728,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.0
+          }
+        },
+        "100": {
+          "30": {
+            "recall": 0.88933,
+            "after_cap": {
+              "pairs": 227449,
+              "mean_per_s1": 22.745,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 350402,
+            "positives_lost_to_cap": 599,
+            "recall_lost_to_cap": 0.03589,
+            "cap_seconds": 1.89
+          },
+          "60": {
+            "recall": 0.91288,
+            "after_cap": {
+              "pairs": 386747,
+              "mean_per_s1": 38.675,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 191104,
+            "positives_lost_to_cap": 206,
+            "recall_lost_to_cap": 0.01234,
+            "cap_seconds": 1.8
+          },
+          "80": {
+            "recall": 0.92007,
+            "after_cap": {
+              "pairs": 461831,
+              "mean_per_s1": 46.183,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 116020,
+            "positives_lost_to_cap": 86,
+            "recall_lost_to_cap": 0.00515,
+            "cap_seconds": 1.63
+          },
+          "100": {
+            "recall": 0.92403,
+            "after_cap": {
+              "pairs": 511048,
+              "mean_per_s1": 51.105,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 66803,
+            "positives_lost_to_cap": 20,
+            "recall_lost_to_cap": 0.0012,
+            "cap_seconds": 1.41
+          },
+          "150": {
+            "recall": 0.92516,
+            "after_cap": {
+              "pairs": 563310,
+              "mean_per_s1": 56.331,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 14541,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 6e-05,
+            "cap_seconds": 1.06
+          },
+          "200": {
+            "recall": 0.92516,
+            "after_cap": {
+              "pairs": 575878,
+              "mean_per_s1": 57.588,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 577851,
+            "pairs_dropped": 1973,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 6e-05,
+            "cap_seconds": 0.88
+          }
+        },
+        "150": {
+          "30": {
+            "recall": 0.89179,
+            "after_cap": {
+              "pairs": 244830,
+              "mean_per_s1": 24.483,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 596884,
+            "positives_lost_to_cap": 749,
+            "recall_lost_to_cap": 0.04488,
+            "cap_seconds": 2.48
+          },
+          "60": {
+            "recall": 0.91756,
+            "after_cap": {
+              "pairs": 436628,
+              "mean_per_s1": 43.663,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 405086,
+            "positives_lost_to_cap": 319,
+            "recall_lost_to_cap": 0.01911,
+            "cap_seconds": 2.46
+          },
+          "80": {
+            "recall": 0.9251,
+            "after_cap": {
+              "pairs": 539907,
+              "mean_per_s1": 53.991,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 301807,
+            "positives_lost_to_cap": 193,
+            "recall_lost_to_cap": 0.01156,
+            "cap_seconds": 2.34
+          },
+          "100": {
+            "recall": 0.93056,
+            "after_cap": {
+              "pairs": 623090,
+              "mean_per_s1": 62.309,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 218624,
+            "positives_lost_to_cap": 102,
+            "recall_lost_to_cap": 0.00611,
+            "cap_seconds": 2.16
+          },
+          "150": {
+            "recall": 0.93619,
+            "after_cap": {
+              "pairs": 755052,
+              "mean_per_s1": 75.505,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 86662,
+            "positives_lost_to_cap": 8,
+            "recall_lost_to_cap": 0.00048,
+            "cap_seconds": 1.64
+          },
+          "200": {
+            "recall": 0.93655,
+            "after_cap": {
+              "pairs": 810066,
+              "mean_per_s1": 81.007,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 841714,
+            "pairs_dropped": 31648,
+            "positives_lost_to_cap": 2,
+            "recall_lost_to_cap": 0.00012,
+            "cap_seconds": 1.34
+          }
+        },
+        "250": {
+          "30": {
+            "recall": 0.89826,
+            "after_cap": {
+              "pairs": 259686,
+              "mean_per_s1": 25.969,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 1092537,
+            "positives_lost_to_cap": 854,
+            "recall_lost_to_cap": 0.05117,
+            "cap_seconds": 3.67
+          },
+          "60": {
+            "recall": 0.92337,
+            "after_cap": {
+              "pairs": 480376,
+              "mean_per_s1": 48.038,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 871847,
+            "positives_lost_to_cap": 435,
+            "recall_lost_to_cap": 0.02606,
+            "cap_seconds": 3.71
+          },
+          "80": {
+            "recall": 0.93116,
+            "after_cap": {
+              "pairs": 608884,
+              "mean_per_s1": 60.888,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 743339,
+            "positives_lost_to_cap": 305,
+            "recall_lost_to_cap": 0.01827,
+            "cap_seconds": 3.57
+          },
+          "100": {
+            "recall": 0.93751,
+            "after_cap": {
+              "pairs": 721883,
+              "mean_per_s1": 72.188,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 630340,
+            "positives_lost_to_cap": 199,
+            "recall_lost_to_cap": 0.01192,
+            "cap_seconds": 3.49
+          },
+          "150": {
+            "recall": 0.94536,
+            "after_cap": {
+              "pairs": 947073,
+              "mean_per_s1": 94.707,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 405150,
+            "positives_lost_to_cap": 68,
+            "recall_lost_to_cap": 0.00407,
+            "cap_seconds": 3.1
+          },
+          "200": {
+            "recall": 0.94751,
+            "after_cap": {
+              "pairs": 1104155,
+              "mean_per_s1": 110.415,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 1352223,
+            "pairs_dropped": 248068,
+            "positives_lost_to_cap": 32,
+            "recall_lost_to_cap": 0.00192,
+            "cap_seconds": 2.74
+          }
+        },
+        "500": {
+          "30": {
+            "recall": 0.9009,
+            "after_cap": {
+              "pairs": 277964,
+              "mean_per_s1": 27.796,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 2411552,
+            "positives_lost_to_cap": 1060,
+            "recall_lost_to_cap": 0.06351,
+            "cap_seconds": 6.66
+          },
+          "60": {
+            "recall": 0.92672,
+            "after_cap": {
+              "pairs": 531354,
+              "mean_per_s1": 53.135,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 2158162,
+            "positives_lost_to_cap": 629,
+            "recall_lost_to_cap": 0.03769,
+            "cap_seconds": 6.72
+          },
+          "80": {
+            "recall": 0.93481,
+            "after_cap": {
+              "pairs": 688239,
+              "mean_per_s1": 68.824,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 2001277,
+            "positives_lost_to_cap": 494,
+            "recall_lost_to_cap": 0.0296,
+            "cap_seconds": 6.68
+          },
+          "100": {
+            "recall": 0.94122,
+            "after_cap": {
+              "pairs": 834503,
+              "mean_per_s1": 83.45,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 1855013,
+            "positives_lost_to_cap": 387,
+            "recall_lost_to_cap": 0.02319,
+            "cap_seconds": 6.59
+          },
+          "150": {
+            "recall": 0.95051,
+            "after_cap": {
+              "pairs": 1161290,
+              "mean_per_s1": 116.129,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 1528226,
+            "positives_lost_to_cap": 232,
+            "recall_lost_to_cap": 0.0139,
+            "cap_seconds": 6.38
+          },
+          "200": {
+            "recall": 0.9538,
+            "after_cap": {
+              "pairs": 1440671,
+              "mean_per_s1": 144.067,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 2689516,
+            "pairs_dropped": 1248845,
+            "positives_lost_to_cap": 177,
+            "recall_lost_to_cap": 0.01061,
+            "cap_seconds": 6.18
+          }
+        }
+      },
+      "s3": {
+        "50": {
+          "30": {
+            "recall": 0.87338,
+            "after_cap": {
+              "pairs": 170570,
+              "mean_per_s1": 17.057,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 74262,
+            "positives_lost_to_cap": 415,
+            "recall_lost_to_cap": 0.02296,
+            "cap_seconds": 1.24
+          },
+          "60": {
+            "recall": 0.89612,
+            "after_cap": {
+              "pairs": 230941,
+              "mean_per_s1": 23.094,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 13891,
+            "positives_lost_to_cap": 4,
+            "recall_lost_to_cap": 0.00022,
+            "cap_seconds": 0.98
+          },
+          "80": {
+            "recall": 0.89634,
+            "after_cap": {
+              "pairs": 241237,
+              "mean_per_s1": 24.124,
+              "p95_per_s1": 70.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 3595,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.89
+          },
+          "100": {
+            "recall": 0.89634,
+            "after_cap": {
+              "pairs": 244091,
+              "mean_per_s1": 24.409,
+              "p95_per_s1": 70.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 741,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.88
+          },
+          "150": {
+            "recall": 0.89634,
+            "after_cap": {
+              "pairs": 244816,
+              "mean_per_s1": 24.482,
+              "p95_per_s1": 70.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 16,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.87
+          },
+          "200": {
+            "recall": 0.89634,
+            "after_cap": {
+              "pairs": 244832,
+              "mean_per_s1": 24.483,
+              "p95_per_s1": 70.0,
+              "max_per_s1": 162
+            },
+            "pairs_before_cap": 244832,
+            "pairs_dropped": 0,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.01
+          }
+        },
+        "100": {
+          "30": {
+            "recall": 0.872,
+            "after_cap": {
+              "pairs": 221715,
+              "mean_per_s1": 22.172,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 328858,
+            "positives_lost_to_cap": 989,
+            "recall_lost_to_cap": 0.05471,
+            "cap_seconds": 1.96
+          },
+          "60": {
+            "recall": 0.91177,
+            "after_cap": {
+              "pairs": 374472,
+              "mean_per_s1": 37.447,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 176101,
+            "positives_lost_to_cap": 270,
+            "recall_lost_to_cap": 0.01494,
+            "cap_seconds": 1.84
+          },
+          "80": {
+            "recall": 0.92106,
+            "after_cap": {
+              "pairs": 446030,
+              "mean_per_s1": 44.603,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 104543,
+            "positives_lost_to_cap": 102,
+            "recall_lost_to_cap": 0.00564,
+            "cap_seconds": 1.69
+          },
+          "100": {
+            "recall": 0.92577,
+            "after_cap": {
+              "pairs": 491814,
+              "mean_per_s1": 49.181,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 58759,
+            "positives_lost_to_cap": 17,
+            "recall_lost_to_cap": 0.00094,
+            "cap_seconds": 1.45
+          },
+          "150": {
+            "recall": 0.92665,
+            "after_cap": {
+              "pairs": 537063,
+              "mean_per_s1": 53.706,
+              "p95_per_s1": 147.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 13510,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 6e-05,
+            "cap_seconds": 1.14
+          },
+          "200": {
+            "recall": 0.92671,
+            "after_cap": {
+              "pairs": 548570,
+              "mean_per_s1": 54.857,
+              "p95_per_s1": 147.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 550573,
+            "pairs_dropped": 2003,
+            "positives_lost_to_cap": 0,
+            "recall_lost_to_cap": 0.0,
+            "cap_seconds": 0.98
+          }
+        },
+        "150": {
+          "30": {
+            "recall": 0.87388,
+            "after_cap": {
+              "pairs": 240343,
+              "mean_per_s1": 24.034,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 571681,
+            "positives_lost_to_cap": 1143,
+            "recall_lost_to_cap": 0.06323,
+            "cap_seconds": 2.59
+          },
+          "60": {
+            "recall": 0.91481,
+            "after_cap": {
+              "pairs": 426448,
+              "mean_per_s1": 42.645,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 385576,
+            "positives_lost_to_cap": 403,
+            "recall_lost_to_cap": 0.02229,
+            "cap_seconds": 2.55
+          },
+          "80": {
+            "recall": 0.92505,
+            "after_cap": {
+              "pairs": 526678,
+              "mean_per_s1": 52.668,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 285346,
+            "positives_lost_to_cap": 218,
+            "recall_lost_to_cap": 0.01206,
+            "cap_seconds": 2.44
+          },
+          "100": {
+            "recall": 0.93091,
+            "after_cap": {
+              "pairs": 606846,
+              "mean_per_s1": 60.685,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 205178,
+            "positives_lost_to_cap": 112,
+            "recall_lost_to_cap": 0.0062,
+            "cap_seconds": 2.25
+          },
+          "150": {
+            "recall": 0.93672,
+            "after_cap": {
+              "pairs": 731283,
+              "mean_per_s1": 73.128,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 80741,
+            "positives_lost_to_cap": 7,
+            "recall_lost_to_cap": 0.00039,
+            "cap_seconds": 1.77
+          },
+          "200": {
+            "recall": 0.93705,
+            "after_cap": {
+              "pairs": 782406,
+              "mean_per_s1": 78.241,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 812024,
+            "pairs_dropped": 29618,
+            "positives_lost_to_cap": 1,
+            "recall_lost_to_cap": 6e-05,
+            "cap_seconds": 1.43
+          }
+        },
+        "250": {
+          "30": {
+            "recall": 0.87654,
+            "after_cap": {
+              "pairs": 255952,
+              "mean_per_s1": 25.595,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 1049867,
+            "positives_lost_to_cap": 1283,
+            "recall_lost_to_cap": 0.07097,
+            "cap_seconds": 3.74
+          },
+          "60": {
+            "recall": 0.91929,
+            "after_cap": {
+              "pairs": 470045,
+              "mean_per_s1": 47.005,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 835774,
+            "positives_lost_to_cap": 510,
+            "recall_lost_to_cap": 0.02821,
+            "cap_seconds": 3.81
+          },
+          "80": {
+            "recall": 0.92991,
+            "after_cap": {
+              "pairs": 595030,
+              "mean_per_s1": 59.503,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 710789,
+            "positives_lost_to_cap": 318,
+            "recall_lost_to_cap": 0.01759,
+            "cap_seconds": 3.74
+          },
+          "100": {
+            "recall": 0.93622,
+            "after_cap": {
+              "pairs": 704834,
+              "mean_per_s1": 70.483,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 600985,
+            "positives_lost_to_cap": 204,
+            "recall_lost_to_cap": 0.01128,
+            "cap_seconds": 3.56
+          },
+          "150": {
+            "recall": 0.9433,
+            "after_cap": {
+              "pairs": 921873,
+              "mean_per_s1": 92.187,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 383946,
+            "positives_lost_to_cap": 76,
+            "recall_lost_to_cap": 0.0042,
+            "cap_seconds": 3.24
+          },
+          "200": {
+            "recall": 0.94557,
+            "after_cap": {
+              "pairs": 1073956,
+              "mean_per_s1": 107.396,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 1305819,
+            "pairs_dropped": 231863,
+            "positives_lost_to_cap": 35,
+            "recall_lost_to_cap": 0.00194,
+            "cap_seconds": 2.79
+          }
+        },
+        "500": {
+          "30": {
+            "recall": 0.87897,
+            "after_cap": {
+              "pairs": 275612,
+              "mean_per_s1": 27.561,
+              "p95_per_s1": 30.0,
+              "max_per_s1": 30
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 2393044,
+            "positives_lost_to_cap": 1515,
+            "recall_lost_to_cap": 0.0838,
+            "cap_seconds": 6.89
+          },
+          "60": {
+            "recall": 0.92477,
+            "after_cap": {
+              "pairs": 523912,
+              "mean_per_s1": 52.391,
+              "p95_per_s1": 60.0,
+              "max_per_s1": 60
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 2144744,
+            "positives_lost_to_cap": 687,
+            "recall_lost_to_cap": 0.038,
+            "cap_seconds": 6.86
+          },
+          "80": {
+            "recall": 0.93511,
+            "after_cap": {
+              "pairs": 677649,
+              "mean_per_s1": 67.765,
+              "p95_per_s1": 80.0,
+              "max_per_s1": 80
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 1991007,
+            "positives_lost_to_cap": 500,
+            "recall_lost_to_cap": 0.02766,
+            "cap_seconds": 6.88
+          },
+          "100": {
+            "recall": 0.94247,
+            "after_cap": {
+              "pairs": 821179,
+              "mean_per_s1": 82.118,
+              "p95_per_s1": 100.0,
+              "max_per_s1": 100
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 1847477,
+            "positives_lost_to_cap": 367,
+            "recall_lost_to_cap": 0.0203,
+            "cap_seconds": 6.69
+          },
+          "150": {
+            "recall": 0.94994,
+            "after_cap": {
+              "pairs": 1142550,
+              "mean_per_s1": 114.255,
+              "p95_per_s1": 150.0,
+              "max_per_s1": 150
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 1526106,
+            "positives_lost_to_cap": 232,
+            "recall_lost_to_cap": 0.01283,
+            "cap_seconds": 6.54
+          },
+          "200": {
+            "recall": 0.95392,
+            "after_cap": {
+              "pairs": 1419698,
+              "mean_per_s1": 141.97,
+              "p95_per_s1": 200.0,
+              "max_per_s1": 200
+            },
+            "pairs_before_cap": 2668656,
+            "pairs_dropped": 1248958,
+            "positives_lost_to_cap": 160,
+            "recall_lost_to_cap": 0.00885,
+            "cap_seconds": 6.34
+          }
+        }
+      }
+    }
+  },
+  "frozen_rule_set": {
+    "10k": {
+      "rules": [
+        "exact_name",
+        "exact_address",
+        "numeric",
+        "name_prefix",
+        "address_prefix",
+        "name_ngram",
+        "name_phonetic",
+        "address_token",
+        "house_locality",
+        "state_locality",
+        "address_signature"
+      ],
+      "source1_entities": 10000,
+      "by_source_by_cutoff": {
+        "s2": {
+          "100": {
+            "precap_recall": 0.9538,
+            "precap": {
+              "pairs": 751227,
+              "mean_per_s1": 75.123,
+              "p95_per_s1": 174.0,
+              "max_per_s1": 338
+            },
+            "blocking_seconds": 4.21,
+            "caps": {
+              "60": {
+                "recall": 0.9447,
+                "after_cap": {
+                  "pairs": 459175,
+                  "mean_per_s1": 45.917,
+                  "p95_per_s1": 60.0,
+                  "max_per_s1": 60
+                },
+                "pairs_dropped": 292052,
+                "positives_lost_to_cap": 152,
+                "cap_seconds": 2.32
+              },
+              "80": {
+                "recall": 0.94949,
+                "after_cap": {
+                  "pairs": 558627,
+                  "mean_per_s1": 55.863,
+                  "p95_per_s1": 80.0,
+                  "max_per_s1": 80
+                },
+                "pairs_dropped": 192600,
+                "positives_lost_to_cap": 72,
+                "cap_seconds": 2.12
+              },
+              "100": {
+                "recall": 0.95255,
+                "after_cap": {
+                  "pairs": 630653,
+                  "mean_per_s1": 63.065,
+                  "p95_per_s1": 100.0,
+                  "max_per_s1": 100
+                },
+                "pairs_dropped": 120574,
+                "positives_lost_to_cap": 21,
+                "cap_seconds": 1.85
+              },
+              "150": {
+                "recall": 0.95362,
+                "after_cap": {
+                  "pairs": 719888,
+                  "mean_per_s1": 71.989,
+                  "p95_per_s1": 150.0,
+                  "max_per_s1": 150
+                },
+                "pairs_dropped": 31339,
+                "positives_lost_to_cap": 3,
+                "cap_seconds": 1.39
+              }
+            }
+          },
+          "150": {
+            "precap_recall": 0.96141,
+            "precap": {
+              "pairs": 1091502,
+              "mean_per_s1": 109.15,
+              "p95_per_s1": 250.0,
+              "max_per_s1": 487
+            },
+            "blocking_seconds": 3.94,
+            "caps": {
+              "60": {
+                "recall": 0.94673,
+                "after_cap": {
+                  "pairs": 502823,
+                  "mean_per_s1": 50.282,
+                  "p95_per_s1": 60.0,
+                  "max_per_s1": 60
+                },
+                "pairs_dropped": 588679,
+                "positives_lost_to_cap": 245,
+                "cap_seconds": 3.12
+              },
+              "80": {
+                "recall": 0.95147,
+                "after_cap": {
+                  "pairs": 631895,
+                  "mean_per_s1": 63.19,
+                  "p95_per_s1": 80.0,
+                  "max_per_s1": 80
+                },
+                "pairs_dropped": 459607,
+                "positives_lost_to_cap": 166,
+                "cap_seconds": 3.02
+              },
+              "100": {
+                "recall": 0.95584,
+                "after_cap": {
+                  "pairs": 741139,
+                  "mean_per_s1": 74.114,
+                  "p95_per_s1": 100.0,
+                  "max_per_s1": 100
+                },
+                "pairs_dropped": 350363,
+                "positives_lost_to_cap": 93,
+                "cap_seconds": 2.87
+              },
+              "150": {
+                "recall": 0.95998,
+                "after_cap": {
+                  "pairs": 932154,
+                  "mean_per_s1": 93.215,
+                  "p95_per_s1": 150.0,
+                  "max_per_s1": 150
+                },
+                "pairs_dropped": 159348,
+                "positives_lost_to_cap": 24,
+                "cap_seconds": 2.41
+              }
+            }
+          }
+        },
+        "s3": {
+          "100": {
+            "precap_recall": 0.95514,
+            "precap": {
+              "pairs": 738409,
+              "mean_per_s1": 73.841,
+              "p95_per_s1": 172.0,
+              "max_per_s1": 315
+            },
+            "blocking_seconds": 3.85,
+            "caps": {
+              "60": {
+                "recall": 0.94319,
+                "after_cap": {
+                  "pairs": 454113,
+                  "mean_per_s1": 45.411,
+                  "p95_per_s1": 60.0,
+                  "max_per_s1": 60
+                },
+                "pairs_dropped": 284296,
+                "positives_lost_to_cap": 216,
+                "cap_seconds": 2.27
+              },
+              "80": {
+                "recall": 0.94972,
+                "after_cap": {
+                  "pairs": 551688,
+                  "mean_per_s1": 55.169,
+                  "p95_per_s1": 80.0,
+                  "max_per_s1": 80
+                },
+                "pairs_dropped": 186721,
+                "positives_lost_to_cap": 98,
+                "cap_seconds": 2.14
+              },
+              "100": {
+                "recall": 0.95304,
+                "after_cap": {
+                  "pairs": 622163,
+                  "mean_per_s1": 62.216,
+                  "p95_per_s1": 100.0,
+                  "max_per_s1": 100
+                },
+                "pairs_dropped": 116246,
+                "positives_lost_to_cap": 38,
+                "cap_seconds": 1.88
+              },
+              "150": {
+                "recall": 0.95492,
+                "after_cap": {
+                  "pairs": 707597,
+                  "mean_per_s1": 70.76,
+                  "p95_per_s1": 150.0,
+                  "max_per_s1": 150
+                },
+                "pairs_dropped": 30812,
+                "positives_lost_to_cap": 4,
+                "cap_seconds": 1.42
+              }
+            }
+          },
+          "150": {
+            "precap_recall": 0.96211,
+            "precap": {
+              "pairs": 1075608,
+              "mean_per_s1": 107.561,
+              "p95_per_s1": 251.0,
+              "max_per_s1": 468
+            },
+            "blocking_seconds": 4.07,
+            "caps": {
+              "60": {
+                "recall": 0.94546,
+                "after_cap": {
+                  "pairs": 498034,
+                  "mean_per_s1": 49.803,
+                  "p95_per_s1": 60.0,
+                  "max_per_s1": 60
+                },
+                "pairs_dropped": 577574,
+                "positives_lost_to_cap": 301,
+                "cap_seconds": 3.14
+              },
+              "80": {
+                "recall": 0.95171,
+                "after_cap": {
+                  "pairs": 624808,
+                  "mean_per_s1": 62.481,
+                  "p95_per_s1": 80.0,
+                  "max_per_s1": 80
+                },
+                "pairs_dropped": 450800,
+                "positives_lost_to_cap": 188,
+                "cap_seconds": 3.02
+              },
+              "100": {
+                "recall": 0.95536,
+                "after_cap": {
+                  "pairs": 731882,
+                  "mean_per_s1": 73.188,
+                  "p95_per_s1": 100.0,
+                  "max_per_s1": 100
+                },
+                "pairs_dropped": 343726,
+                "positives_lost_to_cap": 122,
+                "cap_seconds": 2.86
+              },
+              "150": {
+                "recall": 0.96039,
+                "after_cap": {
+                  "pairs": 918674,
+                  "mean_per_s1": 91.867,
+                  "p95_per_s1": 150.0,
+                  "max_per_s1": 150
+                },
+                "pairs_dropped": 156934,
+                "positives_lost_to_cap": 31,
+                "cap_seconds": 2.37
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

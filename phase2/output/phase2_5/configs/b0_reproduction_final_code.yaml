@@ -1,0 +1,56 @@
+# Phase 2 configuration. Relative paths resolve against the repository root.
+seed: 42
+n_jobs: 6                        # worker processes for normalization and pair features (each holds ~185 MB)
+
+paths:
+  data_root: dataset             # train/ and test/ TSVs (an S3 prefix mounted locally on AWS)
+  phase2_dir: phase2/output/phase2_5/b0_reproduction_final_code             # artifacts/, reports/ and output/ are written below this
+  validator: utils/validate_submission.py
+
+development:
+  enabled: true
+  max_source1_rows: 5000         # deterministic S1 sample (train and test)
+  max_target_rows: 100000        # per target source (null = full sources); train keeps every GT match of sampled S1
+
+candidate_generation:
+  use_country_block: true        # exact normalized country prefixes every key (open set)
+  use_exact_name_block: true     # country + compact core name
+  use_exact_address_block: true  # country + sorted normalized address tokens
+  use_numeric_block: true        # country + house number + street token / postal code
+  use_name_prefix_block: true
+  use_address_prefix_block: true
+  use_name_char_ngram_block: true  # country + rarest core-name tokens (deterministic signature)
+  use_name_phonetic_block: true  # country + consonant skeleton of the name (transliteration spelling)
+  use_address_token_block: true  # country + rarest locality tokens of the address
+  name_prefix_length: 8
+  address_prefix_length: 12
+  rare_tokens_per_name: 2
+  rare_tokens_per_address: 2
+  max_block_size: 100            # target records per key; larger keys are skipped and recorded
+  max_candidates_per_source1: 60 # per target source, after the union; drops are recorded
+  source1_chunk_size: 100000
+
+features:
+  name: {char_ngram: true, token_jaccard: true, edit_similarity: true, normalized_exact: true}
+  address: {char_ngram: true, token_jaccard: true, edit_similarity: true, normalized_exact: true}
+  structural: {country_equal: true, name_missing: true, address_missing: true,
+               house_number_equal: true, postal_code_equal: true}
+
+model:
+  type: logistic_regression
+  C: 1.0
+  max_iter: 2000
+
+training:
+  source1_sample: 60000          # full mode: S1 entities featurized for train + validation
+
+threshold:
+  default: null                  # never used blindly; inference reads threshold_results.json
+  grid_start: 0.05
+  grid_stop: 0.95
+  grid_step: 0.05
+
+validation:
+  negative_ratio: 5              # sampled negatives per positive in the training partition
+  hard_negative_fraction: 0.5    # share of those taken as the most name/address-similar negatives
+  validation_fraction: 0.2

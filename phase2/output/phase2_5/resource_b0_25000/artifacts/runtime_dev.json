@@ -1,0 +1,25 @@
+{
+  "seconds": {
+    "train_load_s1_gt": 7.1,
+    "train_normalize_s1": 3.8,
+    "train_load_s2": 9.9,
+    "train_normalize_s2": 135.4,
+    "train_candidates_s2": 237.7,
+    "train_features_s2": 27.1,
+    "train_load_s3": 15.3,
+    "train_normalize_s3": 138.1,
+    "train_candidates_s3": 209.4,
+    "train_features_s3": 20.0,
+    "train_model": 3.2,
+    "threshold_sweep": 0.4,
+    "error_analysis": 27.0
+  },
+  "memory": {
+    "s1_records_mb": 8.8,
+    "s2_records_mb": 1767.7,
+    "s3_records_mb": 1840.5
+  },
+  "n_jobs": 6,
+  "until": "model",
+  "source1_chunk_size": 100000
+}

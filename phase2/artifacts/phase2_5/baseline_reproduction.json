@@ -1,0 +1,322 @@
+{
+  "spec_reported_b0": {
+    "s2_candidate_recall": 0.98103,
+    "s3_candidate_recall": 0.98156,
+    "combined_candidate_recall": 0.9813,
+    "train_entities": 4000,
+    "validation_entities": 1000,
+    "train_candidate_pairs": 319829,
+    "train_pairs_used": 81972,
+    "selected_threshold": 0.7,
+    "macro_f05": 0.9709,
+    "false_positives": 44,
+    "false_negatives_below_threshold": 111,
+    "blocking_missed_validation_positives": 72,
+    "zero_match_validation_entities": 54,
+    "zero_match_predicted_empty": 49
+  },
+  "original_b0_artifacts": {
+    "s2_candidate_recall": 0.98103,
+    "s3_candidate_recall": 0.98156,
+    "combined_candidate_recall": 0.9813,
+    "train_entities": 4000,
+    "validation_entities": 1000,
+    "train_candidate_pairs": 319829,
+    "train_pairs_used": 81972,
+    "selected_threshold": 0.7,
+    "macro_f05": 0.9709,
+    "false_positives": 44,
+    "false_negatives_below_threshold": 111,
+    "blocking_missed_validation_positives": 72,
+    "zero_match_validation_entities": 54,
+    "zero_match_predicted_empty": 49,
+    "train_validation_entity_overlap": 0
+  },
+  "b0_reproduction": {
+    "metrics": {
+      "s2_candidate_recall": 0.98103,
+      "s3_candidate_recall": 0.98156,
+      "combined_candidate_recall": 0.9813,
+      "train_entities": 4000,
+      "validation_entities": 1000,
+      "train_candidate_pairs": 319829,
+      "train_pairs_used": 81972,
+      "selected_threshold": 0.7,
+      "macro_f05": 0.9709,
+      "false_positives": 44,
+      "false_negatives_below_threshold": 111,
+      "blocking_missed_validation_positives": 72,
+      "zero_match_validation_entities": 54,
+      "zero_match_predicted_empty": 49,
+      "train_validation_entity_overlap": 0
+    },
+    "artifacts_identical_to_b0": {
+      "threshold_results.json": true,
+      "training_summary.json": true,
+      "candidate_statistics.json": true,
+      "feature_statistics.json": true,
+      "error_analysis.json": true
+    },
+    "output_sha256_identical": true,
+    "output_sha256": {
+      "matching_results.tsv": "f82d3596ba8f2f23a9d3184a9dd5afe6250944de26ed56ea43f2b88a109be2b4",
+      "candidate_pairs.tsv": "0957d652d05bc208b79aeee13aa527ed839ae6d4047dfe18990cbe1fa4c043e8"
+    },
+    "model_file_identical": true,
+    "validator": {
+      "with_candidates": {
+        "command": "python.exe validate_submission.py --matching C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction\\output\\dev\\matching_results.tsv --test-dir C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction\\output\\dev\\test_subset --candidate C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction\\output\\dev\\candidate_pairs.tsv --check-ids",
+        "returncode": 0,
+        "passed": true,
+        "output": [
+          "ML Challenge 2026 — submission validator",
+          "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction\\output\\dev\\test_subset",
+          "  required S1 entities: 5000",
+          "  valid S2/S3 match IDs: 200000",
+          "  matching_results.tsv: 5000 rows (4211 empty, 789 non-empty).",
+          "  candidate_pairs.tsv: 5000 rows (8 empty, 4992 non-empty).",
+          "",
+          "PASS — no blocking issues found. Safe to submit."
+        ]
+      }
+    },
+    "section45_checks": {
+      "1_every_s1_represented": true,
+      "3_no_malformed_ids": true,
+      "4_no_duplicate_ids_in_a_list": true,
+      "5_multi_match_serialization": true,
+      "6_zero_match_serialization": true,
+      "7_deterministic_sorted_lists": true,
+      "matches_subset_of_candidates": true,
+      "2_ids_exist_in_s2_s3": true,
+      "8_row_count": true,
+      "9_header": true
+    },
+    "runtime_seconds_by_stage": {
+      "train_load_s1_gt": 7.4,
+      "train_normalize_s1": 1.9,
+      "train_load_s2": 11.9,
+      "train_normalize_s2": 7.2,
+      "train_candidates_s2": 7.1,
+      "train_features_s2": 6.6,
+      "train_load_s3": 17.4,
+      "train_normalize_s3": 8.4,
+      "train_candidates_s3": 8.2,
+      "train_features_s3": 5.5,
+      "train_model": 0.5,
+      "threshold_sweep": 0.1,
+      "error_analysis": 29.3,
+      "test_load_s1": 4.2,
+      "test_normalize_s1": 0.6,
+      "test_load_s2": 11.8,
+      "test_normalize_s2": 9.1,
+      "test_candidates_features_scores_s2": 15.2,
+      "test_load_s3": 13.2,
+      "test_normalize_s3": 6.8,
+      "test_candidates_features_scores_s3": 11.7,
+      "test_write_outputs": 0.4,
+      "validator": 0.7
+    },
+    "wall_seconds": 195.4,
+    "main_process_peak_working_set_mb": 2285,
+    "all_python_processes_peak_mb": 2851,
+    "memory_method": "external: Windows PeakWorkingSet64 sampled every 2 s (phase2/tools/memwatch.ps1)"
+  },
+  "b0_reproduction_after_refactor": {
+    "metrics": {
+      "s2_candidate_recall": 0.98103,
+      "s3_candidate_recall": 0.98156,
+      "combined_candidate_recall": 0.9813,
+      "train_entities": 4000,
+      "validation_entities": 1000,
+      "train_candidate_pairs": 319829,
+      "train_pairs_used": 81972,
+      "selected_threshold": 0.7,
+      "macro_f05": 0.9709,
+      "false_positives": 44,
+      "false_negatives_below_threshold": 111,
+      "blocking_missed_validation_positives": 72,
+      "zero_match_validation_entities": 54,
+      "zero_match_predicted_empty": 49,
+      "train_validation_entity_overlap": 0
+    },
+    "artifacts_identical_to_b0": {
+      "threshold_results.json": true,
+      "training_summary.json": true,
+      "candidate_statistics.json": true,
+      "feature_statistics.json": true,
+      "error_analysis.json": true
+    },
+    "output_sha256_identical": true,
+    "output_sha256": {
+      "matching_results.tsv": "f82d3596ba8f2f23a9d3184a9dd5afe6250944de26ed56ea43f2b88a109be2b4",
+      "candidate_pairs.tsv": "0957d652d05bc208b79aeee13aa527ed839ae6d4047dfe18990cbe1fa4c043e8"
+    },
+    "model_file_identical": true,
+    "validator": {
+      "with_candidates": {
+        "command": "python.exe validate_submission.py --matching C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_after_refactor\\output\\dev\\matching_results.tsv --test-dir C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_after_refactor\\output\\dev\\test_subset --candidate C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_after_refactor\\output\\dev\\candidate_pairs.tsv --check-ids",
+        "returncode": 0,
+        "passed": true,
+        "output": [
+          "ML Challenge 2026 — submission validator",
+          "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_after_refactor\\output\\dev\\test_subset",
+          "  required S1 entities: 5000",
+          "  valid S2/S3 match IDs: 200000",
+          "  matching_results.tsv: 5000 rows (4211 empty, 789 non-empty).",
+          "  candidate_pairs.tsv: 5000 rows (8 empty, 4992 non-empty).",
+          "",
+          "PASS — no blocking issues found. Safe to submit."
+        ]
+      }
+    },
+    "section45_checks": {
+      "1_every_s1_represented": true,
+      "3_no_malformed_ids": true,
+      "4_no_duplicate_ids_in_a_list": true,
+      "5_multi_match_serialization": true,
+      "6_zero_match_serialization": true,
+      "7_deterministic_sorted_lists": true,
+      "matches_subset_of_candidates": true,
+      "2_ids_exist_in_s2_s3": true,
+      "8_row_count": true,
+      "9_header": true
+    },
+    "runtime_seconds_by_stage": {
+      "train_load_s1_gt": 8.1,
+      "train_normalize_s1": 2.0,
+      "train_load_s2": 13.0,
+      "train_normalize_s2": 8.2,
+      "train_candidates_s2": 7.1,
+      "train_features_s2": 7.2,
+      "train_load_s3": 16.1,
+      "train_normalize_s3": 6.7,
+      "train_candidates_s3": 4.9,
+      "train_features_s3": 4.5,
+      "train_model": 0.5,
+      "threshold_sweep": 0.1,
+      "error_analysis": 25.2,
+      "test_load_s1": 4.0,
+      "test_normalize_s1": 0.6,
+      "test_load_s2": 12.1,
+      "test_normalize_s2": 6.8,
+      "test_candidates_features_scores_s2": 11.0,
+      "test_load_s3": 12.9,
+      "test_normalize_s3": 6.8,
+      "test_candidates_features_scores_s3": 10.4,
+      "test_write_outputs": 0.3,
+      "validator": 0.6
+    },
+    "wall_seconds": 179,
+    "main_process_peak_working_set_mb": 2293,
+    "all_python_processes_peak_mb": 2753,
+    "memory_method": "external: Windows PeakWorkingSet64 sampled every 2 s (phase2/tools/memwatch.ps1)"
+  },
+  "b0_reproduction_final_code": {
+    "metrics": {
+      "s2_candidate_recall": 0.98103,
+      "s3_candidate_recall": 0.98156,
+      "combined_candidate_recall": 0.9813,
+      "train_entities": 4000,
+      "validation_entities": 1000,
+      "train_candidate_pairs": 319829,
+      "train_pairs_used": 81972,
+      "selected_threshold": 0.7,
+      "macro_f05": 0.9709,
+      "false_positives": 44,
+      "false_negatives_below_threshold": 111,
+      "blocking_missed_validation_positives": 72,
+      "zero_match_validation_entities": 54,
+      "zero_match_predicted_empty": 49,
+      "train_validation_entity_overlap": 0
+    },
+    "artifacts_identical_to_b0": {
+      "threshold_results.json": true,
+      "training_summary.json": true,
+      "candidate_statistics.json": true,
+      "feature_statistics.json": true,
+      "error_analysis.json": true
+    },
+    "output_sha256_identical": true,
+    "output_sha256": {
+      "matching_results.tsv": "f82d3596ba8f2f23a9d3184a9dd5afe6250944de26ed56ea43f2b88a109be2b4",
+      "candidate_pairs.tsv": "0957d652d05bc208b79aeee13aa527ed839ae6d4047dfe18990cbe1fa4c043e8"
+    },
+    "model_file_identical": true,
+    "validator": {
+      "with_candidates": {
+        "command": "python.exe validate_submission.py --matching C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_final_code\\output\\dev\\matching_results.tsv --test-dir C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_final_code\\output\\dev\\test_subset --candidate C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_final_code\\output\\dev\\candidate_pairs.tsv --check-ids",
+        "returncode": 0,
+        "passed": true,
+        "output": [
+          "ML Challenge 2026 — submission validator",
+          "  test dir: C:\\Users\\dbijp\\OneDrive\\Desktop\\amazon_aws\\phase2\\output\\phase2_5\\b0_reproduction_final_code\\output\\dev\\test_subset",
+          "  required S1 entities: 5000",
+          "  valid S2/S3 match IDs: 200000",
+          "  matching_results.tsv: 5000 rows (4211 empty, 789 non-empty).",
+          "  candidate_pairs.tsv: 5000 rows (8 empty, 4992 non-empty).",
+          "",
+          "PASS — no blocking issues found. Safe to submit."
+        ]
+      }
+    },
+    "section45_checks": {
+      "1_every_s1_represented": true,
+      "3_no_malformed_ids": true,
+      "4_no_duplicate_ids_in_a_list": true,
+      "5_multi_match_serialization": true,
+      "6_zero_match_serialization": true,
+      "7_deterministic_sorted_lists": true,
+      "matches_subset_of_candidates": true,
+      "2_ids_exist_in_s2_s3": true,
+      "8_row_count": true,
+      "9_header": true
+    },
+    "runtime_seconds_by_stage": {
+      "train_load_s1_gt": 6.7,
+      "train_normalize_s1": 1.7,
+      "train_load_s2": 10.8,
+      "train_normalize_s2": 6.2,
+      "train_candidates_s2": 4.4,
+      "train_features_s2": 4.6,
+      "train_load_s3": 11.6,
+      "train_normalize_s3": 5.3,
+      "train_candidates_s3": 4.4,
+      "train_features_s3": 3.8,
+      "train_model": 0.5,
+      "threshold_sweep": 0.1,
+      "error_analysis": 21.9,
+      "test_load_s1": 3.8,
+      "test_normalize_s1": 0.5,
+      "test_load_s2": 11.3,
+      "test_normalize_s2": 5.8,
+      "test_candidates_features_scores_s2": 9.3,
+      "test_load_s3": 10.9,
+      "test_normalize_s3": 5.7,
+      "test_candidates_features_scores_s3": 9.1,
+      "test_write_outputs": 0.3,
+      "validator": 0.5
+    },
+    "wall_seconds": 148.5,
+    "main_process_peak_working_set_mb": 2317,
+    "all_python_processes_peak_mb": 3064,
+    "memory_method": "external: Windows PeakWorkingSet64 sampled every 2 s (phase2/tools/memwatch.ps1)"
+  },
+  "matches_spec_b0": {
+    "s2_candidate_recall": true,
+    "s3_candidate_recall": true,
+    "combined_candidate_recall": true,
+    "train_entities": true,
+    "validation_entities": true,
+    "train_candidate_pairs": true,
+    "train_pairs_used": true,
+    "selected_threshold": true,
+    "macro_f05": true,
+    "false_positives": true,
+    "false_negatives_below_threshold": true,
+    "blocking_missed_validation_positives": true,
+    "zero_match_validation_entities": true,
+    "zero_match_predicted_empty": true
+  },
+  "reproduced": true
+}

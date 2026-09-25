@@ -1,0 +1,9 @@
+﻿{
+    "name":  "blocking_lr_50000",
+    "args":  "phase2/src/run_phase2.py --config phase2/output/phase2_5/configs/blocking_lr_50000.yaml --mode dev --until model",
+    "exit_code":  0,
+    "wall_seconds":  1102.5,
+    "main_process_peak_working_set_mb":  7914,
+    "all_python_processes_peak_mb":  8597,
+    "samples":  544
+}

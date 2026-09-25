@@ -1,0 +1,16 @@
+{
+  "seconds": {
+    "test_load_s1": 3.5,
+    "test_normalize_s1": 46.8,
+    "test_load_s2": 8.7,
+    "test_normalize_s2": 111.0,
+    "test_candidates_features_scores_s2": 3547.1,
+    "test_load_s3": 10.2,
+    "test_normalize_s3": 116.4,
+    "test_candidates_features_scores_s3": 3564.9,
+    "test_write_outputs": 67.5,
+    "validator": 314.1
+  },
+  "n_jobs": 6,
+  "source1_chunk_size": 25000
+}

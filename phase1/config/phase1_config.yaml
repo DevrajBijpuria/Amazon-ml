@@ -1,0 +1,15 @@
+# Phase 1 configuration. Relative paths resolve against the repository root.
+# Environment variables override: PHASE1_DATA_ROOT, PHASE1_OUTPUT_DIR, PHASE1_OUTPUT_S3_URI.
+
+data_root: dataset            # local folder with train/ and test/, or s3://bucket/prefix
+output_dir: phase1            # reports/ and artifacts/ are written below this
+output_s3_uri: ""             # optional s3://bucket/prefix to upload reports + artifacts
+local_cache_dir: .phase1_cache  # where s3:// inputs are staged (skipped for local data)
+
+seed: 42
+max_rows: null                # cap rows read per file for quick runs; null = full files
+
+variation_sample_rows: 200000  # rows per source for name/address pattern rates
+singleton_sample_rows: 50000   # rows per match bucket for singleton pattern rates
+pair_sample_s1: 5000           # Source-1 entities sampled for pair-level analysis
+negative_pool_rows: 50000      # random S2/S3 rows per source used to draw negatives

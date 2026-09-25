@@ -1,0 +1,9 @@
+﻿{
+    "name":  "capsweep_frozen_10k",
+    "args":  "phase2/src/phase2_5.py capsweep --scale 10k",
+    "exit_code":  0,
+    "wall_seconds":  944.1,
+    "main_process_peak_working_set_mb":  7020,
+    "all_python_processes_peak_mb":  8008,
+    "samples":  466
+}

@@ -1,0 +1,35 @@
+{
+  "seconds": {
+    "train_load_s1_gt": 7.4,
+    "train_normalize_s1": 1.9,
+    "train_load_s2": 11.9,
+    "train_normalize_s2": 7.2,
+    "train_candidates_s2": 7.1,
+    "train_features_s2": 6.6,
+    "train_load_s3": 17.4,
+    "train_normalize_s3": 8.4,
+    "train_candidates_s3": 8.2,
+    "train_features_s3": 5.5,
+    "train_model": 0.5,
+    "threshold_sweep": 0.1,
+    "error_analysis": 29.3,
+    "test_load_s1": 4.2,
+    "test_normalize_s1": 0.6,
+    "test_load_s2": 11.8,
+    "test_normalize_s2": 9.1,
+    "test_candidates_features_scores_s2": 15.2,
+    "test_load_s3": 13.2,
+    "test_normalize_s3": 6.8,
+    "test_candidates_features_scores_s3": 11.7,
+    "test_write_outputs": 0.4,
+    "validator": 0.7
+  },
+  "memory": {
+    "s1_records_mb": 1.8,
+    "s2_records_mb": 35.0,
+    "s3_records_mb": 34.8
+  },
+  "n_jobs": 6,
+  "until": "all",
+  "source1_chunk_size": 100000
+}

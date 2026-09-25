@@ -1,0 +1,9 @@
+﻿{
+    "name":  "frozen_dev_smoke",
+    "args":  "phase2/src/run_phase2.py --config phase2/config/phase2_5_frozen.yaml --mode dev",
+    "exit_code":  0,
+    "wall_seconds":  160.5,
+    "main_process_peak_working_set_mb":  2347,
+    "all_python_processes_peak_mb":  3141,
+    "samples":  79
+}

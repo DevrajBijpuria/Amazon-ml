@@ -1,0 +1,9 @@
+﻿{
+    "name":  "b0_reproduction_after_refactor",
+    "args":  "phase2/src/run_phase2.py --config phase2/output/phase2_5/configs/b0_reproduction_after_refactor.yaml --mode dev",
+    "exit_code":  0,
+    "wall_seconds":  179,
+    "main_process_peak_working_set_mb":  2293,
+    "all_python_processes_peak_mb":  2753,
+    "samples":  88
+}

@@ -1,0 +1,68 @@
+# Phase 2.5 FROZEN hardened configuration (derived from the Phase 2 B0 config; see
+# phase2/reports/phase2_5_report.md for the evidence behind every change).
+# Relative paths resolve against the repository root.
+seed: 42
+n_jobs: 6                        # worker processes for normalization and pair features (each holds ~185 MB)
+
+paths:
+  data_root: dataset             # train/ and test/ TSVs (an S3 prefix mounted locally on AWS)
+  # the frozen model and threshold (0.8) are the ones measured in the 50k Phase 2.5 run; test inference
+  # (--test-only) reads them from here and writes output/<mode>/matching_results.tsv + candidate_pairs.tsv
+  phase2_dir: phase2/output/phase2_5/frozen_50000
+  artifacts_read_only: true      # training with this config is refused: it would overwrite the frozen model
+  validator: utils/validate_submission.py
+  validator_shard_rows: 100000   # full mode: validate in S1 shards (the validator keeps every candidate id in memory)
+
+development:
+  enabled: true
+  max_source1_rows: 5000         # deterministic S1 sample (train and test)
+  max_target_rows: 100000        # per target source (null = full sources); train keeps every GT match of sampled S1
+
+candidate_generation:
+  use_country_block: true        # exact normalized country prefixes every key (open set)
+  use_exact_name_block: true     # country + compact core name
+  use_exact_address_block: true  # country + sorted normalized address tokens
+  use_numeric_block: true        # country + house number + street token / postal code
+  use_name_prefix_block: true
+  use_address_prefix_block: true
+  use_name_char_ngram_block: true  # country + rarest core-name tokens (deterministic signature)
+  use_name_phonetic_block: true  # country + consonant skeleton of the name (transliteration spelling)
+  use_address_token_block: true  # country + rarest locality tokens of the address
+  use_house_locality_block: true   # Phase 2.5: country + house number + rare locality token
+  use_state_locality_block: true   # Phase 2.5: country + state + rare locality token
+  use_address_signature_block: true  # Phase 2.5: country + sorted non-numeric address components
+  name_prefix_length: 8
+  address_prefix_length: 12
+  rare_tokens_per_name: 2
+  rare_tokens_per_address: 2
+  max_block_size: 100            # target records per key; larger keys are skipped and recorded
+  max_candidates_per_source1: 100  # Phase 2.5 (B0: 60); per target source, after the union; drops are recorded
+  source1_chunk_size: 25000       # Phase 2.5: memory only (results are per S1, chunk-independent); B0: 100000
+
+features:
+  name: {char_ngram: true, token_jaccard: true, edit_similarity: true, normalized_exact: true}
+  address: {char_ngram: true, token_jaccard: true, edit_similarity: true, normalized_exact: true}
+  structural: {country_equal: true, name_missing: true, address_missing: true,
+               house_number_equal: true, postal_code_equal: true}
+  # Phase 2.5: feature set F3 (equivalent to all 47 under gradient boosting, simpler)
+  exclude: [matched_by_exact_name_block, matched_by_exact_address_block, matched_by_numeric_block,
+            matched_by_prefix_block, matched_by_ngram_block]
+
+model:
+  type: hist_gradient_boosting   # Phase 2.5 (B0: logistic_regression, C 1.0, max_iter 2000)
+  C: 1.0                         # unused by gradient boosting
+  max_iter: 200
+
+training:
+  source1_sample: 50000          # full mode: the exact 50k S1 sample (40k train / 10k validation) behind the frozen model
+
+threshold:
+  default: null                  # never used blindly; inference reads threshold_results.json
+  grid_start: 0.05
+  grid_stop: 0.95
+  grid_step: 0.05
+
+validation:
+  negative_ratio: 5              # sampled negatives per positive in the training partition
+  hard_negative_fraction: 0.5    # share of those taken as the most name/address-similar negatives
+  validation_fraction: 0.2

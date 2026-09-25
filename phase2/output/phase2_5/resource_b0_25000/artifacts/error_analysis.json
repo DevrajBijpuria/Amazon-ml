@@ -1,0 +1,482 @@
+{
+  "threshold": 0.65,
+  "false_positives": {
+    "count": 697,
+    "examples": [
+      {
+        "s1": "S1-853810997",
+        "target": "S3-302758335",
+        "score": 0.9993,
+        "s1_name": "Gangaya Consulting Limited",
+        "target_name": "Gangayaer Consulting Limited",
+        "s1_address": "60 Golf Glub Road P.S.Jadavpore, Kol, Calcutta, West Bengal",
+        "target_address": "WB, Calcutta, Kol, 60 Golf Glub Road P.s.jadavpore"
+      },
+      {
+        "s1": "S1-891495594",
+        "target": "S3-866735693",
+        "score": 0.9992,
+        "s1_name": "Shagun Enterprises",
+        "target_name": "Shagun Enterprises Group",
+        "s1_address": "New Area Ward No-11 Near Devi Mandir, C/O Ramasharay Singh, Bihar, Aurangabad(Bh), Aurangabad",
+        "target_address": "New Area Ward No-11 Near Devi Mandir, बिहार, Aurangabad, No 61 C/o Ramasharay Singh, Aurangabad(bh)"
+      },
+      {
+        "s1": "S1-253908489",
+        "target": "S2-713459798",
+        "score": 0.9991,
+        "s1_name": "Lyreus Defense Inc",
+        "target_name": "LYREUSA DEFENSE",
+        "s1_address": "11726 Paysons Way, Fairfax County, VA",
+        "target_address": "FAIRFAX COUNTY, VA, 11726 PAYSONS WAY"
+      },
+      {
+        "s1": "S1-725786214",
+        "target": "S3-63534876",
+        "score": 0.9989,
+        "s1_name": "Caldon Bain",
+        "target_name": "caldan bain",
+        "s1_address": "Baltimore, 2732 Chesley Avenue, MD",
+        "target_address": "2732 Chesley Ave, Baltimore, Maryland"
+      },
+      {
+        "s1": "S1-552639018",
+        "target": "S3-508052371",
+        "score": 0.9986,
+        "s1_name": "IR Advisory Pvt. Ltd.",
+        "target_name": "IV Advis0ry-Pvt Ltd",
+        "s1_address": "92-M-1 Village Munirka, New Delhi, South West Delhi, Delhi",
+        "target_address": "South West Delhi, Delhi, DL, 92-M-1 Village Munirka"
+      },
+      {
+        "s1": "S1-528382196",
+        "target": "S2-282081716",
+        "score": 0.9986,
+        "s1_name": "Ivenus Petroleum",
+        "target_name": "IVENUSA  PETROLEUM",
+        "s1_address": "Wilmington, NC, 304 Flemington Road",
+        "target_address": "304 FLEMINGTON RD, WILMINGTON, NC"
+      },
+      {
+        "s1": "S1-823741381",
+        "target": "S2-872158575",
+        "score": 0.9981,
+        "s1_name": "Sarasiya Infraprojects Private Limited",
+        "target_name": "SARAZIYA INFRAPROJECTS PRIVATE LTD",
+        "s1_address": "# 12-10-587/2/B, Road No 4, Medibhavi, Seethafalmandi, Secunderabad, Hyderabad, Telangana",
+        "target_address": "#12-10-587/2/B , ROAD NO 4, MEDIBHAVI, SEETHAFALMANDI, SECUNDERABAD, తెలంగాణ"
+      },
+      {
+        "s1": "S1-364019776",
+        "target": "S2-64796047",
+        "score": 0.998,
+        "s1_name": "Rasna World Public Limited",
+        "target_name": "Rasna W0rld Group Public Limited",
+        "s1_address": "F-101 1St Floor Tower No. 07 International Infotech Park, Sector-30A Vashi Railway, Station, Navi Mumbai, Raigarh, Maharashtra",
+        "target_address": "F-101 1ST FLOOR TOWER NO. 28 INTERNATIONAL INFOTECH PARK, SECTOR-30A VASHI RAILWAY, STATION, NAVI MUMBAI, Maharashtra"
+      },
+      {
+        "s1": "S1-300679450",
+        "target": "S2-215000524",
+        "score": 0.998,
+        "s1_name": "Jalna Properties Pvt Ltd",
+        "target_name": ">> Jalna Properties Limited",
+        "s1_address": "Row House No A-3 Cts No 6975 Krishnavatika, Jalna, Maharashtra",
+        "target_address": "ROW HOUSE NO A-3 CTS NO 6982 KRISHNAVATIKA, JALNA, Maharashtra"
+      },
+      {
+        "s1": "S1-298877161",
+        "target": "S2-937577124",
+        "score": 0.9979,
+        "s1_name": "Gowri Brothers Private Limited",
+        "target_name": "GOWRI BROTHERS  OVERSEAS PRIVATE LIMITED",
+        "s1_address": "D.No-12-13-1282/409, Flat No-409, 4Th Floor, Mehatab Arcade, Tarnaka Junction, Hyderabad, Telangana",
+        "target_address": "D.NO-12-13-1282/413, FLAT NO-409, 4TH FLOOR, MEHATAB ARCADE, TARNAKA JUNCTION, HYDERABAD, Telangana"
+      }
+    ]
+  },
+  "false_negatives_scored_below_threshold": {
+    "count": 2210,
+    "examples": [
+      {
+        "s1": "S1-75477466",
+        "target": "S3-1000924",
+        "score": 0.0,
+        "s1_name": "Fium LLC",
+        "target_name": "Xylobelosyn",
+        "s1_address": "22 Kingsbridge Place, Unit D, Chesapeake City, VA",
+        "target_address": "0022 Kingsbridge Place, Chesapeake, Virginia"
+      },
+      {
+        "s1": "S1-151234482",
+        "target": "S2-454384381",
+        "score": 0.0004,
+        "s1_name": "Vr Polytechnic",
+        "target_name": "VR-SERVICES - 9608432108",
+        "s1_address": "916, 9Th Floor, Vrindavan Green, Sahibabad, Ghaziabad, Uttar Pradesh",
+        "target_address": "9-16, 9TH FLOOR, VRINDAVAN GREEN, SAHIBABAD, GHAZIABAD, Uttar Pradesh"
+      },
+      {
+        "s1": "S1-748403331",
+        "target": "S3-123105377",
+        "score": 0.0004,
+        "s1_name": "Indian Timber Private Limited",
+        "target_name": "Mr lndian Timber Prvrate (Limited) #21802",
+        "s1_address": "C/O Sibir Kr Sengupta, Prantik Apartment Vip Road, Raghunthpur D. B. Nagar, Kolkata, Kolkata, Howrah, West Bengal",
+        "target_address": "C/o Sibir Kr Sengupta, Rajarhat Gopalpur, WB"
+      },
+      {
+        "s1": "S1-102606099",
+        "target": "S2-557388422",
+        "score": 0.0009,
+        "s1_name": "Five Educational Society",
+        "target_name": "Five Educational Society Ltd - 9956109154",
+        "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-641063039",
+        "target": "S3-853169370",
+        "score": 0.001,
+        "s1_name": "Chattisgarh Trading Ltd",
+        "target_name": "Tavodrexnyla",
+        "s1_address": "Dem Phoenix Sales Office, Ground Floor, Bldg 7, Near Times Of India Press, Off Western Express Highway, Kurar Village, Malad East, Mumbai, Maharashtra",
+        "target_address": "Dem Phoenix Sales Office, Mumbai (SUBURBAN), Mumbai, MH"
+      },
+      {
+        "s1": "S1-737529353",
+        "target": "S3-280056874",
+        "score": 0.0012,
+        "s1_name": "Han Ganga Private Limited",
+        "target_name": "Dr Han Private Limited (Services)",
+        "s1_address": "Ballanillam, 5Thfloor, No.43, Chevalier Shivaji Ganesan Road, T.Nagar, Chennai, Tamil Nadu",
+        "target_address": "Ballanillam, Chennai, TN"
+      },
+      {
+        "s1": "S1-45278941",
+        "target": "S3-713032058",
+        "score": 0.0012,
+        "s1_name": "Nium Inc",
+        "target_name": "Ectomirasyn",
+        "s1_address": "1552 B Dahill Road, Brooklyn, NY",
+        "target_address": "001552 B Dahill Road, Brooklyn, New York"
+      },
+      {
+        "s1": "S1-893184502",
+        "target": "S3-724447046",
+        "score": 0.0017,
+        "s1_name": "Malinda Matos, D.O., P.C.",
+        "target_name": "Malinda Matos, D.O., LLC | www.malindama.com",
+        "s1_address": "685 Baypoint Avenue, Evans, NY",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-219938369",
+        "target": "S3-23799209",
+        "score": 0.0019,
+        "s1_name": "Medanet PLLC",
+        "target_name": "Ciraarcriza",
+        "s1_address": "1246 Old Country Road, Hempstead, NY",
+        "target_address": "1246 Old Country Rd, PO Box 3615, Westbury, New York"
+      },
+      {
+        "s1": "S1-972480177",
+        "target": "S3-517545241",
+        "score": 0.0021,
+        "s1_name": "Av Memorial Trust",
+        "target_name": "Av Memorial Trust  LLP - 6962121235",
+        "s1_address": "1St Floor, Subhadra House, 11 Joy Builders Colony, Saket, Indore, Madhya Pradesh",
+        "target_address": ""
+      }
+    ]
+  },
+  "false_negatives_never_retrieved": {
+    "count": 1495,
+    "examples": [
+      {
+        "s1": "S1-100511071",
+        "target": "S2-166791746",
+        "score": NaN,
+        "s1_name": "Shakti Infra Private Limited",
+        "target_name": "শক্তি ইনফ্রা প্রাইভেট লিমিটেড",
+        "s1_address": "C/O Jagabandhu Mondal, Vill- Mirzapur, Sethpur, North 24 Parganas, West Bengal",
+        "target_address": "51/2 C/O JAGABANDHU MONDAL, SETHPUR, NORTH 24 PARGANAS, West Bengal"
+      },
+      {
+        "s1": "S1-100511071",
+        "target": "S3-376271072",
+        "score": NaN,
+        "s1_name": "Shakti Infra Private Limited",
+        "target_name": "শক্তি ইনফ্রা প্রাইভেট লিমিটেড",
+        "s1_address": "C/O Jagabandhu Mondal, Vill- Mirzapur, Sethpur, North 24 Parganas, West Bengal",
+        "target_address": "Block A-618 C/o Jagabandhu Mondal, Vill- Mirzapur, North 24 Parganas, Sethpur, WB"
+      },
+      {
+        "s1": "S1-102606099",
+        "target": "S3-110965286",
+        "score": NaN,
+        "s1_name": "Five Educational Society",
+        "target_name": "Five Edducatgional Society",
+        "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-104612478",
+        "target": "S3-322009363",
+        "score": NaN,
+        "s1_name": "Gold Software Private Limited",
+        "target_name": "கோல்டு சாஃப்ட்வேர் பிரைவேட் லிமிடெட்",
+        "s1_address": "Survey No 22/2, Hanumepalli Village Begapalli Road, Rajeswary Layout, Hosur, Krishnagiri, Dharmapuri, Tamil Nadu",
+        "target_address": "Survey No 22/2, Krishnagiri, TN"
+      },
+      {
+        "s1": "S1-105054349",
+        "target": "S2-207607701",
+        "score": NaN,
+        "s1_name": "Health Network LLC",
+        "target_name": "Health Network",
+        "s1_address": "Puyallup, WA, 18823 87th Avenue Court",
+        "target_address": "18823 87TH AVENUE COURT, null, PUYALLUP, WA"
+      },
+      {
+        "s1": "S1-105054349",
+        "target": "S2-65467060",
+        "score": NaN,
+        "s1_name": "Health Network LLC",
+        "target_name": "healthnetwork.com",
+        "s1_address": "Puyallup, WA, 18823 87th Avenue Court",
+        "target_address": "18823 87TH AVENUE COURT, null, PUYALLUP, WA"
+      },
+      {
+        "s1": "S1-105054349",
+        "target": "S2-880201283",
+        "score": NaN,
+        "s1_name": "Health Network LLC",
+        "target_name": "Health Network Ventures",
+        "s1_address": "Puyallup, WA, 18823 87th Avenue Court",
+        "target_address": ""
+      },
+      {
+        "s1": "S1-105054349",
+        "target": "S3-301241630",
+        "score": NaN,
+        "s1_name": "Health Network LLC",
+        "target_name": "Gildavi Formerly Health Network LLC",
+        "s1_address": "Puyallup, WA, 18823 87th Avenue Court",
+        "target_address": "18823 87th Avenue Court, Puyallup, WA"
+      },
+      {
+        "s1": "S1-105276633",
+        "target": "S3-315160014",
+        "score": NaN,
+        "s1_name": "Back Alley Pub",
+        "target_name": "Back Alley",
+        "s1_address": "Kyle, 191 Shiro Drive, TX",
+        "target_address": "191 Shrio Dr, Kyle, Texas"
+      },
+      {
+        "s1": "S1-106433739",
+        "target": "S2-374264808",
+        "score": NaN,
+        "s1_name": "Green Media Private Limited",
+        "target_name": "Dr GREENMEDIA.COM",
+        "s1_address": "New Delhi, House No. 186, Delhi, North West, Tarun Enclave Pitampura",
+        "target_address": "HOUSE NO. 186, TARUN ENCLAVE PITAMPURA, NEW DELHI, दिल्ली"
+      }
+    ]
+  },
+  "hardest_positives_lowest_score": [
+    {
+      "s1": "S1-75477466",
+      "target": "S3-1000924",
+      "score": 0.0,
+      "s1_name": "Fium LLC",
+      "target_name": "Xylobelosyn",
+      "s1_address": "22 Kingsbridge Place, Unit D, Chesapeake City, VA",
+      "target_address": "0022 Kingsbridge Place, Chesapeake, Virginia"
+    },
+    {
+      "s1": "S1-151234482",
+      "target": "S2-454384381",
+      "score": 0.0004,
+      "s1_name": "Vr Polytechnic",
+      "target_name": "VR-SERVICES - 9608432108",
+      "s1_address": "916, 9Th Floor, Vrindavan Green, Sahibabad, Ghaziabad, Uttar Pradesh",
+      "target_address": "9-16, 9TH FLOOR, VRINDAVAN GREEN, SAHIBABAD, GHAZIABAD, Uttar Pradesh"
+    },
+    {
+      "s1": "S1-748403331",
+      "target": "S3-123105377",
+      "score": 0.0004,
+      "s1_name": "Indian Timber Private Limited",
+      "target_name": "Mr lndian Timber Prvrate (Limited) #21802",
+      "s1_address": "C/O Sibir Kr Sengupta, Prantik Apartment Vip Road, Raghunthpur D. B. Nagar, Kolkata, Kolkata, Howrah, West Bengal",
+      "target_address": "C/o Sibir Kr Sengupta, Rajarhat Gopalpur, WB"
+    },
+    {
+      "s1": "S1-102606099",
+      "target": "S2-557388422",
+      "score": 0.0009,
+      "s1_name": "Five Educational Society",
+      "target_name": "Five Educational Society Ltd - 9956109154",
+      "s1_address": "Short Street, 2Nd Floor, Flat No.-6, 4B, West Bengal, Kolkata, Howrah",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-641063039",
+      "target": "S3-853169370",
+      "score": 0.001,
+      "s1_name": "Chattisgarh Trading Ltd",
+      "target_name": "Tavodrexnyla",
+      "s1_address": "Dem Phoenix Sales Office, Ground Floor, Bldg 7, Near Times Of India Press, Off Western Express Highway, Kurar Village, Malad East, Mumbai, Maharashtra",
+      "target_address": "Dem Phoenix Sales Office, Mumbai (SUBURBAN), Mumbai, MH"
+    },
+    {
+      "s1": "S1-737529353",
+      "target": "S3-280056874",
+      "score": 0.0012,
+      "s1_name": "Han Ganga Private Limited",
+      "target_name": "Dr Han Private Limited (Services)",
+      "s1_address": "Ballanillam, 5Thfloor, No.43, Chevalier Shivaji Ganesan Road, T.Nagar, Chennai, Tamil Nadu",
+      "target_address": "Ballanillam, Chennai, TN"
+    },
+    {
+      "s1": "S1-45278941",
+      "target": "S3-713032058",
+      "score": 0.0012,
+      "s1_name": "Nium Inc",
+      "target_name": "Ectomirasyn",
+      "s1_address": "1552 B Dahill Road, Brooklyn, NY",
+      "target_address": "001552 B Dahill Road, Brooklyn, New York"
+    },
+    {
+      "s1": "S1-893184502",
+      "target": "S3-724447046",
+      "score": 0.0017,
+      "s1_name": "Malinda Matos, D.O., P.C.",
+      "target_name": "Malinda Matos, D.O., LLC | www.malindama.com",
+      "s1_address": "685 Baypoint Avenue, Evans, NY",
+      "target_address": ""
+    },
+    {
+      "s1": "S1-219938369",
+      "target": "S3-23799209",
+      "score": 0.0019,
+      "s1_name": "Medanet PLLC",
+      "target_name": "Ciraarcriza",
+      "s1_address": "1246 Old Country Road, Hempstead, NY",
+      "target_address": "1246 Old Country Rd, PO Box 3615, Westbury, New York"
+    },
+    {
+      "s1": "S1-972480177",
+      "target": "S3-517545241",
+      "score": 0.0021,
+      "s1_name": "Av Memorial Trust",
+      "target_name": "Av Memorial Trust  LLP - 6962121235",
+      "s1_address": "1St Floor, Subhadra House, 11 Joy Builders Colony, Saket, Indore, Madhya Pradesh",
+      "target_address": ""
+    }
+  ],
+  "zero_match_entities": {
+    "count": 281,
+    "predicted_empty": 249,
+    "false_merge_examples": [
+      {
+        "s1": "S1-739797656",
+        "target": "S3-502483528",
+        "score": 0.9978,
+        "s1_name": "Montara Fund Corp",
+        "target_name": "Montaora Fund  Corp",
+        "s1_address": "4714 Komensky Avenue, Chicago, IL",
+        "target_address": "4714 Komensky Avenue, Chicago, Illinois"
+      },
+      {
+        "s1": "S1-94008147",
+        "target": "S2-723276062",
+        "score": 0.9971,
+        "s1_name": "Ivenyx Highland, LLC",
+        "target_name": "Ivonyx Highland, LLC",
+        "s1_address": "4569 Matney Hollow Rd Road, Seymour, MO",
+        "target_address": "4569 MATNEY HOLLOW RD ROAD, SEYMOUR, MO"
+      },
+      {
+        "s1": "S1-26085394",
+        "target": "S2-8373592",
+        "score": 0.9827,
+        "s1_name": "Eagan Value Harmony LLC",
+        "target_name": "Fishman Value Harmony LLC",
+        "s1_address": "205 George Street, Lee, MA",
+        "target_address": "LEE, MA, 205. GEORGE STREET"
+      },
+      {
+        "s1": "S1-672485901",
+        "target": "S3-682317624",
+        "score": 0.9733,
+        "s1_name": "Mcmillian Choice Municipal Partners",
+        "target_name": "Benjamin Choice Municipal Partners",
+        "s1_address": "503 Lakeside Place, Garrett, IN",
+        "target_address": "503 Lakeside Pl, Garrett, Indiana"
+      },
+      {
+        "s1": "S1-20267366",
+        "target": "S3-411021204",
+        "score": 0.9716,
+        "s1_name": "Barbara Quinn Desert Better LLC",
+        "target_name": "Novak  Quinn Desert Better LLC",
+        "s1_address": "57 Powers Street, Dedham, MA",
+        "target_address": "57 Powers Street, Dedham, Massachusetts"
+      },
+      {
+        "s1": "S1-101517021",
+        "target": "S3-179185151",
+        "score": 0.9669,
+        "s1_name": "Keslie Levesque Cornerstone Navios",
+        "target_name": "CARROLL LEVESQUE LEVESQUE CORNERSTONE NAVIOS",
+        "s1_address": "3001 Honeysuckle Circle, Unit A, Killeen, TX",
+        "target_address": "3001 Honeysuckle Circle, # A, Killeen, Texas"
+      },
+      {
+        "s1": "S1-617603148",
+        "target": "S3-625260955",
+        "score": 0.944,
+        "s1_name": "Alpha Global Pvt Ltd",
+        "target_name": "આલ્ફા ગ્લોબલ પ્રાઇવેટ લિમિટેડ",
+        "s1_address": "1 Amidhara Complex Village Bopal Bopal, Ahmedabad, Gujarat",
+        "target_address": "Sr No.410a., Ahmedabad, Bopal, GJ"
+      },
+      {
+        "s1": "S1-109597244",
+        "target": "S3-201772447",
+        "score": 0.9415,
+        "s1_name": "Al Properties Private Limited",
+        "target_name": "M/s Al Limited Agencies  Private Properties",
+        "s1_address": "8-2-624/A/B1, 1St Floor, Road No.10, Banjara Hills, Hyderabad, Telangana",
+        "target_address": "8-2-624/A/B14, 1St Floor, Road No.10, Banjara Hills, Hyderabad, TG"
+      },
+      {
+        "s1": "S1-914882895",
+        "target": "S2-638874263",
+        "score": 0.9365,
+        "s1_name": "Vijay Properties Private Limited",
+        "target_name": "વિજય ઇન્ફોટેક પ્રાઇવેટ લિમિટેડ",
+        "s1_address": "Dhanera Road, Tharad, Banas Kantha, Gujarat",
+        "target_address": "#7-4 DHANERA ROAD, BANAS KANTHA, THARAD, ગુજરાત"
+      },
+      {
+        "s1": "S1-980571025",
+        "target": "S2-979696535",
+        "score": 0.9333,
+        "s1_name": "Himachal Vidyalaya Private Limited",
+        "target_name": "Himachal Vidyalaya Limited",
+        "s1_address": "Om City Lic Colony Tq. Latur, Dis- Latur, Latur, Maharashtra",
+        "target_address": "DOOR NO 71 OM CITY LIC COLONY TQ. LATUR, DIS- LATUR, LATUR, Maharashtra"
+      }
+    ]
+  },
+  "multi_match_entities": {
+    "count": 4468,
+    "mean_true_matches": 3.817,
+    "mean_predicted": 3.138,
+    "predicted_at_least_two": 3888
+  }
+}

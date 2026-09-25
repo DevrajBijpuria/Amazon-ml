@@ -1,0 +1,254 @@
+{
+  "runs": {
+    "b0_reproduction": {
+      "source1_entities": 5000,
+      "targets": "100k per source",
+      "exit_code": null,
+      "wall_seconds": 195.4,
+      "main_process_peak_working_set_mb": 2285,
+      "all_python_processes_peak_mb": 2851,
+      "stage_seconds": {
+        "train_load_s1_gt": 7.4,
+        "train_normalize_s1": 1.9,
+        "train_load_s2": 11.9,
+        "train_normalize_s2": 7.2,
+        "train_candidates_s2": 7.1,
+        "train_features_s2": 6.6,
+        "train_load_s3": 17.4,
+        "train_normalize_s3": 8.4,
+        "train_candidates_s3": 8.2,
+        "train_features_s3": 5.5,
+        "train_model": 0.5,
+        "threshold_sweep": 0.1,
+        "error_analysis": 29.3,
+        "test_load_s1": 4.2,
+        "test_normalize_s1": 0.6,
+        "test_load_s2": 11.8,
+        "test_normalize_s2": 9.1,
+        "test_candidates_features_scores_s2": 15.2,
+        "test_load_s3": 13.2,
+        "test_normalize_s3": 6.8,
+        "test_candidates_features_scores_s3": 11.7,
+        "test_write_outputs": 0.4,
+        "validator": 0.7
+      },
+      "record_table_mb": {
+        "s1_records_mb": 1.8,
+        "s2_records_mb": 35.0,
+        "s3_records_mb": 34.8
+      },
+      "workers": 6,
+      "source1_chunk_size": 100000,
+      "candidate_pairs": {
+        "s2": 207436,
+        "s3": 196200
+      },
+      "precap_candidate_pairs": {
+        "s2": 312708,
+        "s3": 295254
+      },
+      "candidate_recall": {
+        "s2": 0.98103,
+        "s3": 0.98156
+      },
+      "largest_skipped_bucket": {
+        "s2": 1381,
+        "s3": 1229
+      },
+      "max_candidates_per_s1": {
+        "s2": 60,
+        "s3": 60
+      }
+    },
+    "blocking_10k": {
+      "source1_entities": 10000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 1752.1,
+      "main_process_peak_working_set_mb": 9654,
+      "all_python_processes_peak_mb": 9777
+    },
+    "resource_b0_25000": {
+      "source1_entities": 25000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 863.1,
+      "main_process_peak_working_set_mb": 6999,
+      "all_python_processes_peak_mb": 7768,
+      "stage_seconds": {
+        "train_load_s1_gt": 7.1,
+        "train_normalize_s1": 3.8,
+        "train_load_s2": 9.9,
+        "train_normalize_s2": 135.4,
+        "train_candidates_s2": 237.7,
+        "train_features_s2": 27.1,
+        "train_load_s3": 15.3,
+        "train_normalize_s3": 138.1,
+        "train_candidates_s3": 209.4,
+        "train_features_s3": 20.0,
+        "train_model": 3.2,
+        "threshold_sweep": 0.4,
+        "error_analysis": 27.0
+      },
+      "record_table_mb": {
+        "s1_records_mb": 8.8,
+        "s2_records_mb": 1767.7,
+        "s3_records_mb": 1840.5
+      },
+      "workers": 6,
+      "source1_chunk_size": 100000,
+      "candidate_pairs": {
+        "s2": 958692,
+        "s3": 940428
+      },
+      "precap_candidate_pairs": {
+        "s2": 1402574,
+        "s3": 1379525
+      },
+      "candidate_recall": {
+        "s2": 0.91285,
+        "s3": 0.91288
+      },
+      "largest_skipped_bucket": {
+        "s2": 42879,
+        "s3": 50968
+      },
+      "max_candidates_per_s1": {
+        "s2": 60,
+        "s3": 60
+      }
+    },
+    "resource_b0_50000": {
+      "source1_entities": 50000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 841.3,
+      "main_process_peak_working_set_mb": 7361,
+      "all_python_processes_peak_mb": 8155,
+      "stage_seconds": {
+        "train_load_s1_gt": 8.6,
+        "train_normalize_s1": 6.8,
+        "train_load_s2": 11.2,
+        "train_normalize_s2": 122.8,
+        "train_candidates_s2": 202.3,
+        "train_features_s2": 28.6,
+        "train_load_s3": 9.8,
+        "train_normalize_s3": 118.0,
+        "train_candidates_s3": 212.9,
+        "train_features_s3": 36.5,
+        "train_model": 7.1,
+        "threshold_sweep": 0.5,
+        "error_analysis": 27.2
+      },
+      "record_table_mb": {
+        "s1_records_mb": 17.6,
+        "s2_records_mb": 1767.7,
+        "s3_records_mb": 1840.5
+      },
+      "workers": 6,
+      "source1_chunk_size": 100000,
+      "candidate_pairs": {
+        "s2": 1905924,
+        "s3": 1880429
+      },
+      "precap_candidate_pairs": {
+        "s2": 2777206,
+        "s3": 2762245
+      },
+      "candidate_recall": {
+        "s2": 0.91303,
+        "s3": 0.91202
+      },
+      "largest_skipped_bucket": {
+        "s2": 42878,
+        "s3": 50968
+      },
+      "max_candidates_per_s1": {
+        "s2": 60,
+        "s3": 60
+      }
+    },
+    "blocking_lr_50000": {
+      "source1_entities": 50000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 1102.5,
+      "main_process_peak_working_set_mb": 7914,
+      "all_python_processes_peak_mb": 8597,
+      "stage_seconds": {
+        "train_load_s1_gt": 7.1,
+        "train_normalize_s1": 5.8,
+        "train_load_s2": 10.2,
+        "train_normalize_s2": 122.0,
+        "train_candidates_s2": 312.2,
+        "train_features_s2": 43.9,
+        "train_load_s3": 9.7,
+        "train_normalize_s3": 119.8,
+        "train_candidates_s3": 325.4,
+        "train_features_s3": 45.1,
+        "train_model": 8.4,
+        "threshold_sweep": 0.6,
+        "error_analysis": 32.0
+      }
+    },
+    "frozen_50000": {
+      "source1_entities": 50000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 1092.8,
+      "main_process_peak_working_set_mb": 8045,
+      "all_python_processes_peak_mb": 8610,
+      "stage_seconds": {
+        "train_load_s1_gt": 6.9,
+        "train_normalize_s1": 5.9,
+        "train_load_s2": 9.1,
+        "train_normalize_s2": 113.0,
+        "train_candidates_s2": 308.9,
+        "train_features_s2": 42.6,
+        "train_load_s3": 9.7,
+        "train_normalize_s3": 119.2,
+        "train_candidates_s3": 323.3,
+        "train_features_s3": 44.9,
+        "train_model": 16.8,
+        "threshold_sweep": 0.6,
+        "error_analysis": 31.7
+      }
+    },
+    "capsweep_frozen_10k": {
+      "source1_entities": 10000,
+      "targets": "full",
+      "exit_code": 0,
+      "wall_seconds": 944.1,
+      "main_process_peak_working_set_mb": 7020,
+      "all_python_processes_peak_mb": 8008
+    }
+  },
+  "cartesian_product": "never built: candidates are equi-joins on blocking keys; target keys above max_block_size are skipped; each S1 keeps at most max_candidates_per_source1 candidates per source",
+  "memory_method": "external: Windows PeakWorkingSet64 sampled every 2 s (phase2/tools/memwatch.ps1)",
+  "projection_full_run": {
+    "method": "stage-based, frozen configuration: target load/normalize and index build are fixed per source (measured at 50k); candidate join and cap scale with Source-1 count (measured at 10k on the frozen rule set); features scale with candidate pairs (throughput measured at 50k). Model scoring, submission merge and validation are extra and not included.",
+    "test_inference_by_source": {
+      "s2": {
+        "load_normalize_s": 122.0,
+        "index_build_s": 279.0,
+        "join_and_cap_s": 1050.0,
+        "test_candidate_pairs": 107701865,
+        "features_s": 1476.0,
+        "feature_pairs_per_second": 72963,
+        "total_s": 2927.0
+      },
+      "s3": {
+        "load_normalize_s": 129.0,
+        "index_build_s": 295.0,
+        "join_and_cap_s": 993.0,
+        "test_candidate_pairs": 108048374,
+        "features_s": 1556.0,
+        "feature_pairs_per_second": 69447,
+        "total_s": 2973.0
+      }
+    },
+    "test_inference_total_seconds_estimate": 5900.0,
+    "test_candidate_pairs_estimate": 215750239,
+    "peak_memory_note": "The frozen 50k run peaked at 8045 MB (main process); the target-side key tables and normalized target records dominate and do not grow with Source-1 size. Feature buffers grow with the S1 chunk: at 100k S1 per chunk about 6.2M pairs per source (~1.2 GB of float32 features plus copies), so a 25k chunk is advised for the full run."
+  }
+}

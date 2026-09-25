@@ -1,0 +1,1898 @@
+{
+  "dev": {
+    "scale": "dev",
+    "source1_entities": 5000,
+    "validation_entities": 1000,
+    "target_rows_per_source": 100000,
+    "b0_recall": {
+      "s2": {
+        "positives": 8328,
+        "b0_recall": 0.98103,
+        "validation_positives": 1670,
+        "validation_b0_recall": 0.97844
+      },
+      "s3": {
+        "positives": 9055,
+        "b0_recall": 0.98156,
+        "validation_positives": 1798,
+        "validation_b0_recall": 0.97998
+      }
+    },
+    "by_source": {
+      "s2": {
+        "rules": {
+          "exact_name": {
+            "pairs": 7347,
+            "mean_per_s1": 1.469,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 19,
+            "true_positives": 4968,
+            "recall": 0.59654,
+            "unique_only_positives": 6,
+            "unique_only_pairs": 95,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 152250,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 20,
+            "p99_kept_bucket": 3.0,
+            "largest_bucket_overall": 20,
+            "shapley_recall": 0.11399,
+            "shapley_pairs": 1920.0
+          },
+          "exact_address": {
+            "pairs": 2597,
+            "mean_per_s1": 0.519,
+            "p95_per_s1": 2.0,
+            "max_per_s1": 5,
+            "true_positives": 2589,
+            "recall": 0.31088,
+            "unique_only_positives": 2,
+            "unique_only_pairs": 3,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 93703,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 5,
+            "p99_kept_bucket": 2.0,
+            "largest_bucket_overall": 5,
+            "shapley_recall": 0.05528,
+            "shapley_pairs": 463.4
+          },
+          "numeric": {
+            "pairs": 6654,
+            "mean_per_s1": 1.331,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 54,
+            "true_positives": 4745,
+            "recall": 0.56976,
+            "unique_only_positives": 11,
+            "unique_only_pairs": 1837,
+            "true_positives_lost_to_skipped_keys": 2,
+            "target_keys": 81568,
+            "skipped_keys": 4,
+            "largest_kept_bucket": 54,
+            "p99_kept_bucket": 3.0,
+            "largest_bucket_overall": 183,
+            "shapley_recall": 0.11413,
+            "shapley_pairs": 2813.0
+          },
+          "name_prefix": {
+            "pairs": 24858,
+            "mean_per_s1": 4.972,
+            "p95_per_s1": 24.0,
+            "max_per_s1": 99,
+            "true_positives": 5289,
+            "recall": 0.63509,
+            "unique_only_positives": 24,
+            "unique_only_pairs": 9555,
+            "true_positives_lost_to_skipped_keys": 20,
+            "target_keys": 59608,
+            "skipped_keys": 55,
+            "largest_kept_bucket": 99,
+            "p99_kept_bucket": 8.0,
+            "largest_bucket_overall": 670,
+            "shapley_recall": 0.12935,
+            "shapley_pairs": 15379.1
+          },
+          "address_prefix": {
+            "pairs": 3600,
+            "mean_per_s1": 0.72,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 23,
+            "true_positives": 3224,
+            "recall": 0.38713,
+            "unique_only_positives": 4,
+            "unique_only_pairs": 279,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 92523,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 23,
+            "p99_kept_bucket": 2.0,
+            "largest_bucket_overall": 23,
+            "shapley_recall": 0.07073,
+            "shapley_pairs": 909.9
+          },
+          "name_ngram": {
+            "pairs": 143250,
+            "mean_per_s1": 28.65,
+            "p95_per_s1": 96.0,
+            "max_per_s1": 193,
+            "true_positives": 5543,
+            "recall": 0.66559,
+            "unique_only_positives": 74,
+            "unique_only_pairs": 127781,
+            "true_positives_lost_to_skipped_keys": 50,
+            "target_keys": 14773,
+            "skipped_keys": 381,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 78.0,
+            "largest_bucket_overall": 1049,
+            "shapley_recall": 0.14815,
+            "shapley_pairs": 133752.5
+          },
+          "name_phonetic": {
+            "pairs": 8903,
+            "mean_per_s1": 1.781,
+            "p95_per_s1": 6.0,
+            "max_per_s1": 23,
+            "true_positives": 5161,
+            "recall": 0.61972,
+            "unique_only_positives": 86,
+            "unique_only_pairs": 1609,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 83291,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 23,
+            "p99_kept_bucket": 5.0,
+            "largest_bucket_overall": 23,
+            "shapley_recall": 0.1305,
+            "shapley_pairs": 3454.6
+          },
+          "address_token": {
+            "pairs": 159541,
+            "mean_per_s1": 31.908,
+            "p95_per_s1": 98.0,
+            "max_per_s1": 172,
+            "true_positives": 7163,
+            "recall": 0.86011,
+            "unique_only_positives": 264,
+            "unique_only_pairs": 152279,
+            "true_positives_lost_to_skipped_keys": 28,
+            "target_keys": 21803,
+            "skipped_keys": 167,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 60.650000000001455,
+            "largest_bucket_overall": 1381,
+            "shapley_recall": 0.22022,
+            "shapley_pairs": 154015.5
+          }
+        },
+        "cumulative_in_listed_order": [
+          {
+            "rules_added_so_far": [
+              "exact_name"
+            ],
+            "recall": 0.59654,
+            "pairs": 7347
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address"
+            ],
+            "recall": 0.71746,
+            "pairs": 8362
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric"
+            ],
+            "recall": 0.82937,
+            "pairs": 11196
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix"
+            ],
+            "recall": 0.88857,
+            "pairs": 30125
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix"
+            ],
+            "recall": 0.89637,
+            "pairs": 30518
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram"
+            ],
+            "recall": 0.92699,
+            "pairs": 158707
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic"
+            ],
+            "recall": 0.95065,
+            "pairs": 160429
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic",
+              "address_token"
+            ],
+            "recall": 0.98235,
+            "pairs": 312708
+          }
+        ],
+        "union_precap_recall": 0.98235,
+        "union_precap_pairs": 312708,
+        "key_build_seconds_all_rules": 14.5
+      },
+      "s3": {
+        "rules": {
+          "exact_name": {
+            "pairs": 7754,
+            "mean_per_s1": 1.551,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 16,
+            "true_positives": 5255,
+            "recall": 0.58034,
+            "unique_only_positives": 10,
+            "unique_only_pairs": 147,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 153668,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 17,
+            "p99_kept_bucket": 3.0,
+            "largest_bucket_overall": 17,
+            "shapley_recall": 0.11523,
+            "shapley_pairs": 2088.1
+          },
+          "exact_address": {
+            "pairs": 3472,
+            "mean_per_s1": 0.694,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 5,
+            "true_positives": 3454,
+            "recall": 0.38145,
+            "unique_only_positives": 4,
+            "unique_only_pairs": 5,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 93590,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 7,
+            "p99_kept_bucket": 2.0,
+            "largest_bucket_overall": 7,
+            "shapley_recall": 0.07291,
+            "shapley_pairs": 665.7
+          },
+          "numeric": {
+            "pairs": 6747,
+            "mean_per_s1": 1.349,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 49,
+            "true_positives": 4904,
+            "recall": 0.54158,
+            "unique_only_positives": 17,
+            "unique_only_pairs": 1762,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 80675,
+            "skipped_keys": 4,
+            "largest_kept_bucket": 49,
+            "p99_kept_bucket": 3.0,
+            "largest_bucket_overall": 185,
+            "shapley_recall": 0.10874,
+            "shapley_pairs": 2771.4
+          },
+          "name_prefix": {
+            "pairs": 27698,
+            "mean_per_s1": 5.54,
+            "p95_per_s1": 24.0,
+            "max_per_s1": 98,
+            "true_positives": 5662,
+            "recall": 0.62529,
+            "unique_only_positives": 47,
+            "unique_only_pairs": 13071,
+            "true_positives_lost_to_skipped_keys": 22,
+            "target_keys": 59648,
+            "skipped_keys": 53,
+            "largest_kept_bucket": 98,
+            "p99_kept_bucket": 7.0,
+            "largest_bucket_overall": 642,
+            "shapley_recall": 0.13437,
+            "shapley_pairs": 18488.0
+          },
+          "address_prefix": {
+            "pairs": 4065,
+            "mean_per_s1": 0.813,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 23,
+            "true_positives": 3466,
+            "recall": 0.38277,
+            "unique_only_positives": 11,
+            "unique_only_pairs": 506,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 91502,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 28,
+            "p99_kept_bucket": 2.0,
+            "largest_bucket_overall": 28,
+            "shapley_recall": 0.07094,
+            "shapley_pairs": 1182.1
+          },
+          "name_ngram": {
+            "pairs": 121575,
+            "mean_per_s1": 24.315,
+            "p95_per_s1": 96.0,
+            "max_per_s1": 190,
+            "true_positives": 5936,
+            "recall": 0.65555,
+            "unique_only_positives": 129,
+            "unique_only_pairs": 107085,
+            "true_positives_lost_to_skipped_keys": 70,
+            "target_keys": 15276,
+            "skipped_keys": 385,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 70.0,
+            "largest_bucket_overall": 1089,
+            "shapley_recall": 0.15319,
+            "shapley_pairs": 112531.9
+          },
+          "name_phonetic": {
+            "pairs": 8919,
+            "mean_per_s1": 1.784,
+            "p95_per_s1": 6.0,
+            "max_per_s1": 27,
+            "true_positives": 5219,
+            "recall": 0.57637,
+            "unique_only_positives": 45,
+            "unique_only_pairs": 1459,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 83804,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 27,
+            "p99_kept_bucket": 4.0,
+            "largest_bucket_overall": 27,
+            "shapley_recall": 0.11904,
+            "shapley_pairs": 3358.6
+          },
+          "address_token": {
+            "pairs": 159913,
+            "mean_per_s1": 31.983,
+            "p95_per_s1": 99.0,
+            "max_per_s1": 196,
+            "true_positives": 7426,
+            "recall": 0.8201,
+            "unique_only_positives": 268,
+            "unique_only_pairs": 152374,
+            "true_positives_lost_to_skipped_keys": 37,
+            "target_keys": 20250,
+            "skipped_keys": 182,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 63.0,
+            "largest_bucket_overall": 1229,
+            "shapley_recall": 0.20859,
+            "shapley_pairs": 154168.2
+          }
+        },
+        "cumulative_in_listed_order": [
+          {
+            "rules_added_so_far": [
+              "exact_name"
+            ],
+            "recall": 0.58034,
+            "pairs": 7754
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address"
+            ],
+            "recall": 0.75781,
+            "pairs": 9379
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric"
+            ],
+            "recall": 0.83832,
+            "pairs": 11934
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix"
+            ],
+            "recall": 0.89928,
+            "pairs": 33249
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix"
+            ],
+            "recall": 0.90514,
+            "pairs": 33851
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram"
+            ],
+            "recall": 0.94092,
+            "pairs": 141352
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic"
+            ],
+            "recall": 0.9534,
+            "pairs": 142880
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic",
+              "address_token"
+            ],
+            "recall": 0.98299,
+            "pairs": 295254
+          }
+        ],
+        "union_precap_recall": 0.98299,
+        "union_precap_pairs": 295254,
+        "key_build_seconds_all_rules": 15.0
+      }
+    },
+    "address_blocking": {
+      "s2": {
+        "house_locality": {
+          "rule_alone": {
+            "pairs": 5809,
+            "mean_per_s1": 1.162,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 14,
+            "recall": 0.62776,
+            "blocking_seconds": 0.02
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 151345,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 25,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 25
+            }
+          },
+          "new_pairs_vs_b0_precap": 274,
+          "b0_missed_positives_retrieved": 18,
+          "with_b0_after_cap": {
+            "recall": 0.98319,
+            "pairs": 207605,
+            "mean_per_s1": 41.521,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        },
+        "postal_locality": {
+          "rule_alone": {
+            "pairs": 15,
+            "mean_per_s1": 0.003,
+            "p95_per_s1": 0.0,
+            "max_per_s1": 5,
+            "recall": 0.00168,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "postal_locality": {
+              "target_keys": 983,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 6,
+              "p99_kept_bucket": 2.17999999999995,
+              "largest_bucket_overall": 6
+            }
+          },
+          "new_pairs_vs_b0_precap": 0,
+          "b0_missed_positives_retrieved": 0,
+          "with_b0_after_cap": {
+            "recall": 0.98103,
+            "pairs": 207436,
+            "mean_per_s1": 41.487,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        },
+        "state_locality": {
+          "rule_alone": {
+            "pairs": 89524,
+            "mean_per_s1": 17.905,
+            "p95_per_s1": 69.0,
+            "max_per_s1": 170,
+            "recall": 0.87776,
+            "blocking_seconds": 0.04
+          },
+          "buckets": {
+            "state_locality": {
+              "target_keys": 56382,
+              "skipped_keys": 81,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 25.0,
+              "largest_bucket_overall": 484
+            }
+          },
+          "new_pairs_vs_b0_precap": 14307,
+          "b0_missed_positives_retrieved": 17,
+          "with_b0_after_cap": {
+            "recall": 0.98175,
+            "pairs": 213465,
+            "mean_per_s1": 42.693,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        },
+        "address_signature": {
+          "rule_alone": {
+            "pairs": 5260,
+            "mean_per_s1": 1.052,
+            "p95_per_s1": 2.0,
+            "max_per_s1": 85,
+            "recall": 0.12764,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "address_signature": {
+              "target_keys": 31063,
+              "skipped_keys": 3,
+              "largest_kept_bucket": 85,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 146
+            }
+          },
+          "new_pairs_vs_b0_precap": 3706,
+          "b0_missed_positives_retrieved": 8,
+          "with_b0_after_cap": {
+            "recall": 0.98199,
+            "pairs": 208408,
+            "mean_per_s1": 41.682,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        },
+        "house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 93472,
+            "mean_per_s1": 18.694,
+            "p95_per_s1": 71.0,
+            "max_per_s1": 179,
+            "recall": 0.89553,
+            "blocking_seconds": 0.06
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 151345,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 25,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 25
+            },
+            "postal_locality": {
+              "target_keys": 983,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 6,
+              "p99_kept_bucket": 2.17999999999995,
+              "largest_bucket_overall": 6
+            },
+            "state_locality": {
+              "target_keys": 56382,
+              "skipped_keys": 81,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 25.0,
+              "largest_bucket_overall": 484
+            },
+            "address_signature": {
+              "target_keys": 31063,
+              "skipped_keys": 3,
+              "largest_kept_bucket": 85,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 146
+            }
+          },
+          "new_pairs_vs_b0_precap": 17982,
+          "b0_missed_positives_retrieved": 35,
+          "with_b0_after_cap": {
+            "recall": 0.98391,
+            "pairs": 214408,
+            "mean_per_s1": 42.882,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        },
+        "name_phonetic_token+house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 211868,
+            "mean_per_s1": 42.374,
+            "p95_per_s1": 122.0,
+            "max_per_s1": 260,
+            "recall": 0.94585,
+            "blocking_seconds": 0.11
+          },
+          "buckets": {
+            "name_phonetic_token": {
+              "target_keys": 7838,
+              "skipped_keys": 362,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 80.0,
+              "largest_bucket_overall": 1438
+            },
+            "house_locality": {
+              "target_keys": 151345,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 25,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 25
+            },
+            "postal_locality": {
+              "target_keys": 983,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 6,
+              "p99_kept_bucket": 2.17999999999995,
+              "largest_bucket_overall": 6
+            },
+            "state_locality": {
+              "target_keys": 56382,
+              "skipped_keys": 81,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 25.0,
+              "largest_bucket_overall": 484
+            },
+            "address_signature": {
+              "target_keys": 31063,
+              "skipped_keys": 3,
+              "largest_kept_bucket": 85,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 146
+            }
+          },
+          "new_pairs_vs_b0_precap": 64591,
+          "b0_missed_positives_retrieved": 37,
+          "with_b0_after_cap": {
+            "recall": 0.98355,
+            "pairs": 229099,
+            "mean_per_s1": 45.82,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98103
+        }
+      },
+      "s3": {
+        "house_locality": {
+          "rule_alone": {
+            "pairs": 6240,
+            "mean_per_s1": 1.248,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 21,
+            "recall": 0.60486,
+            "blocking_seconds": 0.02
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 148253,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            }
+          },
+          "new_pairs_vs_b0_precap": 433,
+          "b0_missed_positives_retrieved": 24,
+          "with_b0_after_cap": {
+            "recall": 0.98421,
+            "pairs": 196499,
+            "mean_per_s1": 39.3,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        },
+        "postal_locality": {
+          "rule_alone": {
+            "pairs": 21,
+            "mean_per_s1": 0.004,
+            "p95_per_s1": 0.0,
+            "max_per_s1": 3,
+            "recall": 0.00232,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "postal_locality": {
+              "target_keys": 1032,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 3,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 3
+            }
+          },
+          "new_pairs_vs_b0_precap": 0,
+          "b0_missed_positives_retrieved": 0,
+          "with_b0_after_cap": {
+            "recall": 0.98156,
+            "pairs": 196200,
+            "mean_per_s1": 39.24,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        },
+        "state_locality": {
+          "rule_alone": {
+            "pairs": 94470,
+            "mean_per_s1": 18.894,
+            "p95_per_s1": 71.0,
+            "max_per_s1": 168,
+            "recall": 0.84495,
+            "blocking_seconds": 0.05
+          },
+          "buckets": {
+            "state_locality": {
+              "target_keys": 52901,
+              "skipped_keys": 88,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 27.0,
+              "largest_bucket_overall": 698
+            }
+          },
+          "new_pairs_vs_b0_precap": 19952,
+          "b0_missed_positives_retrieved": 17,
+          "with_b0_after_cap": {
+            "recall": 0.98255,
+            "pairs": 204603,
+            "mean_per_s1": 40.921,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        },
+        "address_signature": {
+          "rule_alone": {
+            "pairs": 3026,
+            "mean_per_s1": 0.605,
+            "p95_per_s1": 2.0,
+            "max_per_s1": 91,
+            "recall": 0.16345,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "address_signature": {
+              "target_keys": 27778,
+              "skipped_keys": 12,
+              "largest_kept_bucket": 91,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 382
+            }
+          },
+          "new_pairs_vs_b0_precap": 1059,
+          "b0_missed_positives_retrieved": 3,
+          "with_b0_after_cap": {
+            "recall": 0.98189,
+            "pairs": 196595,
+            "mean_per_s1": 39.319,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        },
+        "house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 96284,
+            "mean_per_s1": 19.257,
+            "p95_per_s1": 72.0,
+            "max_per_s1": 168,
+            "recall": 0.86604,
+            "blocking_seconds": 0.1
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 148253,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "postal_locality": {
+              "target_keys": 1032,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 3,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 3
+            },
+            "state_locality": {
+              "target_keys": 52901,
+              "skipped_keys": 88,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 27.0,
+              "largest_bucket_overall": 698
+            },
+            "address_signature": {
+              "target_keys": 27778,
+              "skipped_keys": 12,
+              "largest_kept_bucket": 91,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 382
+            }
+          },
+          "new_pairs_vs_b0_precap": 21418,
+          "b0_missed_positives_retrieved": 37,
+          "with_b0_after_cap": {
+            "recall": 0.98476,
+            "pairs": 205261,
+            "mean_per_s1": 41.052,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        },
+        "name_phonetic_token+house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 214327,
+            "mean_per_s1": 42.865,
+            "p95_per_s1": 126.0,
+            "max_per_s1": 263,
+            "recall": 0.93352,
+            "blocking_seconds": 0.15
+          },
+          "buckets": {
+            "name_phonetic_token": {
+              "target_keys": 8354,
+              "skipped_keys": 351,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 80.0,
+              "largest_bucket_overall": 1670
+            },
+            "house_locality": {
+              "target_keys": 148253,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "postal_locality": {
+              "target_keys": 1032,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 3,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 3
+            },
+            "state_locality": {
+              "target_keys": 52901,
+              "skipped_keys": 88,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 27.0,
+              "largest_bucket_overall": 698
+            },
+            "address_signature": {
+              "target_keys": 27778,
+              "skipped_keys": 12,
+              "largest_kept_bucket": 91,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 382
+            }
+          },
+          "new_pairs_vs_b0_precap": 69332,
+          "b0_missed_positives_retrieved": 41,
+          "with_b0_after_cap": {
+            "recall": 0.98465,
+            "pairs": 219426,
+            "mean_per_s1": 43.885,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.98156
+        }
+      }
+    }
+  },
+  "10k": {
+    "scale": "10k",
+    "source1_entities": 10000,
+    "validation_entities": 2000,
+    "target_rows_per_source": "full",
+    "b0_recall": {
+      "s2": {
+        "positives": 16690,
+        "b0_recall": 0.91288,
+        "validation_positives": 3270,
+        "validation_b0_recall": 0.91101
+      },
+      "s3": {
+        "positives": 18078,
+        "b0_recall": 0.91177,
+        "validation_positives": 3624,
+        "validation_b0_recall": 0.91474
+      }
+    },
+    "by_source": {
+      "s2": {
+        "rules": {
+          "exact_name": {
+            "pairs": 87089,
+            "mean_per_s1": 8.709,
+            "p95_per_s1": 41.0,
+            "max_per_s1": 107,
+            "true_positives": 9297,
+            "recall": 0.55704,
+            "unique_only_positives": 117,
+            "unique_only_pairs": 14107,
+            "true_positives_lost_to_skipped_keys": 203,
+            "target_keys": 5151503,
+            "skipped_keys": 1400,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 8.0,
+            "largest_bucket_overall": 864,
+            "shapley_recall": 0.14363,
+            "shapley_pairs": 45136.7
+          },
+          "exact_address": {
+            "pairs": 6526,
+            "mean_per_s1": 0.653,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 16,
+            "true_positives": 5315,
+            "recall": 0.31845,
+            "unique_only_positives": 55,
+            "unique_only_pairs": 90,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 3695797,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 40,
+            "p99_kept_bucket": 4.0,
+            "largest_bucket_overall": 40,
+            "shapley_recall": 0.07629,
+            "shapley_pairs": 1709.8
+          },
+          "numeric": {
+            "pairs": 40592,
+            "mean_per_s1": 4.059,
+            "p95_per_s1": 17.0,
+            "max_per_s1": 100,
+            "true_positives": 9232,
+            "recall": 0.55315,
+            "unique_only_positives": 383,
+            "unique_only_pairs": 28055,
+            "true_positives_lost_to_skipped_keys": 31,
+            "target_keys": 2473309,
+            "skipped_keys": 540,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 9.0,
+            "largest_bucket_overall": 8512,
+            "shapley_recall": 0.15705,
+            "shapley_pairs": 31889.7
+          },
+          "name_prefix": {
+            "pairs": 114093,
+            "mean_per_s1": 11.409,
+            "p95_per_s1": 63.0,
+            "max_per_s1": 100,
+            "true_positives": 7832,
+            "recall": 0.46926,
+            "unique_only_positives": 204,
+            "unique_only_pairs": 59247,
+            "true_positives_lost_to_skipped_keys": 458,
+            "target_keys": 1033272,
+            "skipped_keys": 3982,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 36.0,
+            "largest_bucket_overall": 32431,
+            "shapley_recall": 0.12064,
+            "shapley_pairs": 81506.6
+          },
+          "address_prefix": {
+            "pairs": 21594,
+            "mean_per_s1": 2.159,
+            "p95_per_s1": 7.0,
+            "max_per_s1": 100,
+            "true_positives": 6535,
+            "recall": 0.39155,
+            "unique_only_positives": 49,
+            "unique_only_pairs": 12003,
+            "true_positives_lost_to_skipped_keys": 1,
+            "target_keys": 3500417,
+            "skipped_keys": 144,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 5.0,
+            "largest_bucket_overall": 952,
+            "shapley_recall": 0.09475,
+            "shapley_pairs": 14855.0
+          },
+          "name_ngram": {
+            "pairs": 161219,
+            "mean_per_s1": 16.122,
+            "p95_per_s1": 85.0,
+            "max_per_s1": 194,
+            "true_positives": 4968,
+            "recall": 0.29766,
+            "unique_only_positives": 173,
+            "unique_only_pairs": 132195,
+            "true_positives_lost_to_skipped_keys": 784,
+            "target_keys": 163077,
+            "skipped_keys": 7807,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 86.0,
+            "largest_bucket_overall": 42880,
+            "shapley_recall": 0.07881,
+            "shapley_pairs": 144682.2
+          },
+          "name_phonetic": {
+            "pairs": 108295,
+            "mean_per_s1": 10.829,
+            "p95_per_s1": 73.0,
+            "max_per_s1": 100,
+            "true_positives": 8910,
+            "recall": 0.53385,
+            "unique_only_positives": 159,
+            "unique_only_pairs": 45896,
+            "true_positives_lost_to_skipped_keys": 305,
+            "target_keys": 2507868,
+            "skipped_keys": 2213,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 11.0,
+            "largest_bucket_overall": 1149,
+            "shapley_recall": 0.13906,
+            "shapley_pairs": 71739.6
+          },
+          "address_token": {
+            "pairs": 192071,
+            "mean_per_s1": 19.207,
+            "p95_per_s1": 85.0,
+            "max_per_s1": 182,
+            "true_positives": 6043,
+            "recall": 0.36207,
+            "unique_only_positives": 492,
+            "unique_only_pairs": 183853,
+            "true_positives_lost_to_skipped_keys": 788,
+            "target_keys": 321883,
+            "skipped_keys": 12331,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 75.0,
+            "largest_bucket_overall": 41141,
+            "shapley_recall": 0.115,
+            "shapley_pairs": 186331.4
+          }
+        },
+        "cumulative_in_listed_order": [
+          {
+            "rules_added_so_far": [
+              "exact_name"
+            ],
+            "recall": 0.55704,
+            "pairs": 87089
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address"
+            ],
+            "recall": 0.69802,
+            "pairs": 90653
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric"
+            ],
+            "recall": 0.81318,
+            "pairs": 122844
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix"
+            ],
+            "recall": 0.85446,
+            "pairs": 203147
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix"
+            ],
+            "recall": 0.86483,
+            "pairs": 215443
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram"
+            ],
+            "recall": 0.88185,
+            "pairs": 348013
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic"
+            ],
+            "recall": 0.89575,
+            "pairs": 393998
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic",
+              "address_token"
+            ],
+            "recall": 0.92522,
+            "pairs": 577851
+          }
+        ],
+        "union_precap_recall": 0.92522,
+        "union_precap_pairs": 577851,
+        "key_build_seconds_all_rules": 447.2
+      },
+      "s3": {
+        "rules": {
+          "exact_name": {
+            "pairs": 110145,
+            "mean_per_s1": 11.014,
+            "p95_per_s1": 56.0,
+            "max_per_s1": 109,
+            "true_positives": 9816,
+            "recall": 0.54298,
+            "unique_only_positives": 194,
+            "unique_only_pairs": 20110,
+            "true_positives_lost_to_skipped_keys": 185,
+            "target_keys": 5571652,
+            "skipped_keys": 1438,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 8.0,
+            "largest_bucket_overall": 790,
+            "shapley_recall": 0.14715,
+            "shapley_pairs": 59106.0
+          },
+          "exact_address": {
+            "pairs": 8538,
+            "mean_per_s1": 0.854,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 20,
+            "true_positives": 6956,
+            "recall": 0.38478,
+            "unique_only_positives": 130,
+            "unique_only_pairs": 212,
+            "true_positives_lost_to_skipped_keys": 0,
+            "target_keys": 3899104,
+            "skipped_keys": 0,
+            "largest_kept_bucket": 87,
+            "p99_kept_bucket": 4.0,
+            "largest_bucket_overall": 87,
+            "shapley_recall": 0.09921,
+            "shapley_pairs": 2400.6
+          },
+          "numeric": {
+            "pairs": 42186,
+            "mean_per_s1": 4.219,
+            "p95_per_s1": 18.0,
+            "max_per_s1": 99,
+            "true_positives": 9616,
+            "recall": 0.53192,
+            "unique_only_positives": 341,
+            "unique_only_pairs": 28998,
+            "true_positives_lost_to_skipped_keys": 23,
+            "target_keys": 2541045,
+            "skipped_keys": 623,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 9.0,
+            "largest_bucket_overall": 9161,
+            "shapley_recall": 0.14927,
+            "shapley_pairs": 33039.9
+          },
+          "name_prefix": {
+            "pairs": 115499,
+            "mean_per_s1": 11.55,
+            "p95_per_s1": 67.0,
+            "max_per_s1": 100,
+            "true_positives": 8126,
+            "recall": 0.4495,
+            "unique_only_positives": 253,
+            "unique_only_pairs": 55454,
+            "true_positives_lost_to_skipped_keys": 526,
+            "target_keys": 1066910,
+            "skipped_keys": 4195,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 38.0,
+            "largest_bucket_overall": 33028,
+            "shapley_recall": 0.11989,
+            "shapley_pairs": 79766.8
+          },
+          "address_prefix": {
+            "pairs": 22485,
+            "mean_per_s1": 2.248,
+            "p95_per_s1": 7.0,
+            "max_per_s1": 100,
+            "true_positives": 6928,
+            "recall": 0.38323,
+            "unique_only_positives": 49,
+            "unique_only_pairs": 12222,
+            "true_positives_lost_to_skipped_keys": 2,
+            "target_keys": 3620678,
+            "skipped_keys": 277,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 5.0,
+            "largest_bucket_overall": 1341,
+            "shapley_recall": 0.09276,
+            "shapley_pairs": 15280.4
+          },
+          "name_ngram": {
+            "pairs": 160016,
+            "mean_per_s1": 16.002,
+            "p95_per_s1": 86.0,
+            "max_per_s1": 182,
+            "true_positives": 5360,
+            "recall": 0.29649,
+            "unique_only_positives": 255,
+            "unique_only_pairs": 130962,
+            "true_positives_lost_to_skipped_keys": 978,
+            "target_keys": 177929,
+            "skipped_keys": 8072,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 86.44000000000233,
+            "largest_bucket_overall": 50968,
+            "shapley_recall": 0.08253,
+            "shapley_pairs": 143446.7
+          },
+          "name_phonetic": {
+            "pairs": 117031,
+            "mean_per_s1": 11.703,
+            "p95_per_s1": 76.0,
+            "max_per_s1": 100,
+            "true_positives": 9081,
+            "recall": 0.50232,
+            "unique_only_positives": 115,
+            "unique_only_pairs": 39132,
+            "true_positives_lost_to_skipped_keys": 206,
+            "target_keys": 2710944,
+            "skipped_keys": 2058,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 11.0,
+            "largest_bucket_overall": 1542,
+            "shapley_recall": 0.13196,
+            "shapley_pairs": 72198.9
+          },
+          "address_token": {
+            "pairs": 151082,
+            "mean_per_s1": 15.108,
+            "p95_per_s1": 82.0,
+            "max_per_s1": 183,
+            "true_positives": 6056,
+            "recall": 0.33499,
+            "unique_only_positives": 448,
+            "unique_only_pairs": 142873,
+            "true_positives_lost_to_skipped_keys": 803,
+            "target_keys": 300493,
+            "skipped_keys": 11968,
+            "largest_kept_bucket": 100,
+            "p99_kept_bucket": 76.0,
+            "largest_bucket_overall": 40797,
+            "shapley_recall": 0.10393,
+            "shapley_pairs": 145333.8
+          }
+        },
+        "cumulative_in_listed_order": [
+          {
+            "rules_added_so_far": [
+              "exact_name"
+            ],
+            "recall": 0.54298,
+            "pairs": 110145
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address"
+            ],
+            "recall": 0.73913,
+            "pairs": 115273
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric"
+            ],
+            "recall": 0.82537,
+            "pairs": 148060
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix"
+            ],
+            "recall": 0.86608,
+            "pairs": 224670
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix"
+            ],
+            "recall": 0.8736,
+            "pairs": 237177
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram"
+            ],
+            "recall": 0.89274,
+            "pairs": 368487
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic"
+            ],
+            "recall": 0.90192,
+            "pairs": 407700
+          },
+          {
+            "rules_added_so_far": [
+              "exact_name",
+              "exact_address",
+              "numeric",
+              "name_prefix",
+              "address_prefix",
+              "name_ngram",
+              "name_phonetic",
+              "address_token"
+            ],
+            "recall": 0.92671,
+            "pairs": 550573
+          }
+        ],
+        "union_precap_recall": 0.92671,
+        "union_precap_pairs": 550573,
+        "key_build_seconds_all_rules": 457.4
+      }
+    },
+    "address_blocking": {
+      "s2": {
+        "house_locality": {
+          "rule_alone": {
+            "pairs": 47097,
+            "mean_per_s1": 4.71,
+            "p95_per_s1": 19.0,
+            "max_per_s1": 140,
+            "recall": 0.62265,
+            "blocking_seconds": 0.7
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 4804708,
+              "skipped_keys": 168,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 560
+            }
+          },
+          "new_pairs_vs_b0_precap": 27889,
+          "b0_missed_positives_retrieved": 270,
+          "with_b0_after_cap": {
+            "recall": 0.92606,
+            "pairs": 400446,
+            "mean_per_s1": 40.045,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        },
+        "postal_locality": {
+          "rule_alone": {
+            "pairs": 76,
+            "mean_per_s1": 0.008,
+            "p95_per_s1": 0.0,
+            "max_per_s1": 19,
+            "recall": 0.00198,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "postal_locality": {
+              "target_keys": 34148,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 48,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 48
+            }
+          },
+          "new_pairs_vs_b0_precap": 31,
+          "b0_missed_positives_retrieved": 3,
+          "with_b0_after_cap": {
+            "recall": 0.91306,
+            "pairs": 386755,
+            "mean_per_s1": 38.675,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        },
+        "state_locality": {
+          "rule_alone": {
+            "pairs": 233665,
+            "mean_per_s1": 23.366,
+            "p95_per_s1": 90.0,
+            "max_per_s1": 188,
+            "recall": 0.61917,
+            "blocking_seconds": 0.28
+          },
+          "buckets": {
+            "state_locality": {
+              "target_keys": 655660,
+              "skipped_keys": 12505,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 21856
+            }
+          },
+          "new_pairs_vs_b0_precap": 139716,
+          "b0_missed_positives_retrieved": 381,
+          "with_b0_after_cap": {
+            "recall": 0.93176,
+            "pairs": 446113,
+            "mean_per_s1": 44.611,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        },
+        "address_signature": {
+          "rule_alone": {
+            "pairs": 9566,
+            "mean_per_s1": 0.957,
+            "p95_per_s1": 3.0,
+            "max_per_s1": 98,
+            "recall": 0.11995,
+            "blocking_seconds": 0.1
+          },
+          "buckets": {
+            "address_signature": {
+              "target_keys": 921817,
+              "skipped_keys": 334,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 6872
+            }
+          },
+          "new_pairs_vs_b0_precap": 6470,
+          "b0_missed_positives_retrieved": 102,
+          "with_b0_after_cap": {
+            "recall": 0.91851,
+            "pairs": 389167,
+            "mean_per_s1": 38.917,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        },
+        "house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 276773,
+            "mean_per_s1": 27.677,
+            "p95_per_s1": 94.0,
+            "max_per_s1": 216,
+            "recall": 0.82648,
+            "blocking_seconds": 1.07
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 4804708,
+              "skipped_keys": 168,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 560
+            },
+            "postal_locality": {
+              "target_keys": 34148,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 48,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 48
+            },
+            "state_locality": {
+              "target_keys": 655660,
+              "skipped_keys": 12505,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 21856
+            },
+            "address_signature": {
+              "target_keys": 921817,
+              "skipped_keys": 334,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 6872
+            }
+          },
+          "new_pairs_vs_b0_precap": 173394,
+          "b0_missed_positives_retrieved": 618,
+          "with_b0_after_cap": {
+            "recall": 0.9447,
+            "pairs": 459182,
+            "mean_per_s1": 45.918,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        },
+        "name_phonetic_token+house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 319816,
+            "mean_per_s1": 31.982,
+            "p95_per_s1": 101.0,
+            "max_per_s1": 261,
+            "recall": 0.83919,
+            "blocking_seconds": 1.12
+          },
+          "buckets": {
+            "name_phonetic_token": {
+              "target_keys": 86986,
+              "skipped_keys": 5764,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 80.0,
+              "largest_bucket_overall": 70859
+            },
+            "house_locality": {
+              "target_keys": 4804708,
+              "skipped_keys": 168,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 560
+            },
+            "postal_locality": {
+              "target_keys": 34148,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 48,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 48
+            },
+            "state_locality": {
+              "target_keys": 655660,
+              "skipped_keys": 12505,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 21856
+            },
+            "address_signature": {
+              "target_keys": 921817,
+              "skipped_keys": 334,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 6872
+            }
+          },
+          "new_pairs_vs_b0_precap": 189033,
+          "b0_missed_positives_retrieved": 618,
+          "with_b0_after_cap": {
+            "recall": 0.9447,
+            "pairs": 462915,
+            "mean_per_s1": 46.291,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91288
+        }
+      },
+      "s3": {
+        "house_locality": {
+          "rule_alone": {
+            "pairs": 53543,
+            "mean_per_s1": 5.354,
+            "p95_per_s1": 21.0,
+            "max_per_s1": 126,
+            "recall": 0.6035,
+            "blocking_seconds": 0.72
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 4807765,
+              "skipped_keys": 652,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 716
+            }
+          },
+          "new_pairs_vs_b0_precap": 31966,
+          "b0_missed_positives_retrieved": 287,
+          "with_b0_after_cap": {
+            "recall": 0.92472,
+            "pairs": 390223,
+            "mean_per_s1": 39.022,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        },
+        "postal_locality": {
+          "rule_alone": {
+            "pairs": 102,
+            "mean_per_s1": 0.01,
+            "p95_per_s1": 0.0,
+            "max_per_s1": 28,
+            "recall": 0.00194,
+            "blocking_seconds": 0.01
+          },
+          "buckets": {
+            "postal_locality": {
+              "target_keys": 40572,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 58,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 58
+            }
+          },
+          "new_pairs_vs_b0_precap": 50,
+          "b0_missed_positives_retrieved": 1,
+          "with_b0_after_cap": {
+            "recall": 0.91183,
+            "pairs": 374485,
+            "mean_per_s1": 37.449,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        },
+        "state_locality": {
+          "rule_alone": {
+            "pairs": 243415,
+            "mean_per_s1": 24.341,
+            "p95_per_s1": 91.0,
+            "max_per_s1": 191,
+            "recall": 0.58983,
+            "blocking_seconds": 0.27
+          },
+          "buckets": {
+            "state_locality": {
+              "target_keys": 629871,
+              "skipped_keys": 12460,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 34445
+            }
+          },
+          "new_pairs_vs_b0_precap": 148232,
+          "b0_missed_positives_retrieved": 445,
+          "with_b0_after_cap": {
+            "recall": 0.92947,
+            "pairs": 439328,
+            "mean_per_s1": 43.933,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        },
+        "address_signature": {
+          "rule_alone": {
+            "pairs": 12889,
+            "mean_per_s1": 1.289,
+            "p95_per_s1": 4.0,
+            "max_per_s1": 100,
+            "recall": 0.15809,
+            "blocking_seconds": 0.09
+          },
+          "buckets": {
+            "address_signature": {
+              "target_keys": 859799,
+              "skipped_keys": 599,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 20438
+            }
+          },
+          "new_pairs_vs_b0_precap": 8482,
+          "b0_missed_positives_retrieved": 127,
+          "with_b0_after_cap": {
+            "recall": 0.91775,
+            "pairs": 377437,
+            "mean_per_s1": 37.744,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        },
+        "house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 294444,
+            "mean_per_s1": 29.444,
+            "p95_per_s1": 95.0,
+            "max_per_s1": 193,
+            "recall": 0.79649,
+            "blocking_seconds": 1.09
+          },
+          "buckets": {
+            "house_locality": {
+              "target_keys": 4807765,
+              "skipped_keys": 652,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 716
+            },
+            "postal_locality": {
+              "target_keys": 40572,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 58,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 58
+            },
+            "state_locality": {
+              "target_keys": 629871,
+              "skipped_keys": 12460,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 34445
+            },
+            "address_signature": {
+              "target_keys": 859799,
+              "skipped_keys": 599,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 20438
+            }
+          },
+          "new_pairs_vs_b0_precap": 187862,
+          "b0_missed_positives_retrieved": 708,
+          "with_b0_after_cap": {
+            "recall": 0.94319,
+            "pairs": 454123,
+            "mean_per_s1": 45.412,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        },
+        "name_phonetic_token+house_locality+postal_locality+state_locality+address_signature": {
+          "rule_alone": {
+            "pairs": 334935,
+            "mean_per_s1": 33.493,
+            "p95_per_s1": 102.0,
+            "max_per_s1": 264,
+            "recall": 0.81347,
+            "blocking_seconds": 1.14
+          },
+          "buckets": {
+            "name_phonetic_token": {
+              "target_keys": 100321,
+              "skipped_keys": 6173,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 79.0,
+              "largest_bucket_overall": 86577
+            },
+            "house_locality": {
+              "target_keys": 4807765,
+              "skipped_keys": 652,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 716
+            },
+            "postal_locality": {
+              "target_keys": 40572,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 58,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 58
+            },
+            "state_locality": {
+              "target_keys": 629871,
+              "skipped_keys": 12460,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 68.0,
+              "largest_bucket_overall": 34445
+            },
+            "address_signature": {
+              "target_keys": 859799,
+              "skipped_keys": 599,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 20438
+            }
+          },
+          "new_pairs_vs_b0_precap": 202310,
+          "b0_missed_positives_retrieved": 711,
+          "with_b0_after_cap": {
+            "recall": 0.94341,
+            "pairs": 457857,
+            "mean_per_s1": 45.786,
+            "p95_per_s1": 60.0,
+            "max_per_s1": 60
+          },
+          "b0_after_cap_recall": 0.91177
+        }
+      }
+    }
+  }
+}

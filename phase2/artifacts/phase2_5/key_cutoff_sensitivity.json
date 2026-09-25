@@ -1,0 +1,1480 @@
+{
+  "dev": {
+    "scale": "dev",
+    "source1_entities": 5000,
+    "validation_entities": 1000,
+    "target_rows_per_source": 100000,
+    "b0_recall": {
+      "s2": {
+        "positives": 8328,
+        "b0_recall": 0.98103,
+        "validation_positives": 1670,
+        "validation_b0_recall": 0.97844
+      },
+      "s3": {
+        "positives": 9055,
+        "b0_recall": 0.98156,
+        "validation_positives": 1798,
+        "validation_b0_recall": 0.97998
+      }
+    },
+    "cap_during_test": "none (pre-cap)",
+    "by_source": {
+      "s2": {
+        "50": {
+          "precap": {
+            "pairs": 143887,
+            "mean_per_s1": 28.777,
+            "p95_per_s1": 71.0,
+            "max_per_s1": 159
+          },
+          "precap_recall": 0.97695,
+          "positives_recovered_precap": 8136,
+          "blocking_seconds": 0.22,
+          "positives_lost_sharing_skipped_key": 117,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 152250,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "exact_address": {
+              "target_keys": 93703,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 5,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 5
+            },
+            "numeric": {
+              "target_keys": 81568,
+              "skipped_keys": 5,
+              "largest_kept_bucket": 47,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 183
+            },
+            "name_prefix": {
+              "target_keys": 59608,
+              "skipped_keys": 102,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 7.0,
+              "largest_bucket_overall": 670
+            },
+            "address_prefix": {
+              "target_keys": 92523,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 23
+            },
+            "name_ngram": {
+              "target_keys": 14773,
+              "skipped_keys": 713,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 36.0,
+              "largest_bucket_overall": 1049
+            },
+            "name_phonetic": {
+              "target_keys": 83291,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 23
+            },
+            "address_token": {
+              "target_keys": 21803,
+              "skipped_keys": 477,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 38.0,
+              "largest_bucket_overall": 1381
+            }
+          }
+        },
+        "100": {
+          "precap": {
+            "pairs": 312708,
+            "mean_per_s1": 62.542,
+            "p95_per_s1": 156.0,
+            "max_per_s1": 311
+          },
+          "precap_recall": 0.98235,
+          "positives_recovered_precap": 8181,
+          "blocking_seconds": 0.22,
+          "positives_lost_sharing_skipped_key": 72,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 152250,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "exact_address": {
+              "target_keys": 93703,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 5,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 5
+            },
+            "numeric": {
+              "target_keys": 81568,
+              "skipped_keys": 4,
+              "largest_kept_bucket": 54,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 183
+            },
+            "name_prefix": {
+              "target_keys": 59608,
+              "skipped_keys": 55,
+              "largest_kept_bucket": 99,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 670
+            },
+            "address_prefix": {
+              "target_keys": 92523,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 23
+            },
+            "name_ngram": {
+              "target_keys": 14773,
+              "skipped_keys": 381,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 78.0,
+              "largest_bucket_overall": 1049
+            },
+            "name_phonetic": {
+              "target_keys": 83291,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 23
+            },
+            "address_token": {
+              "target_keys": 21803,
+              "skipped_keys": 167,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 60.650000000001455,
+              "largest_bucket_overall": 1381
+            }
+          }
+        },
+        "150": {
+          "precap": {
+            "pairs": 532213,
+            "mean_per_s1": 106.443,
+            "p95_per_s1": 272.0,
+            "max_per_s1": 471
+          },
+          "precap_recall": 0.98679,
+          "positives_recovered_precap": 8218,
+          "blocking_seconds": 0.29,
+          "positives_lost_sharing_skipped_key": 35,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 152250,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "exact_address": {
+              "target_keys": 93703,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 5,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 5
+            },
+            "numeric": {
+              "target_keys": 81568,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 122,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 183
+            },
+            "name_prefix": {
+              "target_keys": 59608,
+              "skipped_keys": 28,
+              "largest_kept_bucket": 149,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 670
+            },
+            "address_prefix": {
+              "target_keys": 92523,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 23
+            },
+            "name_ngram": {
+              "target_keys": 14773,
+              "skipped_keys": 201,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 110.0,
+              "largest_bucket_overall": 1049
+            },
+            "name_phonetic": {
+              "target_keys": 83291,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 23
+            },
+            "address_token": {
+              "target_keys": 21803,
+              "skipped_keys": 86,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 71.0,
+              "largest_bucket_overall": 1381
+            }
+          }
+        },
+        "250": {
+          "precap": {
+            "pairs": 921851,
+            "mean_per_s1": 184.37,
+            "p95_per_s1": 431.0,
+            "max_per_s1": 734
+          },
+          "precap_recall": 0.98979,
+          "positives_recovered_precap": 8243,
+          "blocking_seconds": 0.47,
+          "positives_lost_sharing_skipped_key": 10,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 152250,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "exact_address": {
+              "target_keys": 93703,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 5,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 5
+            },
+            "numeric": {
+              "target_keys": 81568,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 183,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 183
+            },
+            "name_prefix": {
+              "target_keys": 59608,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 234,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 670
+            },
+            "address_prefix": {
+              "target_keys": 92523,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 23
+            },
+            "name_ngram": {
+              "target_keys": 14773,
+              "skipped_keys": 44,
+              "largest_kept_bucket": 249,
+              "p99_kept_bucket": 153.0,
+              "largest_bucket_overall": 1049
+            },
+            "name_phonetic": {
+              "target_keys": 83291,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 23
+            },
+            "address_token": {
+              "target_keys": 21803,
+              "skipped_keys": 27,
+              "largest_kept_bucket": 242,
+              "p99_kept_bucket": 80.25,
+              "largest_bucket_overall": 1381
+            }
+          }
+        },
+        "500": {
+          "precap": {
+            "pairs": 1220113,
+            "mean_per_s1": 244.023,
+            "p95_per_s1": 583.0500000000002,
+            "max_per_s1": 1066
+          },
+          "precap_recall": 0.99099,
+          "positives_recovered_precap": 8253,
+          "blocking_seconds": 0.56,
+          "positives_lost_sharing_skipped_key": 0,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 152250,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 20,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 20
+            },
+            "exact_address": {
+              "target_keys": 93703,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 5,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 5
+            },
+            "numeric": {
+              "target_keys": 81568,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 183,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 183
+            },
+            "name_prefix": {
+              "target_keys": 59608,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 234,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 670
+            },
+            "address_prefix": {
+              "target_keys": 92523,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 23
+            },
+            "name_ngram": {
+              "target_keys": 14773,
+              "skipped_keys": 8,
+              "largest_kept_bucket": 498,
+              "p99_kept_bucket": 164.0,
+              "largest_bucket_overall": 1049
+            },
+            "name_phonetic": {
+              "target_keys": 83291,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 23,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 23
+            },
+            "address_token": {
+              "target_keys": 21803,
+              "skipped_keys": 2,
+              "largest_kept_bucket": 485,
+              "p99_kept_bucket": 84.0,
+              "largest_bucket_overall": 1381
+            }
+          }
+        },
+        "no_cutoff_diagnostic": {
+          "recall_upper_bound": 0.99099,
+          "pair_count_upper_bound": 1590626,
+          "largest_bucket": 1381,
+          "note": "not materialized; never deployable"
+        }
+      },
+      "s3": {
+        "50": {
+          "precap": {
+            "pairs": 142938,
+            "mean_per_s1": 28.588,
+            "p95_per_s1": 69.0,
+            "max_per_s1": 147
+          },
+          "precap_recall": 0.97835,
+          "positives_recovered_precap": 8859,
+          "blocking_seconds": 0.16,
+          "positives_lost_sharing_skipped_key": 133,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 153668,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 17,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 17
+            },
+            "exact_address": {
+              "target_keys": 93590,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 7,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 7
+            },
+            "numeric": {
+              "target_keys": 80675,
+              "skipped_keys": 4,
+              "largest_kept_bucket": 49,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 185
+            },
+            "name_prefix": {
+              "target_keys": 59648,
+              "skipped_keys": 92,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 7.0,
+              "largest_bucket_overall": 642
+            },
+            "address_prefix": {
+              "target_keys": 91502,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 28,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 28
+            },
+            "name_ngram": {
+              "target_keys": 15276,
+              "skipped_keys": 665,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 39.0,
+              "largest_bucket_overall": 1089
+            },
+            "name_phonetic": {
+              "target_keys": 83804,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 27,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 27
+            },
+            "address_token": {
+              "target_keys": 20250,
+              "skipped_keys": 497,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 38.0,
+              "largest_bucket_overall": 1229
+            }
+          }
+        },
+        "100": {
+          "precap": {
+            "pairs": 295254,
+            "mean_per_s1": 59.051,
+            "p95_per_s1": 155.0,
+            "max_per_s1": 312
+          },
+          "precap_recall": 0.98299,
+          "positives_recovered_precap": 8901,
+          "blocking_seconds": 0.25,
+          "positives_lost_sharing_skipped_key": 91,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 153668,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 17,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 17
+            },
+            "exact_address": {
+              "target_keys": 93590,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 7,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 7
+            },
+            "numeric": {
+              "target_keys": 80675,
+              "skipped_keys": 4,
+              "largest_kept_bucket": 49,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 185
+            },
+            "name_prefix": {
+              "target_keys": 59648,
+              "skipped_keys": 53,
+              "largest_kept_bucket": 98,
+              "p99_kept_bucket": 7.0,
+              "largest_bucket_overall": 642
+            },
+            "address_prefix": {
+              "target_keys": 91502,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 28,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 28
+            },
+            "name_ngram": {
+              "target_keys": 15276,
+              "skipped_keys": 385,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 70.0,
+              "largest_bucket_overall": 1089
+            },
+            "name_phonetic": {
+              "target_keys": 83804,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 27,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 27
+            },
+            "address_token": {
+              "target_keys": 20250,
+              "skipped_keys": 182,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 63.0,
+              "largest_bucket_overall": 1229
+            }
+          }
+        },
+        "150": {
+          "precap": {
+            "pairs": 527107,
+            "mean_per_s1": 105.421,
+            "p95_per_s1": 266.0,
+            "max_per_s1": 445
+          },
+          "precap_recall": 0.98818,
+          "positives_recovered_precap": 8948,
+          "blocking_seconds": 0.35,
+          "positives_lost_sharing_skipped_key": 44,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 153668,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 17,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 17
+            },
+            "exact_address": {
+              "target_keys": 93590,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 7,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 7
+            },
+            "numeric": {
+              "target_keys": 80675,
+              "skipped_keys": 2,
+              "largest_kept_bucket": 121,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 185
+            },
+            "name_prefix": {
+              "target_keys": 59648,
+              "skipped_keys": 26,
+              "largest_kept_bucket": 148,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 642
+            },
+            "address_prefix": {
+              "target_keys": 91502,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 28,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 28
+            },
+            "name_ngram": {
+              "target_keys": 15276,
+              "skipped_keys": 209,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 107.0,
+              "largest_bucket_overall": 1089
+            },
+            "name_phonetic": {
+              "target_keys": 83804,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 27,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 27
+            },
+            "address_token": {
+              "target_keys": 20250,
+              "skipped_keys": 104,
+              "largest_kept_bucket": 149,
+              "p99_kept_bucket": 72.54999999999927,
+              "largest_bucket_overall": 1229
+            }
+          }
+        },
+        "250": {
+          "precap": {
+            "pairs": 941360,
+            "mean_per_s1": 188.272,
+            "p95_per_s1": 437.0,
+            "max_per_s1": 740
+          },
+          "precap_recall": 0.99172,
+          "positives_recovered_precap": 8980,
+          "blocking_seconds": 0.51,
+          "positives_lost_sharing_skipped_key": 12,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 153668,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 17,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 17
+            },
+            "exact_address": {
+              "target_keys": 93590,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 7,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 7
+            },
+            "numeric": {
+              "target_keys": 80675,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 185,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 185
+            },
+            "name_prefix": {
+              "target_keys": 59648,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 233,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 642
+            },
+            "address_prefix": {
+              "target_keys": 91502,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 28,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 28
+            },
+            "name_ngram": {
+              "target_keys": 15276,
+              "skipped_keys": 50,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 152.0,
+              "largest_bucket_overall": 1089
+            },
+            "name_phonetic": {
+              "target_keys": 83804,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 27,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 27
+            },
+            "address_token": {
+              "target_keys": 20250,
+              "skipped_keys": 37,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 85.0,
+              "largest_bucket_overall": 1229
+            }
+          }
+        },
+        "500": {
+          "precap": {
+            "pairs": 1264966,
+            "mean_per_s1": 252.993,
+            "p95_per_s1": 596.0,
+            "max_per_s1": 997
+          },
+          "precap_recall": 0.99271,
+          "positives_recovered_precap": 8989,
+          "blocking_seconds": 0.52,
+          "positives_lost_sharing_skipped_key": 3,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 153668,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 17,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 17
+            },
+            "exact_address": {
+              "target_keys": 93590,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 7,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 7
+            },
+            "numeric": {
+              "target_keys": 80675,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 185,
+              "p99_kept_bucket": 3.0,
+              "largest_bucket_overall": 185
+            },
+            "name_prefix": {
+              "target_keys": 59648,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 233,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 642
+            },
+            "address_prefix": {
+              "target_keys": 91502,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 28,
+              "p99_kept_bucket": 2.0,
+              "largest_bucket_overall": 28
+            },
+            "name_ngram": {
+              "target_keys": 15276,
+              "skipped_keys": 9,
+              "largest_kept_bucket": 482,
+              "p99_kept_bucket": 163.0,
+              "largest_bucket_overall": 1089
+            },
+            "name_phonetic": {
+              "target_keys": 83804,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 27,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 27
+            },
+            "address_token": {
+              "target_keys": 20250,
+              "skipped_keys": 7,
+              "largest_kept_bucket": 487,
+              "p99_kept_bucket": 91.0,
+              "largest_bucket_overall": 1229
+            }
+          }
+        },
+        "no_cutoff_diagnostic": {
+          "recall_upper_bound": 0.99304,
+          "pair_count_upper_bound": 1735323,
+          "largest_bucket": 1229,
+          "note": "not materialized; never deployable"
+        }
+      }
+    }
+  },
+  "10k": {
+    "scale": "10k",
+    "source1_entities": 10000,
+    "validation_entities": 2000,
+    "target_rows_per_source": "full",
+    "b0_recall": {
+      "s2": {
+        "positives": 16690,
+        "b0_recall": 0.91288,
+        "validation_positives": 3270,
+        "validation_b0_recall": 0.91101
+      },
+      "s3": {
+        "positives": 18078,
+        "b0_recall": 0.91177,
+        "validation_positives": 3624,
+        "validation_b0_recall": 0.91474
+      }
+    },
+    "cap_during_test": "none (pre-cap)",
+    "by_source": {
+      "s2": {
+        "50": {
+          "precap": {
+            "pairs": 237728,
+            "mean_per_s1": 23.773,
+            "p95_per_s1": 66.0,
+            "max_per_s1": 138
+          },
+          "precap_recall": 0.89611,
+          "positives_recovered_precap": 14956,
+          "blocking_seconds": 2.92,
+          "positives_lost_sharing_skipped_key": 1579,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5151503,
+              "skipped_keys": 6452,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 864
+            },
+            "exact_address": {
+              "target_keys": 3695797,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 40,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 40
+            },
+            "numeric": {
+              "target_keys": 2473309,
+              "skipped_keys": 1533,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 8512
+            },
+            "name_prefix": {
+              "target_keys": 1033272,
+              "skipped_keys": 9858,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 25.0,
+              "largest_bucket_overall": 32431
+            },
+            "address_prefix": {
+              "target_keys": 3500417,
+              "skipped_keys": 429,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 952
+            },
+            "name_ngram": {
+              "target_keys": 163077,
+              "skipped_keys": 17651,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 46.0,
+              "largest_bucket_overall": 42880
+            },
+            "name_phonetic": {
+              "target_keys": 2507868,
+              "skipped_keys": 6900,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 1149
+            },
+            "address_token": {
+              "target_keys": 321883,
+              "skipped_keys": 21007,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 42.0,
+              "largest_bucket_overall": 41141
+            }
+          }
+        },
+        "100": {
+          "precap": {
+            "pairs": 577851,
+            "mean_per_s1": 57.785,
+            "p95_per_s1": 150.0,
+            "max_per_s1": 338
+          },
+          "precap_recall": 0.92522,
+          "positives_recovered_precap": 15442,
+          "blocking_seconds": 2.71,
+          "positives_lost_sharing_skipped_key": 1093,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5151503,
+              "skipped_keys": 1400,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 864
+            },
+            "exact_address": {
+              "target_keys": 3695797,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 40,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 40
+            },
+            "numeric": {
+              "target_keys": 2473309,
+              "skipped_keys": 540,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 8512
+            },
+            "name_prefix": {
+              "target_keys": 1033272,
+              "skipped_keys": 3982,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 36.0,
+              "largest_bucket_overall": 32431
+            },
+            "address_prefix": {
+              "target_keys": 3500417,
+              "skipped_keys": 144,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 952
+            },
+            "name_ngram": {
+              "target_keys": 163077,
+              "skipped_keys": 7807,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 86.0,
+              "largest_bucket_overall": 42880
+            },
+            "name_phonetic": {
+              "target_keys": 2507868,
+              "skipped_keys": 2213,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1149
+            },
+            "address_token": {
+              "target_keys": 321883,
+              "skipped_keys": 12331,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 75.0,
+              "largest_bucket_overall": 41141
+            }
+          }
+        },
+        "150": {
+          "precap": {
+            "pairs": 841714,
+            "mean_per_s1": 84.171,
+            "p95_per_s1": 216.0,
+            "max_per_s1": 487
+          },
+          "precap_recall": 0.93667,
+          "positives_recovered_precap": 15633,
+          "blocking_seconds": 2.83,
+          "positives_lost_sharing_skipped_key": 902,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5151503,
+              "skipped_keys": 633,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 864
+            },
+            "exact_address": {
+              "target_keys": 3695797,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 40,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 40
+            },
+            "numeric": {
+              "target_keys": 2473309,
+              "skipped_keys": 291,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 8512
+            },
+            "name_prefix": {
+              "target_keys": 1033272,
+              "skipped_keys": 2232,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 41.0,
+              "largest_bucket_overall": 32431
+            },
+            "address_prefix": {
+              "target_keys": 3500417,
+              "skipped_keys": 67,
+              "largest_kept_bucket": 149,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 952
+            },
+            "name_ngram": {
+              "target_keys": 163077,
+              "skipped_keys": 5303,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 113.0,
+              "largest_bucket_overall": 42880
+            },
+            "name_phonetic": {
+              "target_keys": 2507868,
+              "skipped_keys": 1051,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1149
+            },
+            "address_token": {
+              "target_keys": 321883,
+              "skipped_keys": 8851,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 104.0,
+              "largest_bucket_overall": 41141
+            }
+          }
+        },
+        "250": {
+          "precap": {
+            "pairs": 1352223,
+            "mean_per_s1": 135.222,
+            "p95_per_s1": 360.0,
+            "max_per_s1": 850
+          },
+          "precap_recall": 0.94943,
+          "positives_recovered_precap": 15846,
+          "blocking_seconds": 3.37,
+          "positives_lost_sharing_skipped_key": 689,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5151503,
+              "skipped_keys": 473,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 864
+            },
+            "exact_address": {
+              "target_keys": 3695797,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 40,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 40
+            },
+            "numeric": {
+              "target_keys": 2473309,
+              "skipped_keys": 120,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 8512
+            },
+            "name_prefix": {
+              "target_keys": 1033272,
+              "skipped_keys": 1003,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 45.0,
+              "largest_bucket_overall": 32431
+            },
+            "address_prefix": {
+              "target_keys": 3500417,
+              "skipped_keys": 28,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 952
+            },
+            "name_ngram": {
+              "target_keys": 163077,
+              "skipped_keys": 3811,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 147.0,
+              "largest_bucket_overall": 42880
+            },
+            "name_phonetic": {
+              "target_keys": 2507868,
+              "skipped_keys": 443,
+              "largest_kept_bucket": 249,
+              "p99_kept_bucket": 12.0,
+              "largest_bucket_overall": 1149
+            },
+            "address_token": {
+              "target_keys": 321883,
+              "skipped_keys": 5708,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 150.0,
+              "largest_bucket_overall": 41141
+            }
+          }
+        },
+        "500": {
+          "precap": {
+            "pairs": 2689516,
+            "mean_per_s1": 268.952,
+            "p95_per_s1": 702.0499999999993,
+            "max_per_s1": 1462
+          },
+          "precap_recall": 0.96441,
+          "positives_recovered_precap": 16096,
+          "blocking_seconds": 4.24,
+          "positives_lost_sharing_skipped_key": 439,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5151503,
+              "skipped_keys": 18,
+              "largest_kept_bucket": 494,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 864
+            },
+            "exact_address": {
+              "target_keys": 3695797,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 40,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 40
+            },
+            "numeric": {
+              "target_keys": 2473309,
+              "skipped_keys": 37,
+              "largest_kept_bucket": 499,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 8512
+            },
+            "name_prefix": {
+              "target_keys": 1033272,
+              "skipped_keys": 421,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 47.0,
+              "largest_bucket_overall": 32431
+            },
+            "address_prefix": {
+              "target_keys": 3500417,
+              "skipped_keys": 1,
+              "largest_kept_bucket": 447,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 952
+            },
+            "name_ngram": {
+              "target_keys": 163077,
+              "skipped_keys": 2669,
+              "largest_kept_bucket": 499,
+              "p99_kept_bucket": 206.0,
+              "largest_bucket_overall": 42880
+            },
+            "name_phonetic": {
+              "target_keys": 2507868,
+              "skipped_keys": 28,
+              "largest_kept_bucket": 494,
+              "p99_kept_bucket": 12.0,
+              "largest_bucket_overall": 1149
+            },
+            "address_token": {
+              "target_keys": 321883,
+              "skipped_keys": 2878,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 233.0,
+              "largest_bucket_overall": 41141
+            }
+          }
+        },
+        "no_cutoff_diagnostic": {
+          "recall_upper_bound": 0.99071,
+          "pair_count_upper_bound": 137603066,
+          "largest_bucket": 42880,
+          "note": "not materialized; never deployable"
+        }
+      },
+      "s3": {
+        "50": {
+          "precap": {
+            "pairs": 244832,
+            "mean_per_s1": 24.483,
+            "p95_per_s1": 70.0,
+            "max_per_s1": 162
+          },
+          "precap_recall": 0.89634,
+          "positives_recovered_precap": 16204,
+          "blocking_seconds": 2.52,
+          "positives_lost_sharing_skipped_key": 1749,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5571652,
+              "skipped_keys": 6168,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 790
+            },
+            "exact_address": {
+              "target_keys": 3899104,
+              "skipped_keys": 14,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 87
+            },
+            "numeric": {
+              "target_keys": 2541045,
+              "skipped_keys": 1819,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 9161
+            },
+            "name_prefix": {
+              "target_keys": 1066910,
+              "skipped_keys": 11085,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 25.0,
+              "largest_bucket_overall": 33028
+            },
+            "address_prefix": {
+              "target_keys": 3620678,
+              "skipped_keys": 711,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 1341
+            },
+            "name_ngram": {
+              "target_keys": 177929,
+              "skipped_keys": 19517,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 47.0,
+              "largest_bucket_overall": 50968
+            },
+            "name_phonetic": {
+              "target_keys": 2710944,
+              "skipped_keys": 6944,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 10.0,
+              "largest_bucket_overall": 1542
+            },
+            "address_token": {
+              "target_keys": 300493,
+              "skipped_keys": 20241,
+              "largest_kept_bucket": 50,
+              "p99_kept_bucket": 43.0,
+              "largest_bucket_overall": 40797
+            }
+          }
+        },
+        "100": {
+          "precap": {
+            "pairs": 550573,
+            "mean_per_s1": 55.057,
+            "p95_per_s1": 147.0,
+            "max_per_s1": 294
+          },
+          "precap_recall": 0.92671,
+          "positives_recovered_precap": 16753,
+          "blocking_seconds": 2.84,
+          "positives_lost_sharing_skipped_key": 1200,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5571652,
+              "skipped_keys": 1438,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 790
+            },
+            "exact_address": {
+              "target_keys": 3899104,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 87,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 87
+            },
+            "numeric": {
+              "target_keys": 2541045,
+              "skipped_keys": 623,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 9161
+            },
+            "name_prefix": {
+              "target_keys": 1066910,
+              "skipped_keys": 4195,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 38.0,
+              "largest_bucket_overall": 33028
+            },
+            "address_prefix": {
+              "target_keys": 3620678,
+              "skipped_keys": 277,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 1341
+            },
+            "name_ngram": {
+              "target_keys": 177929,
+              "skipped_keys": 8072,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 86.44000000000233,
+              "largest_bucket_overall": 50968
+            },
+            "name_phonetic": {
+              "target_keys": 2710944,
+              "skipped_keys": 2058,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1542
+            },
+            "address_token": {
+              "target_keys": 300493,
+              "skipped_keys": 11968,
+              "largest_kept_bucket": 100,
+              "p99_kept_bucket": 76.0,
+              "largest_bucket_overall": 40797
+            }
+          }
+        },
+        "150": {
+          "precap": {
+            "pairs": 812024,
+            "mean_per_s1": 81.202,
+            "p95_per_s1": 211.0,
+            "max_per_s1": 468
+          },
+          "precap_recall": 0.93711,
+          "positives_recovered_precap": 16941,
+          "blocking_seconds": 2.94,
+          "positives_lost_sharing_skipped_key": 1012,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5571652,
+              "skipped_keys": 652,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 790
+            },
+            "exact_address": {
+              "target_keys": 3899104,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 87,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 87
+            },
+            "numeric": {
+              "target_keys": 2541045,
+              "skipped_keys": 329,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 9161
+            },
+            "name_prefix": {
+              "target_keys": 1066910,
+              "skipped_keys": 2315,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 44.0,
+              "largest_bucket_overall": 33028
+            },
+            "address_prefix": {
+              "target_keys": 3620678,
+              "skipped_keys": 146,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 1341
+            },
+            "name_ngram": {
+              "target_keys": 177929,
+              "skipped_keys": 5456,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 111.0,
+              "largest_bucket_overall": 50968
+            },
+            "name_phonetic": {
+              "target_keys": 2710944,
+              "skipped_keys": 1036,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1542
+            },
+            "address_token": {
+              "target_keys": 300493,
+              "skipped_keys": 8724,
+              "largest_kept_bucket": 150,
+              "p99_kept_bucket": 104.0,
+              "largest_bucket_overall": 40797
+            }
+          }
+        },
+        "250": {
+          "precap": {
+            "pairs": 1305819,
+            "mean_per_s1": 130.582,
+            "p95_per_s1": 355.0,
+            "max_per_s1": 737
+          },
+          "precap_recall": 0.94751,
+          "positives_recovered_precap": 17129,
+          "blocking_seconds": 3.2,
+          "positives_lost_sharing_skipped_key": 824,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5571652,
+              "skipped_keys": 484,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 790
+            },
+            "exact_address": {
+              "target_keys": 3899104,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 87,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 87
+            },
+            "numeric": {
+              "target_keys": 2541045,
+              "skipped_keys": 130,
+              "largest_kept_bucket": 248,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 9161
+            },
+            "name_prefix": {
+              "target_keys": 1066910,
+              "skipped_keys": 1081,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 48.0,
+              "largest_bucket_overall": 33028
+            },
+            "address_prefix": {
+              "target_keys": 3620678,
+              "skipped_keys": 70,
+              "largest_kept_bucket": 243,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 1341
+            },
+            "name_ngram": {
+              "target_keys": 177929,
+              "skipped_keys": 3786,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 148.0,
+              "largest_bucket_overall": 50968
+            },
+            "name_phonetic": {
+              "target_keys": 2710944,
+              "skipped_keys": 453,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1542
+            },
+            "address_token": {
+              "target_keys": 300493,
+              "skipped_keys": 5688,
+              "largest_kept_bucket": 250,
+              "p99_kept_bucket": 153.0,
+              "largest_bucket_overall": 40797
+            }
+          }
+        },
+        "500": {
+          "precap": {
+            "pairs": 2668656,
+            "mean_per_s1": 266.866,
+            "p95_per_s1": 699.0,
+            "max_per_s1": 1392
+          },
+          "precap_recall": 0.96277,
+          "positives_recovered_precap": 17405,
+          "blocking_seconds": 4.21,
+          "positives_lost_sharing_skipped_key": 548,
+          "buckets": {
+            "exact_name": {
+              "target_keys": 5571652,
+              "skipped_keys": 23,
+              "largest_kept_bucket": 496,
+              "p99_kept_bucket": 8.0,
+              "largest_bucket_overall": 790
+            },
+            "exact_address": {
+              "target_keys": 3899104,
+              "skipped_keys": 0,
+              "largest_kept_bucket": 87,
+              "p99_kept_bucket": 4.0,
+              "largest_bucket_overall": 87
+            },
+            "numeric": {
+              "target_keys": 2541045,
+              "skipped_keys": 32,
+              "largest_kept_bucket": 498,
+              "p99_kept_bucket": 9.0,
+              "largest_bucket_overall": 9161
+            },
+            "name_prefix": {
+              "target_keys": 1066910,
+              "skipped_keys": 443,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 50.0,
+              "largest_bucket_overall": 33028
+            },
+            "address_prefix": {
+              "target_keys": 3620678,
+              "skipped_keys": 15,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 5.0,
+              "largest_bucket_overall": 1341
+            },
+            "name_ngram": {
+              "target_keys": 177929,
+              "skipped_keys": 2601,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 203.0,
+              "largest_bucket_overall": 50968
+            },
+            "name_phonetic": {
+              "target_keys": 2710944,
+              "skipped_keys": 36,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 11.0,
+              "largest_bucket_overall": 1542
+            },
+            "address_token": {
+              "target_keys": 300493,
+              "skipped_keys": 2943,
+              "largest_kept_bucket": 500,
+              "p99_kept_bucket": 239.0,
+              "largest_bucket_overall": 40797
+            }
+          }
+        },
+        "no_cutoff_diagnostic": {
+          "recall_upper_bound": 0.99309,
+          "pair_count_upper_bound": 157077781,
+          "largest_bucket": 50968,
+          "note": "not materialized; never deployable"
+        }
+      }
+    }
+  }
+}

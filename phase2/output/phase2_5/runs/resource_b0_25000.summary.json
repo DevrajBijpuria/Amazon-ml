@@ -1,0 +1,9 @@
+﻿{
+    "name":  "resource_b0_25000",
+    "args":  "phase2/src/run_phase2.py --config phase2/output/phase2_5/configs/resource_b0_25000.yaml --mode dev --until model",
+    "exit_code":  0,
+    "wall_seconds":  863.1,
+    "main_process_peak_working_set_mb":  6999,
+    "all_python_processes_peak_mb":  7768,
+    "samples":  425
+}

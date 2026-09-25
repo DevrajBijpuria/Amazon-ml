@@ -1,0 +1,80 @@
+{
+  "executive_summary": [
+    "**Both blocking and the classifier limit performance at full scale, and the classifier limits it more.** On 50,000 Source-1 entities against the complete target files (10,000 identical validation entities), the unchanged Phase 2 baseline B0 reaches macro F0.5 0.8772 [0.8727, 0.8813], not the 0.9709 of the development setting: its candidate recall falls from about 98.1% on 100,000-record target pools to 91.25% on the full files, and its logistic regression misses 4,357 retrieved positives while making 1,353 false merges.",
+    "The frozen hardened configuration scores **0.9309 [0.9279, 0.9340]** at threshold 0.8, a paired improvement of +0.0537 [0.0497, 0.0577] over B0. Improved blocking alone (B0's logistic regression on the new candidate set) raises candidate recall to 95.25% and macro F0.5 by +0.0067 [0.0041, 0.0090]; replacing the model with gradient boosting on the same candidates adds the rest (+0.0471), cutting false positives from 1,427 to 916 and classifier misses from 5,350 to 2,872. Blocking still loses 1,604 validation positives, the ceiling Phase 3 inherits.",
+    "B0 was reproduced byte-for-byte before any change and again on the final code; every comparison uses identical validation entities, seed 42 and paired bootstrap confidence intervals; no improvement is credited from a lower-recall candidate set (the frozen candidate set has higher recall than B0). Test data has not been used for any choice: after the configuration was frozen, a development-scale smoke test ran test inference on a 5,000-entity test subset only to check that the frozen pipeline runs end to end and passes the validator; no labels exist for test, nothing was changed afterwards, and no Phase 2.5 result reads its output."
+  ],
+  "name_edit_sim": "The negative `name_edit_sim` coefficient is a multicollinearity artifact, not a harmful feature: on its own its standardized coefficient is positive at both scales, it correlates at r ≥ 0.9 with `name_translit_edit_sim` and `name_char3_jaccard`, and removing it changes macro F0.5 by an amount indistinguishable from zero (10k: -0.0017 [-0.0042, 0.0011]). It was kept; gradient boosting is insensitive to it.",
+  "final_configuration": "Frozen in `phase2/config/phase2_5_frozen.yaml` (derived from the B0 config; every other value unchanged):\n\n| setting | B0 | frozen | evidence |\n|---|---|---|---|\n| blocking rules | 8 | 8 + house_locality, state_locality, address_signature | 10k: together they retrieve 618 (S2) and 708 (S3) positives B0 missed, with buckets bounded by the 100-record cutoff; name_phonetic_token retrieves 1 and 3 and lowers recall after the cap; postal_locality retrieves 3 and 1 (postcodes are rare) |\n| max_candidates_per_source1 | 60 | 100 | chosen (05:27) from the 10k full-target sweep on the B0 rules, cutoff 100: cap 100 92.40% / 92.58% vs cap 150 92.52% / 92.66% (S2 / S3); then confirmed unchanged (06:03) by a sweep on the exact frozen rule set: 94.47% / 94.32% at cap 60, 95.25% / 95.30% at cap 100, 95.36% / 95.49% at cap 150; cap 150 adds 0.1-0.2 points for about 14% more pairs |\n| max_block_size (cutoff) | 100 | 100 | B0 rules at 10k: cutoffs 50-500 measured; on the frozen rule set (cutoffs 100 and 150 only) cutoff 150 at cap 100 adds 0.3 points for about 18% more pairs (95.58% / 95.54%); not worth the feature cost and memory |\n| source1_chunk_size | 100000 | 25000 | memory only: candidates and features are computed per S1, so results do not depend on the chunk size; smaller chunks bound the feature buffers for the full run |\n| gradient boosting max_iter | n/a | 200 | the value evaluated in Step 9; deliberately not tuned |\n| model | StandardScaler + LogisticRegression | HistGradientBoostingClassifier (max_iter 200, seed 42) | 10k, B0 candidates: 0.9172 [0.9097, 0.9249] vs 0.8758, paired +0.0414 [0.0329, 0.0494]; dev: 0.9765 vs 0.9709 |\n| features | 47 | 42 (F3: the five matched_by_* block-membership flags removed) | equivalent to 47 under gradient boosting at dev and 10k (paired CI of the difference contains 0), so the simpler set is preferred |\n| threshold | 0.70 (dev) | 0.8 (validation, 50k) | selected on validation macro F0.5 only |",
+  "section25_rows": [
+    [
+      "B0 current baseline (50k, full targets)",
+      "91.25%",
+      75.727,
+      "0.8772 [0.8727, 0.8813]",
+      "0.9527",
+      "0.7877",
+      "Current Phase 2 (dev-mode 0.9709 does not hold at full scale)"
+    ],
+    [
+      "Best blocking variant (50k): B0 model on the frozen candidate set",
+      "95.25%",
+      124.528,
+      "0.8839 [0.8800, 0.8880]",
+      "0.9509",
+      "0.7990",
+      "paired vs B0 +0.0067 [0.0041, 0.0090]"
+    ],
+    [
+      "Best feature variant (10k, B0 candidates, LR): F3",
+      "91.23%",
+      76.1,
+      "0.8741 [0.8642, 0.8839]",
+      "0.9364",
+      "0.7961",
+      "equivalent to all 47 features; no feature set is better (different scale from the 50k rows)"
+    ],
+    [
+      "Best model variant (10k, B0 candidates): gradient boosting",
+      "91.23%",
+      76.1,
+      "0.9172 [0.9097, 0.9249]",
+      "0.9756",
+      "0.8301",
+      "vs LR 0.8758 on the same 2,000 entities"
+    ],
+    [
+      "Final hardened Phase 2 (50k, full targets)",
+      "95.25%",
+      124.528,
+      "0.9309 [0.9279, 0.9340]",
+      "0.9705",
+      "0.8706",
+      "selected only after gates; paired vs B0 +0.0537 [0.0497, 0.0577]"
+    ]
+  ],
+  "resources": "Measured: 50k Source-1 entities against the full targets take 18 minutes end to end for the frozen configuration (training and validation), with a main-process peak of 8,045 MB; the 10k harness run peaked at 9,654 MB because it holds 13 rules' key tables plus experiment buffers. Target normalization (about 2 minutes per source) and index building (about 5 minutes per source) are fixed costs; candidate joins, the cap and features scale with Source-1 count. Projected full test inference (1.73M Source-1 entities): about 216 million candidate pairs and about 1.6 hours for candidates and features; model scoring of about 216 million rows, loading and normalizing the test Source-1 file, the submission merge and validation were not measured at scale and add to this (an estimate of 2 to 3 hours in total). Peak memory was measured only for training and validation (8.0 GB at 50k); the inference path was profiled only at development scale, so the full run should be monitored; the frozen config uses 25,000 Source-1 entities per chunk to bound feature buffers. The challenge validator keeps every candidate id in memory; for a candidate_pairs.tsv of about 216 million ids it must be run on Source-1 shards (each shard with its own test_source1 subset) on a 16 GB machine.",
+  "limitations": [
+    "Blocking still misses 1,604 of the validation positives at 50k (candidate recall 95.25%); at 10k most B0 misses were suppressed high-frequency keys (453 of 600), and the no-cutoff diagnostic shows up to 99% of positives share some key, so the remaining recall sits in buckets too large to enumerate.",
+    "The classifier still misses 2,872 retrieved positives and makes 916 false merges on 10,000 validation entities; recall (0.8706) remains the weaker side.",
+    "The per-S1 cap ranks by the number of retrieving rules and edit similarity; adding rules can push true pairs out of the cap (observed for name_phonetic_token), so any new rule must be evaluated after the cap.",
+    "Cross-script and transliterated names are only partly recovered by deterministic romanization and the consonant skeleton; the per-token phonetic block did not help at full scale.",
+    "Validation macro F0.5 is selected and reported on the same validation entities (the Phase 2 protocol); the threshold curve is flat around the optimum, but a small optimism remains.",
+    "France appears only in the test set; it is handled by the same country-agnostic rules without training examples.",
+    "All Phase 2.5 measurements are on Source-1 samples (5k to 50k); the full-scale figures are projections until the full run is executed."
+  ],
+  "handoff": [
+    "Start from `phase2/config/phase2_5_frozen.yaml` and the frozen code; reproduce `phase2/output/phase2_5/frozen_50000/` (macro F0.5 0.9309) before changing anything.",
+    "Largest remaining lever on the blocking side: selective composite keys for oversized buckets (for example a rare name token combined with a locality token) instead of skipping them, evaluated after the cap.",
+    "Largest lever on the model side: more training entities than 40,000 and features that separate near-duplicate businesses at the same address; gradient boosting hyperparameters were deliberately not tuned.",
+    "Keep the evaluation protocol: identical validation entities, seed 42, paired bootstrap, recall reported alongside every F0.5.",
+    "The full Source-1 / full target run and the test submission are pending the user's approval (runtime and memory projection in section 13)."
+  ],
+  "dependencies": "Allowed list plus one documented exception approved by the user: pandas, numpy, scikit-learn (LogisticRegression, HistGradientBoostingClassifier, StandardScaler), pyyaml, pytest, and — carried over from the Phase 2 specification — rapidfuzz (edit similarity, token-set ratio) and joblib (worker processes, model persistence). No other third-party package; memory was measured externally with Windows PowerShell (`phase2/tools/memwatch.ps1`). No external data, no LLM or API, raw datasets unchanged.",
+  "run_labels": {
+    "resource_b0_50000": "B0 (Phase 2 as is)",
+    "blocking_lr_50000": "Frozen blocking + B0 model (LR, 47 features)",
+    "frozen_50000": "Frozen hardened configuration (blocking + gradient boosting, 42 features)"
+  },
+  "baseline_reproduced": true
+}

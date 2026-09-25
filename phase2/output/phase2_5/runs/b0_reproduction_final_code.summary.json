@@ -1,0 +1,9 @@
+﻿{
+    "name":  "b0_reproduction_final_code",
+    "args":  "phase2/src/run_phase2.py --config phase2/output/phase2_5/configs/b0_reproduction_final_code.yaml --mode dev",
+    "exit_code":  0,
+    "wall_seconds":  148.5,
+    "main_process_peak_working_set_mb":  2317,
+    "all_python_processes_peak_mb":  3064,
+    "samples":  73
+}

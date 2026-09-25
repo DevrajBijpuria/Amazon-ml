@@ -1,0 +1,4 @@
+pandas==3.0.2
+PyYAML==6.0.3
+boto3==1.43.92
+pytest==9.1.1
